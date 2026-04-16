@@ -12,6 +12,7 @@ class Flashcard(BaseModel):
     id: str = Field(description="唯一标识")
     category: str = Field(default="基础口语", description="单词所属大类（如：基础口语, Shameless-S02E01）")
     scene: str = Field(default="默认场景", description="单词所属的情景剧场（如：【日常寒暄】, 【场景11：酒吧闲聊】）")
+    tag: str = Field(default="日常生活", description="分类标签（影视剧/日常生活/商务英语/旅游出行/考试词汇）")
     question: str = Field(description="中文问题")
     answer: str = Field(description="英文答案")
     created_at: datetime = Field(default_factory=datetime.now, description="创建时间")
@@ -36,3 +37,4 @@ class FlashcardCreate(BaseModel):
     answer: str
     category: Optional[str] = "基础口语"
     scene: Optional[str] = "默认场景"
+    tag: Optional[str] = "日常生活"

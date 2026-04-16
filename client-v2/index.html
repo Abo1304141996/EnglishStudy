@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="英语闪现卡学习 — 通过场景化学习高效掌握英语口语表达">
+  <title>英语闪现卡 · English Flashcards</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3B82F6',
+            secondary: '#10B981',
+            accent: '#8B5CF6',
+            dark: '#1E293B',
+            light: '#F8FAFC'
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="bg-gray-50 text-dark min-h-screen flex flex-col">
+
+  <!-- ========== 导航栏 ========== -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <div class="flex items-center space-x-2 cursor-pointer" id="nav-logo">
+        <i class="fas fa-bolt text-primary text-2xl"></i>
+        <h1 class="text-xl font-bold text-dark">英语闪现卡</h1>
+      </div>
+      <nav class="hidden md:flex items-center space-x-8">
+        <a class="nav-link active" href="javascript:void(0);" data-page="pack-list">首页</a>
+        <a class="nav-link" href="javascript:void(0);" data-page="my-learning">我的学习</a>
+      </nav>
+      <div class="flex items-center space-x-4">
+        <button class="md:hidden text-dark text-xl" id="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== 主内容 ========== -->
+  <main class="flex-grow container mx-auto px-4 py-8">
+
+    <!-- ===== 页面1: 学习包列表 ===== -->
+    <div id="page-pack-list">
+      <!-- 筛选区 -->
+      <div class="mb-8">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
+          <h2 class="text-2xl font-bold">全部学习包</h2>
+        </div>
+        <div class="flex flex-wrap gap-2" id="tag-filters">
+          <button class="tag-btn active" data-tag="全部">全部</button>
+        </div>
+      </div>
+      <!-- 学习包网格 -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="pack-grid">
+        <div class="text-center text-gray-400 py-16 col-span-full">
+          <i class="fas fa-spinner fa-spin text-3xl mb-4"></i>
+          <p>加载学习包中...</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== 页面2: 场景列表 ===== -->
+    <div id="page-scene-list" class="hidden">
+      <div class="mb-6">
+        <div class="flex items-center mb-4">
+          <button class="flex items-center text-gray-600 hover:text-primary transition-colors" id="back-to-packs">
+            <i class="fas fa-arrow-left mr-2"></i>返回学习包
+          </button>
+        </div>
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+          <div>
+            <h2 class="text-3xl font-bold" id="current-pack-name"></h2>
+            <p class="text-gray-600 mt-2">选择场景开始闪卡学习</p>
+          </div>
+          <div class="text-sm text-gray-500" id="pack-progress-info"></div>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4" id="scene-grid"></div>
+    </div>
+
+    <!-- ===== 页面3: 闪卡学习 ===== -->
+    <div id="page-flashcard" class="hidden">
+      <!-- 顶栏 -->
+      <div class="mb-6">
+        <div class="flex items-center justify-between mb-4">
+          <button class="flex items-center text-gray-600 hover:text-primary transition-colors" id="back-to-scenes">
+            <i class="fas fa-arrow-left mr-2"></i>返回场景
+          </button>
+          <span class="text-sm text-gray-600" id="card-index-display">1 / 10</span>
+        </div>
+        <h3 class="text-2xl font-bold" id="current-scene-name"></h3>
+        <!-- 进度条 -->
+        <div class="w-full bg-gray-200 rounded-full h-2 mt-3">
+          <div class="bg-primary h-2 rounded-full transition-all duration-300" id="card-progress-bar" style="width: 0%"></div>
+        </div>
+      </div>
+
+      <!-- 闪卡区 -->
+      <div class="max-w-3xl mx-auto mb-8">
+        <div class="flashcard-wrapper relative" style="aspect-ratio: 16/10;">
+          <!-- 翻转容器 -->
+          <div class="card-flip w-full h-full cursor-pointer" id="flashcard">
+            <div class="card-inner relative w-full h-full">
+              <!-- 正面: 中文问题 -->
+              <div class="card-front absolute w-full h-full bg-white rounded-2xl shadow-lg flex flex-col items-center justify-center p-8 border border-gray-100">
+                <p class="text-sm text-gray-400 mb-4">点击卡片查看答案</p>
+                <h4 class="text-xl md:text-2xl font-bold text-center leading-relaxed text-dark" id="card-front-text"></h4>
+              </div>
+              <!-- 背面: 英文答案 -->
+              <div class="card-back absolute w-full h-full bg-blue-50 rounded-2xl shadow-lg flex flex-col items-center justify-center p-8 border border-primary/20">
+                <p class="text-sm text-gray-500 mb-2">Answer</p>
+                <h4 class="text-xl md:text-2xl font-bold text-center text-primary leading-relaxed" id="card-back-text"></h4>
+              </div>
+            </div>
+          </div>
+          <!-- 评分反馈浮层（错开旋转覆盖） -->
+          <div class="feedback-overlay hidden" id="card-feedback">
+            <span class="feedback-text" id="feedback-text"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 评分按钮 -->
+      <div class="max-w-3xl mx-auto flex justify-center gap-4 mb-6">
+        <button class="rate-btn px-6 py-3 bg-green-500 hover:bg-green-600 text-white rounded-lg shadow-md transition-all" data-rating="know">
+          <i class="fas fa-check mr-2"></i>认识
+        </button>
+        <button class="rate-btn px-6 py-3 bg-yellow-500 hover:bg-yellow-600 text-white rounded-lg shadow-md transition-all" data-rating="fuzzy">
+          <i class="fas fa-question mr-2"></i>模糊
+        </button>
+        <button class="rate-btn px-6 py-3 bg-red-500 hover:bg-red-600 text-white rounded-lg shadow-md transition-all" data-rating="unknown">
+          <i class="fas fa-times mr-2"></i>不认识
+        </button>
+      </div>
+
+      <!-- 翻页 -->
+      <div class="max-w-xl mx-auto flex items-center justify-center gap-4">
+        <button class="px-5 py-3 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors flex items-center" id="prev-card">
+          <i class="fas fa-chevron-left mr-2"></i>上一张
+        </button>
+        <button class="px-5 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors flex items-center" id="next-card">
+          下一张<i class="fas fa-chevron-right ml-2"></i>
+        </button>
+      </div>
+      <div class="mt-6 max-w-xl mx-auto">
+        <p class="text-center text-sm text-gray-500">
+          <i class="fas fa-info-circle mr-1"></i>
+          快捷键: <kbd class="px-1.5 py-0.5 bg-gray-100 rounded text-xs">Space</kbd> 翻转
+          <kbd class="px-1.5 py-0.5 bg-gray-100 rounded text-xs ml-2">←</kbd> 上一张
+          <kbd class="px-1.5 py-0.5 bg-gray-100 rounded text-xs">→</kbd> 下一张
+          <kbd class="px-1.5 py-0.5 bg-gray-100 rounded text-xs ml-2">1</kbd> 认识
+          <kbd class="px-1.5 py-0.5 bg-gray-100 rounded text-xs">2</kbd> 模糊
+          <kbd class="px-1.5 py-0.5 bg-gray-100 rounded text-xs">3</kbd> 不认识
+        </p>
+      </div>
+    </div>
+
+    <!-- ===== 页面4: 我的学习 ===== -->
+    <div id="page-my-learning" class="hidden">
+      <div class="mb-8">
+        <h2 class="text-3xl font-bold mb-2">我的学习记录</h2>
+        <p class="text-gray-600">查看您的学习进度和历史记录</p>
+      </div>
+      <!-- 统计卡片 -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+        <div class="bg-white rounded-xl shadow-sm p-6 border border-gray-100">
+          <div class="flex items-center justify-between">
+            <div>
+              <p class="text-gray-500 text-sm">总学习卡片</p>
+              <p class="text-2xl font-bold mt-1" id="stat-total-cards">0</p>
+            </div>
+            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+              <i class="fas fa-layer-group text-primary text-xl"></i>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white rounded-xl shadow-sm p-6 border border-gray-100">
+          <div class="flex items-center justify-between">
+            <div>
+              <p class="text-gray-500 text-sm">已掌握</p>
+              <p class="text-2xl font-bold mt-1" id="stat-known">0</p>
+            </div>
+            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+              <i class="fas fa-check-circle text-secondary text-xl"></i>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white rounded-xl shadow-sm p-6 border border-gray-100">
+          <div class="flex items-center justify-between">
+            <div>
+              <p class="text-gray-500 text-sm">正确率</p>
+              <p class="text-2xl font-bold mt-1" id="stat-accuracy">0%</p>
+            </div>
+            <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
+              <i class="fas fa-trophy text-accent text-xl"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 学习历史 -->
+      <div class="bg-white rounded-xl shadow-sm border border-gray-100">
+        <div class="p-6 border-b border-gray-100">
+          <h3 class="text-xl font-bold">最近学习</h3>
+        </div>
+        <div id="learning-history-list" class="divide-y divide-gray-100">
+          <p class="p-6 text-gray-400 text-center">加载中...</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ========== 页脚 ========== -->
+  <footer class="bg-white border-t border-gray-200 py-6 mt-10">
+    <div class="container mx-auto px-4 text-center text-gray-500 text-sm">
+      <p>© 2025 英语闪现卡学习 | 用闪卡让记忆更高效</p>
+    </div>
+  </footer>
+
+  <!-- JS Modules -->
+  <script src="js/api.js"></script>
+  <script src="js/router.js"></script>
+  <script src="js/packs.js"></script>
+  <script src="js/scenes.js"></script>
+  <script src="js/flashcard.js"></script>
+  <script src="js/history.js"></script>
+</body>
+</html>

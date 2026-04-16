@@ -89,18 +89,34 @@ class JSONStudyStorage(BaseStudyStorage):
             result = [c for c in result if c.scene == scene]
         return result
 
-    async def get_categories(self) -> Dict[str, List[str]]:
-        """获取目录层级：分类 -> 场景的树状字典"""
-        categories = {}
+    async def get_categories(self) -> List[Dict[str, Any]]:
+        """获取丰富的分类目录结构"""
+        # 先按 category 聚合
+        cat_data: Dict[str, Dict] = {}
         for card in self.flashcards:
             cat = card.category or "基础口语"
             scn = card.scene or "默认场景"
-            if cat not in categories:
-                categories[cat] = set()
-            categories[cat].add(scn)
-        
-        # 转换为列表，便于 JSON 序列化
-        return {cat: list(scenes) for cat, scenes in categories.items()}
+            tag = getattr(card, 'tag', '日常生活') or "日常生活"
+
+            if cat not in cat_data:
+                cat_data[cat] = {"tag": tag, "scenes": {}}
+            if scn not in cat_data[cat]["scenes"]:
+                cat_data[cat]["scenes"][scn] = 0
+            cat_data[cat]["scenes"][scn] += 1
+
+        # 转换为前端期望的列表格式
+        result = []
+        for cat_name, info in cat_data.items():
+            scenes_list = [{"name": s, "card_count": c} for s, c in info["scenes"].items()]
+            total_cards = sum(s["card_count"] for s in scenes_list)
+            result.append({
+                "name": cat_name,
+                "tag": info["tag"],
+                "scene_count": len(scenes_list),
+                "total_cards": total_cards,
+                "scenes": scenes_list,
+            })
+        return result
 
     async def get_flashcard(self, card_id: str) -> Optional[Flashcard]:
         for card in self.flashcards:

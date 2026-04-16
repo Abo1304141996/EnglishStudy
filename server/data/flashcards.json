@@ -5,7 +5,8 @@
     "answer": "How are you today?",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_1",
@@ -13,7 +14,8 @@
     "answer": "I'm fine thank you.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_2",
@@ -21,7 +23,8 @@
     "answer": "I'm doing well.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_3",
@@ -29,7 +32,8 @@
     "answer": "I'm a bit tired but I'm okay.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_4",
@@ -37,7 +41,8 @@
     "answer": "I wake up.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_5",
@@ -45,7 +50,8 @@
     "answer": "I stretch.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_6",
@@ -53,7 +59,8 @@
     "answer": "I sit up.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_7",
@@ -61,7 +68,8 @@
     "answer": "I stand.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_8",
@@ -69,7 +77,8 @@
     "answer": "I walk to the kitchen.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_9",
@@ -77,7 +86,8 @@
     "answer": "I drink water.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_10",
@@ -85,7 +95,8 @@
     "answer": "I make breakfast.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_11",
@@ -93,7 +104,8 @@
     "answer": "I brush my teeth.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_12",
@@ -101,7 +113,8 @@
     "answer": "I wash my face.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_13",
@@ -109,7 +122,8 @@
     "answer": "I get dressed.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_14",
@@ -117,7 +131,8 @@
     "answer": "I leave my home.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_15",
@@ -125,7 +140,8 @@
     "answer": "What are you doing?",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_16",
@@ -133,7 +149,8 @@
     "answer": "I am studying.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_17",
@@ -141,7 +158,8 @@
     "answer": "I am working.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_18",
@@ -149,7 +167,8 @@
     "answer": "I am spending time with my family.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_19",
@@ -157,7 +176,8 @@
     "answer": "I am relaxing.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_20",
@@ -165,7 +185,8 @@
     "answer": "Do you have time?",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_21",
@@ -173,7 +194,8 @@
     "answer": "Yes I have time.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_22",
@@ -181,7 +203,8 @@
     "answer": "No I am a little busy right now.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_23",
@@ -189,7 +212,8 @@
     "answer": "舒服自然地表达 (Speaking comfortably).",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_24",
@@ -197,7 +221,8 @@
     "answer": "How was your day?",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_25",
@@ -205,7 +230,8 @@
     "answer": "My day was good.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_26",
@@ -213,7 +239,8 @@
     "answer": "My day was okay just normal.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_27",
@@ -221,7 +248,8 @@
     "answer": "I had a busy day but I handled everything well.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_28",
@@ -229,7 +257,8 @@
     "answer": "I woke up early today.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_29",
@@ -237,7 +266,8 @@
     "answer": "The weather was quiet and calm.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_30",
@@ -245,7 +275,8 @@
     "answer": "I made myself a cup of tea.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_31",
@@ -253,7 +284,8 @@
     "answer": "I sat near the window.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_32",
@@ -261,7 +293,8 @@
     "answer": "The sky was getting brighter.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_33",
@@ -269,7 +302,8 @@
     "answer": "I planned my day.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_34",
@@ -277,7 +311,8 @@
     "answer": "I prepared myself for the day ahead.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_35",
@@ -285,7 +320,8 @@
     "answer": "I am having rice and vegetables.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_36",
@@ -293,7 +329,8 @@
     "answer": "I am having bread and eggs.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_37",
@@ -301,7 +338,8 @@
     "answer": "I haven't decided yet.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_38",
@@ -309,7 +347,8 @@
     "answer": "I feel happy today.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_39",
@@ -317,7 +356,8 @@
     "answer": "I feel calm and relaxed right now.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_40",
@@ -325,7 +365,8 @@
     "answer": "交流与联系 (Connection).",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_41",
@@ -333,7 +374,8 @@
     "answer": "I am improving every day.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_42",
@@ -341,7 +383,8 @@
     "answer": "I do not need to be perfect.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_43",
@@ -349,7 +392,8 @@
     "answer": "The weather is pleasant.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_44",
@@ -357,7 +401,8 @@
     "answer": "I see people walking.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_45",
@@ -365,7 +410,8 @@
     "answer": "I hear cars passing by.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_46",
@@ -373,7 +419,8 @@
     "answer": "I feel the fresh air.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_47",
@@ -381,7 +428,8 @@
     "answer": "I am present in this moment.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_48",
@@ -389,7 +437,8 @@
     "answer": "Where are you going?",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_49",
@@ -397,7 +446,8 @@
     "answer": "What are your plans for today?",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_50",
@@ -405,7 +455,8 @@
     "answer": "Did you sleep well?",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_51",
@@ -413,7 +464,8 @@
     "answer": "I'm going to the store.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_52",
@@ -421,7 +473,8 @@
     "answer": "I'm going to meet a friend.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_53",
@@ -429,7 +482,8 @@
     "answer": "Yes I slept well.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_54",
@@ -437,7 +491,8 @@
     "answer": "Not really I was a bit tired.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_55",
@@ -445,7 +500,8 @@
     "answer": "I open the fridge.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_56",
@@ -453,7 +509,8 @@
     "answer": "I take out vegetables.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_57",
@@ -461,7 +518,8 @@
     "answer": "I cut them.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_58",
@@ -469,7 +527,8 @@
     "answer": "I heat the pan.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_59",
@@ -477,7 +536,8 @@
     "answer": "I add spices.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_60",
@@ -485,7 +545,8 @@
     "answer": "I take my time and enjoy the process.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_61",
@@ -493,7 +554,8 @@
     "answer": "I am becoming more confident every day.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_62",
@@ -501,7 +563,8 @@
     "answer": "What are you doing later today?",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_63",
@@ -509,7 +572,8 @@
     "answer": "I will go for a walk later.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_64",
@@ -517,7 +581,8 @@
     "answer": "I might watch a movie.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_65",
@@ -525,7 +590,8 @@
     "answer": "I have some work to finish.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_66",
@@ -533,7 +599,8 @@
     "answer": "Can you help me?",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_67",
@@ -541,7 +608,8 @@
     "answer": "Could you explain that please?",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_68",
@@ -549,7 +617,8 @@
     "answer": "I didn't understand.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_69",
@@ -557,7 +626,8 @@
     "answer": "Could you say that again?",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_70",
@@ -565,7 +635,8 @@
     "answer": "Sure give me a moment.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_71",
@@ -573,7 +644,8 @@
     "answer": "It's a nice day today.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_72",
@@ -581,7 +653,8 @@
     "answer": "It looks like it's going to rain.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_73",
@@ -589,7 +662,8 @@
     "answer": "The sky is very clear today.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_74",
@@ -597,7 +671,8 @@
     "answer": "I am happy to see you.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_75",
@@ -605,7 +680,8 @@
     "answer": "I hope you are doing well.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_76",
@@ -613,7 +689,8 @@
     "answer": "It's nice to talk with you.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_77",
@@ -621,7 +698,8 @@
     "answer": "I sat down to relax.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_78",
@@ -629,7 +707,8 @@
     "answer": "I took a deep breath.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_79",
@@ -637,7 +716,8 @@
     "answer": "I felt calm and peaceful.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_80",
@@ -645,7 +725,8 @@
     "answer": "Let's go for a walk.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_81",
@@ -653,7 +734,8 @@
     "answer": "Let's watch something together.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_82",
@@ -661,7 +743,8 @@
     "answer": "That sounds good.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_83",
@@ -669,7 +752,8 @@
     "answer": "Sure I would like that.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_84",
@@ -677,7 +761,8 @@
     "answer": "Maybe another time.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_85",
@@ -685,7 +770,8 @@
     "answer": "I don't think I can today.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_86",
@@ -693,7 +779,8 @@
     "answer": "I'm happy to meet you.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_87",
@@ -701,7 +788,8 @@
     "answer": "Where are you from?",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_88",
@@ -709,7 +797,8 @@
     "answer": "I like listening to music.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_89",
@@ -717,7 +806,8 @@
     "answer": "I like learning new things.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_90",
@@ -725,7 +815,8 @@
     "answer": "I prefer tea over coffee.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_91",
@@ -733,7 +824,8 @@
     "answer": "I like quiet mornings.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_92",
@@ -741,7 +833,8 @@
     "answer": "I enjoy peaceful days.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_93",
@@ -749,7 +842,8 @@
     "answer": "refreshed",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_94",
@@ -757,7 +851,8 @@
     "answer": "I will call you tomorrow.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_95",
@@ -765,7 +860,8 @@
     "answer": "I need a little time.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_96",
@@ -773,7 +869,8 @@
     "answer": "I need some rest.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_97",
@@ -781,7 +878,8 @@
     "answer": "Thank you that means a lot.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_98",
@@ -789,7 +887,8 @@
     "answer": "I appreciate your support.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_99",
@@ -797,7 +896,8 @@
     "answer": "That is very kind of you.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_100",
@@ -805,7 +905,8 @@
     "answer": "I can hear my breath.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_101",
@@ -813,7 +914,8 @@
     "answer": "How are you feeling today?",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_102",
@@ -821,7 +923,8 @@
     "answer": "Do you need anything?",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_103",
@@ -829,7 +932,8 @@
     "answer": "How can I help?",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_104",
@@ -837,7 +941,8 @@
     "answer": "I'm feeling all right.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "id": "card_105",
@@ -845,7 +950,8 @@
     "answer": "Thank you for asking.",
     "created_at": "2026-04-02T17:14:08.311614",
     "category": "基础口语",
-    "scene": "默认场景"
+    "scene": "默认场景",
+    "tag": "日常生活"
   },
   {
     "category": "Shameless-S02E01",
@@ -853,7 +959,8 @@
     "question": "感叹对方的生活经历不凡：“你的生活背负了太多（复杂沉重），而且你是我前所未见的，最与众不同的人。”",
     "answer": "Your life's not simple, Fiona, and you're nothing like anyone I've ever met.",
     "id": "card_106",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -861,7 +968,8 @@
     "question": "向对方倾诉爱意：“你重新燃起了我享受生活的欲望。”",
     "answer": "You make me want to enjoy my life again.",
     "id": "card_107",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -869,7 +977,8 @@
     "question": "看到陌生人在自己家里，没好气地问：“那老家伙到底是谁？”",
     "answer": "Who the hell is that?",
     "id": "card_108",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -877,7 +986,8 @@
     "question": "清点手头资金时问：“我们现在还差多少钱？”",
     "answer": "How much are we short?",
     "id": "card_109",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -885,7 +995,8 @@
     "question": "给别人当枪手赚钱：“我正要去给某个倒霉的波兰小鬼当代考（高考预考）。”",
     "answer": "I'm taking the PSATs for some Polish kid.",
     "id": "card_110",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -893,7 +1004,8 @@
     "question": "问兄弟能不能多出点血：“你手头还能再多凑个十块左右给我吗？”",
     "answer": "Are you able to kick in, like, ten more?",
     "id": "card_111",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -901,7 +1013,8 @@
     "question": "拒绝别人的同情：“我们不需要你的施舍。”",
     "answer": "We don't need your charity.",
     "id": "card_112",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -909,7 +1022,8 @@
     "question": "对于昨晚的进展感到欣慰：“关于昨晚的那件事，我已经期望（等待）了太久了。”",
     "answer": "I've waited a long time for last night to happen.",
     "id": "card_113",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -917,7 +1031,8 @@
     "question": "不满老爹干涉自己私生活大吼：“至少托尼不会跑来对我家的私事指手画脚！你他妈到底有什么毛病，弗兰克？！”",
     "answer": "At least Tony's not coming here getting all in my family's business. What the fuck is wrong, Frank?!",
     "id": "card_114",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -925,7 +1040,8 @@
     "question": "赌气承认自己的冲动：“也许这就是我想追求的。”",
     "answer": "Maybe that's what I want.",
     "id": "card_115",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -933,7 +1049,8 @@
     "question": "别人乱下判断时反驳：“你对我根本就一无所知。”",
     "answer": "You know nothing about me.",
     "id": "card_116",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -941,7 +1058,8 @@
     "question": "谈条件时让双方都满意：“我得到我想拥有的，你也可以达成你的目的。”",
     "answer": "I get what I want, and you can have what you want.",
     "id": "card_117",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -949,7 +1067,8 @@
     "question": "向朋友解释这奇葩行径的初衷：“我们也就只收养这个寄养儿童一个礼拜，全是为凑足那笔钱去还清我那蠢爆了的停车罚单罢了。”",
     "answer": "We're only taking in a foster kid for a week to get the money to pay for my stupid parking tickets.",
     "id": "card_118",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -957,7 +1076,8 @@
     "question": "为了推销假货或引诱犯罪，先打消顾虑：“这是全国最好的顶尖机器人实验室。”",
     "answer": "This is the robotics lab. It is the best in the country.",
     "id": "card_119",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -965,7 +1085,8 @@
     "question": "吐槽别人家像个没底线的安乐窝：“你们家现在简直就是那个酒鬼弗兰克做梦都想要的天堂。”",
     "answer": "Your house is Frank's wet dream.",
     "id": "card_120",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -973,7 +1094,8 @@
     "question": "被别人问起什么关系：“我们之间算什么关系？朋友。”",
     "answer": "What are we? Friends.",
     "id": "card_121",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -981,7 +1103,8 @@
     "question": "紧接着追问真实性质：“只是普通朋友？那种喜欢随时打炮发生关系的朋友吧。”",
     "answer": "Just friends? Friends who like to do this.",
     "id": "card_122",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -989,7 +1112,8 @@
     "question": "报复家暴/不负责父亲的质问：“你现在感觉如何，老爹？你还觉得我只配当个婊子吗？”",
     "answer": "What do you think now, daddy? Am I still a whore?",
     "id": "card_123",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -997,7 +1121,8 @@
     "question": "对闺蜜袒露心声：“我觉得我自己好像真是有点爱上她了。”",
     "answer": "I think I was kind of falling in love with her.",
     "id": "card_124",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1005,7 +1130,8 @@
     "question": "遭遇危机，想带着爱人逃走：“我必须要离开这个镇子了。跟我一起走吧。”",
     "answer": "I have to leave town. Come with me.",
     "id": "card_125",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1013,7 +1139,8 @@
     "question": "放下防备大胆表白：“我爱你。我就想和你在一起。”",
     "answer": "I love you. I want to be with you.",
     "id": "card_126",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1021,7 +1148,8 @@
     "question": "看透老爹的酒鬼本性，预言他马上原形毕露：“不出几天，她只要出门走到便利店，然后路过理发店，最后必然扎进Alibi酒吧。”",
     "answer": "In a few days, she's gonna make it to the store, then the hair salon, Alibi room.",
     "id": "card_127",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1029,7 +1157,8 @@
     "question": "抱怨别人彻底摆烂：“那男的简直可以说是豪无半点责任心可言。”",
     "answer": "Man's got no sense of responsibility.",
     "id": "card_128",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1037,7 +1166,8 @@
     "question": "描述被抛弃的现状：“抛下我们孤儿寡母一家三口，让我们这还要自谋生计（找活路）。”",
     "answer": "Leaving a family of three to fend for ourselves.",
     "id": "card_129",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1045,7 +1175,8 @@
     "question": "抱怨政府不管穷人：“奥萨马·奥巴马（口误）先生难道指望我们就靠着这点钱熬下去吗？”",
     "answer": "How does Mr. Osama-Obama expect us to survive on that?",
     "id": "card_130",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1053,7 +1184,8 @@
     "question": "质疑某些不靠谱女人的赚钱能力：“就算希拉真的能去工作，她能赚到几个子儿？”",
     "answer": "If Sheila does go to work, what's she going to make?",
     "id": "card_131",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1061,7 +1193,8 @@
     "question": "吹牛自己曾抗拒警察拒捕：“他当时试图拿电击枪电晕我。我就直接反过来揍了他。”",
     "answer": "He gonna try and tase me. I hit him.",
     "id": "card_132",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1069,7 +1202,8 @@
     "question": "另一个人听不下去揭穿：“少他妈扯淡，我就被电了一秒左右，就直接吓得拉裤兜子了。”",
     "answer": "I got tasered for like a second, I crapped myself.",
     "id": "card_133",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1077,7 +1211,8 @@
     "question": "质疑前者的牛逼经历：“你这是纯纯扯淡，根本不可能有人被电击完两次，还反倒打晕仨警察撒丫子就跑。”",
     "answer": "There's no way you got tasered twice, fought off three cops ran away.",
     "id": "card_134",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1085,7 +1220,8 @@
     "question": "被人质疑马上立下赌约：“我打赌一千块现金，老子就是干到了！”",
     "answer": "A grand says I did.",
     "id": "card_135",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1093,7 +1229,8 @@
     "question": "好赌之徒立马加注：“我跟了你那一千块赌约，再追加九千。”",
     "answer": "I'll see your grand and add nine more.",
     "id": "card_136",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1101,7 +1238,8 @@
     "question": "正式放狠话开赌局：“一万块美利坚现钞摆在这！我赌你丫绝不可能被电两次还不把裤裆吓出屎尿弄脏内裤，更别提能撑着站着了！”",
     "answer": "10,000 in American legal tender says you can not get tasered twice and not soil your tighty whities, much less keep standing.",
     "id": "card_137",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1109,7 +1247,8 @@
     "question": "调侃酒量不行的年轻男生：“哦，女孩们，你们觉得这帮童子军能扛得住这烈性酒杯数吗？”",
     "answer": "Oh, you think these boy scouts can handle that kind of heat, girls?",
     "id": "card_138",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1117,7 +1256,8 @@
     "question": "到了人多的场合包揽找座位的活儿：“你们等等，我这就去给我们找张桌子位子。”",
     "answer": "I'll get us a table.",
     "id": "card_139",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1125,7 +1265,8 @@
     "question": "邀请朋友晚一点加入派对狂欢：“我们几个人晚点还要出去呢。要不要一块儿来？”",
     "answer": "We're going out later. You want to come?",
     "id": "card_140",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1133,7 +1274,8 @@
     "question": "劝穷忙的朋友放松下神经：“待会儿跟过来喝一杯吧，稍微纵享一下生活。”",
     "answer": "Come later, live a little.",
     "id": "card_141",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1141,7 +1283,8 @@
     "question": "在场边大骂自己的拳手软弱无能：“还手击退回去啊！你打出去的拳就像个娘炮一样棉！”",
     "answer": "Kick him back, you're punching like a fag.",
     "id": "card_142",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1149,7 +1292,8 @@
     "question": "裁判发号施令：“好了，第一回合开始。赶紧各就各位退回角落。”",
     "answer": "First round. Go to your corners.",
     "id": "card_143",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1157,7 +1301,8 @@
     "question": "看到自家拳手光挨打不发火：“马蒂，你应该搞懂的，你是必须狠狠重拳回击他的，是不是？”",
     "answer": "Marty, you know you're supposed to hit him back, right?",
     "id": "card_144",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1165,7 +1310,8 @@
     "question": "没准备挨揍的人崩溃抱怨：“你以为来打老拳会是个怎样的情况？”",
     "answer": "What did you think this was going to be?",
     "id": "card_145",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1173,7 +1319,8 @@
     "question": "没料到混混不按套路出牌：“老子真没想到他他妈居然用脚踢！”",
     "answer": "I didn't think he could punch me with a foot.",
     "id": "card_146",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1181,7 +1328,8 @@
     "question": "打完场下问人服不服：“听着，看着我的眼睛。你是想要扔白毛巾直接放弃投降吗？”",
     "answer": "Listen, look at me. You want to throw in the towel?",
     "id": "card_147",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1189,7 +1337,8 @@
     "question": "被打烂的哥们虚弱地认怂：“如果我脑子够灵光聪明，我就该早点认输。”",
     "answer": "I would if I was smart.",
     "id": "card_148",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1197,7 +1346,8 @@
     "question": "闺蜜评价一直黏在身边的追求者：“他为你（对你）简直痴迷不已啊。”",
     "answer": "He's crazy about you.",
     "id": "card_149",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1205,7 +1355,8 @@
     "question": "朋友再次邀请：“干嘛你晚点不要和我们一起出去玩呢？”",
     "answer": "Why don't you come out with us later.",
     "id": "card_150",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1213,7 +1364,8 @@
     "question": "找借口拒绝派对邀约：“小凯不会介意的。——我真不行（去不了）。”",
     "answer": "Kev won't mind. - I can't.",
     "id": "card_151",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1221,7 +1373,8 @@
     "question": "说明早起有事：“我明天早上在疗养院（养老院）还有个班要值。”",
     "answer": "I got a shift at the nursing home in the morning.",
     "id": "card_152",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1229,7 +1382,8 @@
     "question": "跟华尔街精英客套：“你在高盛工作得怎么样了？”",
     "answer": "How's things at Goldman Sachs?",
     "id": "card_153",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1237,7 +1391,8 @@
     "question": "精英自嘲地炫富：“还挺不错的，至少捞的油水足够我来这种地方被你们痛宰（花冤枉钱消费）了。”",
     "answer": "Going well enough for me to afford getting ripped off coming here.",
     "id": "card_154",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1245,7 +1400,8 @@
     "question": "仇富女反驳华尔街吸血鬼：“反正早晚有一天，你们这帮靠抵押贷款剥削人的混账玩意儿都该进监狱。”",
     "answer": "All you mortgage-raping shits should be in prison anyway.",
     "id": "card_155",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1253,7 +1409,8 @@
     "question": "精英无所谓地替自己辩解：“是啊，不过次贷危机爆发时，我还在念研究生呢。”",
     "answer": "Yeah, well, I was in grad school during the mortgage crisis.",
     "id": "card_156",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1261,7 +1418,8 @@
     "question": "精英毫无羞耻感地暴露正在做的事：“如今，我们正在设法做空欧元，好让整个希腊顺利破产。”",
     "answer": "Nowadays, we're trying to short euros so Greece will go bankrupt.",
     "id": "card_157",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1269,7 +1427,8 @@
     "question": "精英轻浮地追问邀约：“我们待会儿还有戏（约会）吗？”",
     "answer": "Are we on for later?",
     "id": "card_158",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1277,7 +1436,8 @@
     "question": "辣妹高冷地吊胃口回复：“我还没决定自己是不是还像以前一样对你有感觉（喜欢你）。”",
     "answer": "I haven't decided if I still like you.",
     "id": "card_159",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1285,7 +1445,8 @@
     "question": "比赛结束后老板惊叹爆冷门：“那小鬼究竟是怎么他妈地把那个科特·兰蒂斯给胖揍一顿的？”",
     "answer": "How the hell did that little guy kick Kurt- fucking-Landis' ass?",
     "id": "card_160",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1293,7 +1454,8 @@
     "question": "赢了比赛来找庄家拿钱：“从我打的这场比赛里，咱们赚到钱（抽成）了吗？谢了，拉斯米克！”",
     "answer": "We make anything on my fight? Thanks, Rasmik!",
     "id": "card_161",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1301,7 +1463,8 @@
     "question": "庄家告诉他没人压注爆冷局：“零鸭蛋。哪怕兄弟情义再深，也不会让我头脑发昏在这上头犯傻的，老兄。”",
     "answer": "Nada. Fraternal loyalty doesn't extend to stupidity, bud.",
     "id": "card_162",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1309,7 +1472,8 @@
     "question": "宣布要在办一局黑拳：“听着，我还想下个礼拜再接着办一场搏击之夜。”",
     "answer": "Hey, I want to stage another fight night next week.",
     "id": "card_163",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1317,7 +1481,8 @@
     "question": "吩咐收下出去拉人头：“你去四处那些个武道馆里多走动转转，给我多拉拢找些打手好手过来，行吧？”",
     "answer": "Go around to the dojos, round up some more scrappers, all right?",
     "id": "card_164",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1325,7 +1490,8 @@
     "question": "打听对方出门去哪：“没问题。你要去哪？”",
     "answer": "Sure. Where you going?",
     "id": "card_165",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1333,7 +1499,8 @@
     "question": "知道对方去哪里后嘲讽没出息：“我还以为你早对那档子事彻底死心放弃了呢。”",
     "answer": "Thought you gave up on that.",
     "id": "card_166",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1341,7 +1508,8 @@
     "question": "八卦朋友的前任：“凯伦·杰克逊？就在那个跟你老爸搞过之后（你还想去她家）？”",
     "answer": "Karen Jackson? After that thing with your dad?",
     "id": "card_167",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1349,7 +1517,8 @@
     "question": "质问在前女友家楼下看到的男生：“你刚才待在这里到底在干嘛？”",
     "answer": "What the hell you doing here?",
     "id": "card_168",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1357,7 +1526,8 @@
     "question": "理直气壮地说：“我来找凯伦的。”",
     "answer": "Came to see Karen.",
     "id": "card_169",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1365,7 +1535,8 @@
     "question": "得知前女友去了奇怪的互助会：“匿名性瘾者互助会。”",
     "answer": "Sex addicts anonymous.",
     "id": "card_170",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1373,7 +1544,8 @@
     "question": "询问情敌能否上楼等：“那好吧，我能进屋里去等等她吗？”",
     "answer": "Well, can I come in and wait?",
     "id": "card_171",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1381,7 +1553,8 @@
     "question": "嘲讽朋友又被老男人比下去了：“看来大卫那个老家伙比你更持久啊（抢占了你的先机），罗密欧。”",
     "answer": "Looks like old man Dave is beating your time, Romeo.",
     "id": "card_172",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1389,7 +1562,8 @@
     "question": "爆料老男人靠吃药撑着：“他刚才竟然嗑了蓝色小药丸——我特意数过，整整四颗。”",
     "answer": "He was popping little blue pills-- I counted four.",
     "id": "card_173",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1397,7 +1571,8 @@
     "question": "跟老板有约快要来不及了：“啊，艹！我才刚跟我老板报备过，大概一小时后就去跟他汇合跑步的。”",
     "answer": "Ah, fuck! I told my boss I'd meet him for a run in about an hour.",
     "id": "card_174",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1405,7 +1580,8 @@
     "question": "女生想搭讪跑步：“我或许可以跟你们一起跑。”",
     "answer": "I could run with you.",
     "id": "card_175",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1413,7 +1589,8 @@
     "question": "男生看不起女生的体力，女生解释：“我在高中的时候可是跑田径的。”",
     "answer": "I ran track in high school.",
     "id": "card_176",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1421,7 +1598,8 @@
     "question": "被人轻视后呛回去：“干嘛？别露出一副那么大惊小怪的样子。”",
     "answer": "What? Don't look so surprised.",
     "id": "card_177",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1429,7 +1607,8 @@
     "question": "炫耀自己的长项：“我可是练长跑距离的选手。”",
     "answer": "I ran distance.",
     "id": "card_178",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1437,7 +1616,8 @@
     "question": "吹大话过去的辉煌：“以前甚至还有可能（有机会）入选州代表队的拔尖选手呢。”",
     "answer": "There was a chance I was gonna make state.",
     "id": "card_179",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1445,7 +1625,8 @@
     "question": "男生表示要碾压女生，女生欣然接受挑战：“我看我打败你轻而易举。——赌就赌，比比看呀。”",
     "answer": "I could beat your ass. -You're on.",
     "id": "card_180",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1453,7 +1634,8 @@
     "question": "跑步比赛开场指令：“各就各位……——好的。”",
     "answer": "On your mark ... -Yeah.",
     "id": "card_181",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1461,7 +1643,8 @@
     "question": "继续下指令：“预备……——没问题。”",
     "answer": "Get set... -Okay.",
     "id": "card_182",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1469,7 +1652,8 @@
     "question": "看到别人献殷勤开门调侃：“你搞什么名堂？现在化身当接车男仆啦？”",
     "answer": "What are you doing? Are you a valet now?",
     "id": "card_183",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1477,7 +1661,8 @@
     "question": "邻居闲聊盖房子进度：“你的房子重新翻修得怎样了？”",
     "answer": "How's your remodel coming?",
     "id": "card_184",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1485,7 +1670,8 @@
     "question": "试探邻居的关心目的：“你是真心实意想了解，还是纯粹只是为了街坊客套？”",
     "answer": "You really want to know or just being neighborly?",
     "id": "card_185",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1493,7 +1679,8 @@
     "question": "抱怨工程进度：“生锈的铸铁水管全给拆除扔掉了，打算全换上新铜管。”",
     "answer": "Cast iron plumbing's out, replacing it with copper.",
     "id": "card_186",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1501,7 +1688,8 @@
     "question": "解释找了有电工技能的人帮忙：“和我换班倒班干活的那哥们刚好夜间兼职搞电工活儿，所以接下来他会来帮我重新铺设电线。”",
     "answer": "Guy on my shift moonlights as an electrician, so he's going to help me rewire.",
     "id": "card_187",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1509,7 +1697,8 @@
     "question": "打听装修完了的意图：“你是搞定了之后就准备转手倒卖出去（炒房），还是自己留着住进去？”",
     "answer": "You gonna flip it or live in it?",
     "id": "card_188",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1517,7 +1706,8 @@
     "question": "表示迷茫：“等待着看看事情怎么发展吧（走一步看一步）。”",
     "answer": "Waiting to see what happens.",
     "id": "card_189",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1525,7 +1715,8 @@
     "question": "为了结束客套早晨对话：“我得回家去照看孩子们上路了。”",
     "answer": "I got to get the kids going.",
     "id": "card_190",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1533,7 +1724,8 @@
     "question": "惊叹看到被人打青了眼睛：“哇哦。你这只眼睛是怎么搞的？”",
     "answer": "Whoa. What happened to you?",
     "id": "card_191",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1541,7 +1733,8 @@
     "question": "解释为啥挨揍：“我底下的那个拳手临阵吓得怂成娘炮跑路了，我只好必须亲自去顶包填补上场。”",
     "answer": "One of my fighters pussied-out on me, I had to fill in.",
     "id": "card_192",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1549,7 +1742,8 @@
     "question": "嘲讽逃跑的也是识相：“看起来那个怂货临阵脱逃反而算是明智的选择啊。”",
     "answer": "Looks like the pussy had the right idea.",
     "id": "card_193",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1557,7 +1751,8 @@
     "question": "关心挨打的人让敷冰块：“快去拿点冰块敷在你那只眼睛上吧。”",
     "answer": "Get some ice on that eye.",
     "id": "card_194",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1565,7 +1760,8 @@
     "question": "日常找不到吃的：“我们家里把芝士通心粉全都吃光了。”",
     "answer": "We're out of mac and cheese.",
     "id": "card_195",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1573,7 +1769,8 @@
     "question": "想办法拿别的食物替代：“我倒是可以去给你们改做花生酱果酱三明治将就凑合，但我接下来肯定得需要更多的吐司面包才行。”",
     "answer": "I can make PB&Js instead, but I'm gonna need more bread.",
     "id": "card_196",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1581,7 +1778,8 @@
     "question": "抱怨带娃累死：“我精力全被耗尽累瘫了。”",
     "answer": "I'm exhausted.",
     "id": "card_197",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1589,7 +1787,8 @@
     "question": "控诉小婴儿昨晚的暴行：“利亚姆昨晚几乎把我折腾醒了大半夜，就因为他一直拿脑袋一直撞床板。”",
     "answer": "Liam had me up half the night banging his head.",
     "id": "card_198",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1597,7 +1796,8 @@
     "question": "小女孩想要私人空间：“我也必须要有一间只属于我自个儿独立的房间了。”",
     "answer": "I need my own room.",
     "id": "card_199",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1605,7 +1805,8 @@
     "question": "小女孩觉得自己立刻成熟了需要界限：“我很快就要成长成为一个真正的成年女人了。”",
     "answer": "I'm going to be a woman soon.",
     "id": "card_200",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1613,7 +1814,8 @@
     "question": "用戏剧化的早熟语言要独立权：“我亟需获得一点私人隐秘空间，好来顺利去度过去承受马上紧接着那些关于生为人青春期带来的残酷创伤性身心巨大蜕变。”",
     "answer": "I need privacy to undergo the upcoming traumatic transformation.",
     "id": "card_201",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1621,7 +1823,8 @@
     "question": "大人完全听不懂乱入对话：“我们到底在聊瞎扯探讨什么呢？”",
     "answer": "What are we talking about?",
     "id": "card_202",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1629,7 +1832,8 @@
     "question": "大姐提醒要开工了：“第一个送来日托照看的小孩子已经到家门口咯。”",
     "answer": "First day care kid is here.",
     "id": "card_203",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1637,7 +1841,8 @@
     "question": "直接粉碎切断妹妹的想法：“这种事就是不可能永远也不会达成的啊，黛比（打消念头吧）。”",
     "answer": "It's not gonna happen, Debs.",
     "id": "card_204",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1645,7 +1850,8 @@
     "question": "打招呼并夸奖别人擅长的园艺：“哇哦。艾瑟儿，这花园现在看上去真的很赞啊。”",
     "answer": "Wow. Ethel, the garden looks great.",
     "id": "card_205",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1653,7 +1859,8 @@
     "question": "谦虚或者吹嘘这都是肥料的作用：“这全靠那些混合堆肥发酵肥料的奇效。”",
     "answer": "It's all in the compost.",
     "id": "card_206",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1661,7 +1868,8 @@
     "question": "骄傲地指出有蚯蚓在加成：“我养那批红蚯蚓在今年可一直都是保持在加班工作的巅峰状态啊。”",
     "answer": "My red worms have been working overtime this year.",
     "id": "card_207",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1669,7 +1877,8 @@
     "question": "感恩大自然：“上帝慷慨恩赐的任何丰饶一点点都绝对不能被随意丢弃浪费掉啊。”",
     "answer": "None of god's bounty ever needs go to waste.",
     "id": "card_208",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1677,7 +1886,8 @@
     "question": "特工对接工作代号确认：“今天原定的那个计划行动还算数吗？”",
     "answer": "Still on for today?",
     "id": "card_209",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1685,7 +1895,8 @@
     "question": "确认破烂载具是不是还能用：“那你觉得它可能还会运作发动跑得起来吗？”",
     "answer": "Think it still runs?",
     "id": "card_210",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1693,7 +1904,8 @@
     "question": "奉承会修东西的男孩：“八成是不行吧，但只要到了你手上应该任何什么破烂都你能把它修好搞定的。”",
     "answer": "Probably not, but you can fix anything.",
     "id": "card_211",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1701,7 +1913,8 @@
     "question": "听到吃早饭的动静：“早餐开吃咯！”",
     "answer": "Breakfast!",
     "id": "card_212",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1709,7 +1922,8 @@
     "question": "心虚地掩饰找不到某个贵重物品：“我，呃，我就是一下子找不到我那块手表放哪儿了去了。”",
     "answer": "I, uh, I can't find my watch.",
     "id": "card_213",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1717,7 +1931,8 @@
     "question": "防贼一样把家里的钱处理了：“在刚好因为上次出了那桩烂摊子的糟心事情之后，我就叫让我妈赶紧把她用来储备的防灾救急资金给火速挪换个地方转移放好去了。”",
     "answer": "I had mom move her rainy day fund after what happened last time.",
     "id": "card_214",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1725,7 +1940,8 @@
     "question": "不管怎么样就是要推卸责任老赖说辞：“我他妈跟那发生的那档子破事可半毛钱关系都沾不上一点没有牵扯。”",
     "answer": "I had nothing to do with that.",
     "id": "card_215",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1733,7 +1949,8 @@
     "question": "为了防守钱被刷走把卡藏了：“我甚至干脆连她的银行信用卡自动提款卡全也一起都给严严实实藏严实了去，所以你简直想都不要在脑子里盘算再企图动试着想要去把它给再去给偷拿拿走的这种肮脏死主意念头。”",
     "answer": "I hid her ATM card, too, So don't even try taking that again.",
     "id": "card_216",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   },
   {
     "category": "Shameless-S02E01",
@@ -1741,6 +1958,7 @@
     "question": "给生病的小动物找客观原因：“她的鼻腔也一直老是不停地往下直淌流着小清鼻涕，不过我倒总猜测觉得那应当无非也许说不定完全真的就仅仅都只是因为由于早先那个用来之前那个用来在铺垫翻新贴上关于那种贴去关于使用抹在在那个去上在新搞铺新涂那些给贴厨房去崭新装潢亚麻油地板表层材质上所用的些许廉价胶水给刺鼻诱发引发而起的而已罢了。”",
     "answer": "Her nose has been running, but I think it's just the glue that Jeff's been using on the new kitchen linoleum.",
     "id": "card_217",
-    "created_at": "2026-04-03T00:00:00.000000"
+    "created_at": "2026-04-03T00:00:00.000000",
+    "tag": "影视剧"
   }
 ]

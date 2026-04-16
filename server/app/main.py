@@ -120,12 +120,15 @@ def _parse_csv_text(text: str) -> list[FlashcardCreate]:
 
 @app.get("/api/categories")
 async def get_categories():
-    """获取所有卡片的分类和场景目录树"""
+    """获取所有学习包的分类、场景和统计信息"""
     storage = await get_storage()
-    categories = await storage.get_categories()
+    packs = await storage.get_categories()
+    # 同时返回旧格式 categories（兼容 client/ 旧前端）
+    categories = {p["name"]: [s["name"] for s in p["scenes"]] for p in packs}
     return JSONResponse({
         "success": True,
-        "categories": categories
+        "packs": packs,
+        "categories": categories,
     })
 
 

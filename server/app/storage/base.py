@@ -26,8 +26,10 @@ class BaseStudyStorage(ABC):
         pass
 
     @abstractmethod
-    async def get_categories(self) -> Dict[str, List[str]]:
-        """获取层级目录树结构 {category: [scene1, scene2, ...]}"""
+    async def get_categories(self) -> List[Dict[str, Any]]:
+        """获取丰富的分类目录结构，返回列表，每项包含:
+        name, tag, scene_count, total_cards, scenes: [{name, card_count}]
+        """
         pass
 
     @abstractmethod

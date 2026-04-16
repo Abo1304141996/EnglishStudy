@@ -1,0 +1,153 @@
+/* ============================================
+   Custom CSS — 闪卡翻转 & 评分反馈
+   ============================================ */
+
+/* ===== 卡片翻转 ===== */
+.card-flip {
+  perspective: 1200px;
+}
+.card-inner {
+  transition: transform 0.6s ease;
+  transform-style: preserve-3d;
+}
+.card-flipped .card-inner {
+  transform: rotateY(180deg);
+}
+.card-front, .card-back {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.card-back {
+  transform: rotateY(180deg);
+}
+
+/* ===== 评分反馈覆盖卡片（浮现 + 旋转错开） ===== */
+.flashcard-wrapper {
+  position: relative;
+}
+
+.feedback-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  pointer-events: none;
+  /* 初始在原卡下方，不可见 */
+  opacity: 0;
+  transform: rotate(0deg) scale(0.95);
+  border: 3px solid transparent;
+}
+
+.feedback-overlay.hidden {
+  display: none;
+}
+
+.feedback-overlay.show {
+  animation: feedbackPopup 0.9s ease forwards;
+}
+
+.feedback-text {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+/* 颜色变体 */
+.feedback-overlay.feedback-know {
+  background: #dcfce7;
+  border-color: #86efac;
+}
+.feedback-overlay.feedback-know .feedback-text { color: #16a34a; }
+
+.feedback-overlay.feedback-fuzzy {
+  background: #fef3c7;
+  border-color: #fcd34d;
+}
+.feedback-overlay.feedback-fuzzy .feedback-text { color: #d97706; }
+
+.feedback-overlay.feedback-unknown {
+  background: #fee2e2;
+  border-color: #fca5a5;
+}
+.feedback-overlay.feedback-unknown .feedback-text { color: #dc2626; }
+
+/* 关键动画：浮现 + 旋转错开 + 停留 + 消失 */
+@keyframes feedbackPopup {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.9) translate(0, 0);
+  }
+  15% {
+    opacity: 1;
+    transform: rotate(-3deg) scale(1.02) translate(-12px, -8px);
+  }
+  50% {
+    opacity: 1;
+    transform: rotate(-3deg) scale(1) translate(-12px, -8px);
+  }
+  85% {
+    opacity: 1;
+    transform: rotate(-2deg) scale(1) translate(-8px, -6px);
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(0deg) scale(1.03) translate(0, 0);
+  }
+}
+
+/* 卡片滑出滑入（上下张切换） */
+.card-slide-out-left {
+  animation: slideOutLeft 0.35s forwards;
+}
+.card-slide-in-right {
+  animation: slideInRight 0.35s forwards;
+}
+@keyframes slideOutLeft {
+  0%   { transform: translateX(0); opacity: 1; }
+  100% { transform: translateX(-80px); opacity: 0; }
+}
+@keyframes slideInRight {
+  0%   { transform: translateX(80px); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+/* ===== 导航链接 ===== */
+.nav-link {
+  @apply text-gray-600 font-medium hover:text-primary transition-colors;
+}
+.nav-link.active {
+  @apply text-primary;
+}
+
+/* 标签筛选按钮 */
+.tag-btn {
+  @apply px-4 py-2 bg-white border border-gray-200 text-gray-600 rounded-full text-sm font-medium hover:bg-gray-50 transition-colors;
+}
+.tag-btn.active {
+  @apply bg-primary text-white border-primary;
+}
+
+/* 学习包纯色封面 */
+.pack-cover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: rgba(255,255,255,0.8);
+}
+.pack-cover-0 { background: linear-gradient(135deg, #3B82F6, #6366F1); }
+.pack-cover-1 { background: linear-gradient(135deg, #10B981, #059669); }
+.pack-cover-2 { background: linear-gradient(135deg, #8B5CF6, #7C3AED); }
+.pack-cover-3 { background: linear-gradient(135deg, #F59E0B, #D97706); }
+.pack-cover-4 { background: linear-gradient(135deg, #EF4444, #DC2626); }
+.pack-cover-5 { background: linear-gradient(135deg, #EC4899, #DB2777); }
+
+/* 场景卡片 */
+.scene-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.scene-card:hover {
+  transform: translateY(-2px);
+}

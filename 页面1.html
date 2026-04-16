@@ -1,0 +1,1424 @@
+<html lang='zh-CN'>
+        <head >
+        <meta charset='utf-8'/>
+<meta content='width=device-width, initial-scale=1.0' name='viewport'/>
+<title >英语闪现卡学习</title>
+<script src='https://res.gemcoder.com/js/reload.js'></script>
+<script src='https://cdn.tailwindcss.com'></script>
+<link href='https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css' rel='stylesheet'/>
+<script >tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        primary: '#3B82F6',
+        secondary: '#10B981',
+        accent: '#8B5CF6',
+        dark: '#1E293B',
+        light: '#F8FAFC'
+      },
+      spacing: {
+        '18': '4.5rem'
+      }
+    }
+  }
+};</script>
+<style type='text/tailwindcss'>
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+.card-flip {
+                perspective: 1000px;
+            }
+            .card-inner {
+                transition: transform 0.6s;
+                transform-style: preserve-3d;
+            }
+            .card-flipped .card-inner {
+                transform: rotateY(180deg);
+            }
+            .card-slide-out-left {
+                animation: slideOutLeft 0.4s forwards;
+            }
+            .card-slide-in-right {
+                animation: slideInRight 0.4s forwards;
+            }
+            @keyframes slideOutLeft {
+                0% { transform: translateX(0); opacity: 1; }
+                100% { transform: translateX(-100%); opacity: 0; }
+            }
+            @keyframes slideInRight {
+                0% { transform: translateX(100%); opacity: 0; }
+                100% { transform: translateX(0); opacity: 1; }
+            }
+            .card-front, .card-back {
+                backface-visibility: hidden;
+            }
+            .card-back {
+                transform: rotateY(180deg);
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    </style>
+    </head>
+<body class='bg-gray-50 text-dark min-h-screen flex flex-col'>
+        <!-- [MODULE] 78x_导航栏区域 -->
+<header class='bg-white shadow-sm sticky top-0 z-50'>
+        <div class='container mx-auto px-4 py-4 flex items-center justify-between'>
+        <div class='flex items-center space-x-2'>
+        <i class='fas fa-bolt text-primary text-2xl'>
+        </i>
+<h1 class='text-xl font-bold text-dark'>
+        英语闪现卡
+    </h1>
+    </div>
+<nav class='hidden md:flex items-center space-x-8'>
+        <a class='text-primary font-medium hover:text-primary/80 transition-colors' href='javascript:void(0);'>
+        首页
+    </a>
+<a id='my-learning-link' class='text-gray-600 font-medium hover:text-primary/80 transition-colors' href='javascript:void(0);'>
+        我的学习
+    </a>
+<a class='text-gray-600 font-medium hover:text-primary/80 transition-colors' href='javascript:void(0);'>
+        收藏
+    </a>
+<a class='text-gray-600 font-medium hover:text-primary/80 transition-colors' href='javascript:void(0);'>
+        设置
+    </a>
+    </nav>
+<div class='flex items-center space-x-4'>
+        <button class='hidden md:block px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors'>
+        <i class='fas fa-search mr-1'>
+        </i>
+搜索
+    </button>
+<button class='md:hidden text-dark text-xl'>
+        <i class='fas fa-bars'>
+        </i>
+    </button>
+    </div>
+    </div>
+    </header>
+<!-- [/MODULE] 78x_导航栏区域 -- 网站主导航栏，包含logo、导航链接和搜索按钮 -->
+<!-- [MODULE] a2f_主内容区域 -->
+<main class='flex-grow container mx-auto px-4 py-8'>
+        <!-- [MODULE] s7d_我的学习页面 -->
+<div id='my-learning-page' class='hidden'>
+        <div class='mb-8'>
+        <h2 class='text-3xl font-bold mb-2'>
+        我的学习记录
+    </h2>
+<p class='text-gray-600'>
+        查看您的学习进度和历史记录
+    </p>
+    </div>
+<!-- 学习统计 -->
+<div class='grid grid-cols-1 md:grid-cols-3 gap-6 mb-8'>
+        <div class='bg-white rounded-xl shadow-sm p-6 border border-gray-100'>
+        <div class='flex items-center justify-between'>
+        <div >
+        <p class='text-gray-500 text-sm'>
+        总学习时长
+    </p>
+<p class='text-2xl font-bold mt-1' id='total-study-time'>
+        4.5小时
+    </p>
+    </div>
+<div class='w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center'>
+        <i class='fas fa-clock text-primary text-xl'>
+        </i>
+    </div>
+    </div>
+    </div>
+<div class='bg-white rounded-xl shadow-sm p-6 border border-gray-100'>
+        <div class='flex items-center justify-between'>
+        <div >
+        <p class='text-gray-500 text-sm'>
+        已学卡片
+    </p>
+<p class='text-2xl font-bold mt-1' id='total-cards-learned'>
+        128
+    </p>
+    </div>
+<div class='w-12 h-12 bg-green-100 rounded-full flex items-center justify-center'>
+        <i class='fas fa-check-circle text-secondary text-xl'>
+        </i>
+    </div>
+    </div>
+    </div>
+<div class='bg-white rounded-xl shadow-sm p-6 border border-gray-100'>
+        <div class='flex items-center justify-between'>
+        <div >
+        <p class='text-gray-500 text-sm'>
+        完成场景
+    </p>
+<p class='text-2xl font-bold mt-1' id='total-scenes-completed'>
+        8
+    </p>
+    </div>
+<div class='w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center'>
+        <i class='fas fa-trophy text-accent text-xl'>
+        </i>
+    </div>
+    </div>
+    </div>
+    </div>
+<!-- 学习历史列表 -->
+<div class='bg-white rounded-xl shadow-sm border border-gray-100'>
+        <div class='p-6 border-b border-gray-100'>
+        <h3 class='text-xl font-bold'>
+        最近学习
+    </h3>
+    </div>
+<div id='learning-history-list' class='divide-y divide-gray-100'>
+        <!-- 学习历史记录将通过JS动态生成 -->
+    </div>
+    </div>
+    </div>
+<!-- [/MODULE] s7d_我的学习页面 -- 展示学习统计和历史记录 -->
+<!-- [MODULE] c9y_场景选择页面 -->
+<div class='hidden' id='scenes-page'>
+        <div class='mb-8 flex items-center justify-between'>
+        <button class='flex items-center gap-2 text-gray-600 hover:text-primary transition-colors' id='back-to-packs'>
+        <i class='fas fa-arrow-left'>
+        </i>
+<span >
+        返回学习包
+    </span>
+    </button>
+<h2 class='text-2xl font-bold'>
+        Shameless台词包 - 选择场景
+    </h2>
+<div >
+        </div>
+    </div>
+<div class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
+        <div class='scene-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow cursor-pointer' data-scene-id='1'>
+        <img alt='家庭晚餐场景' class='w-full h-32 object-cover' src='https://design.gemcoder.com/staticResource/echoAiSystemImages/038d3fa1920db4a643b013d3a8b2d28a.png'/>
+<div class='p-6'>
+        <h3 class='text-xl font-bold mb-2'>
+        家庭晚餐场景
+    </h3>
+<p class='text-gray-600 mb-4'>
+        Gallagher一家的经典晚餐对话
+    </p>
+<span class='text-sm text-gray-500'>
+        包含15个闪卡
+    </span>
+    </div>
+    </div>
+<div class='scene-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow cursor-pointer' data-scene-id='2'>
+        <img alt='酒吧场景' class='w-full h-32 object-cover' src='https://design.gemcoder.com/staticResource/echoAiSystemImages/6607e1e7637d3467a056690bef8e59bc.png'/>
+<div class='p-6'>
+        <h3 class='text-xl font-bold mb-2'>
+        酒吧场景
+    </h3>
+<p class='text-gray-600 mb-4'>
+        Frank和朋友们在酒吧的对话
+    </p>
+<span class='text-sm text-gray-500'>
+        包含12个闪卡
+    </span>
+    </div>
+    </div>
+<div class='scene-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow cursor-pointer' data-scene-id='3'>
+        <img alt='工作面试场景' class='w-full h-32 object-cover' src='https://design.gemcoder.com/staticResource/echoAiSystemImages/e14e88eaf2183bee710184074188eeaa.png'/>
+<div class='p-6'>
+        <h3 class='text-xl font-bold mb-2'>
+        工作面试场景
+    </h3>
+<p class='text-gray-600 mb-4'>
+        Lip和Ian的面试经历
+    </p>
+<span class='text-sm text-gray-500'>
+        包含10个闪卡
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+<!-- [/MODULE] c9y_场景选择页面 -- 展示当前学习包下的所有场景，点击可进入闪卡学习页面 -->
+<!-- [MODULE] d8z_闪卡学习页面控制区 -->
+<div class='hidden mb-8 flex items-center justify-between' id='flashcard-controls'>
+        <button class='flex items-center gap-2 text-gray-600 hover:text-primary transition-colors' id='back-to-scenes'>
+        <i class='fas fa-arrow-left'>
+        </i>
+<span >
+        返回场景
+    </span>
+    </button>
+<h2 class='text-2xl font-bold'>
+        家庭晚餐场景 - 闪卡学习
+    </h2>
+<div >
+        </div>
+    </div>
+<!-- [/MODULE] d8z_闪卡学习页面控制区 -- 闪卡页面的顶部导航和标题 -->
+<!-- [MODULE] 9d2_学习包列表页面 -->
+<div id='pack-list-page'>
+        <!-- [MODULE] f3s_学习包页面:筛选器 -->
+<div class='mb-8'>
+        <div class='flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6'>
+        <h3 class='text-2xl font-bold'>
+        全部学习包
+    </h3>
+<div class='relative'>
+        <input class='w-full md:w-64 pl-10 pr-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/30' placeholder='搜索学习包...' type='text'/>
+<i class='fas fa-search absolute left-3 top-1/2 -translate-y-1/2 text-gray-400'>
+        </i>
+    </div>
+    </div>
+<div class='flex flex-wrap gap-2'>
+        <button class='px-4 py-2 bg-primary text-white rounded-full text-sm font-medium'>
+        全部
+    </button>
+<button class='px-4 py-2 bg-white border border-gray-200 text-gray-600 rounded-full text-sm font-medium hover:bg-gray-50'>
+        影视剧
+    </button>
+<button class='px-4 py-2 bg-white border border-gray-200 text-gray-600 rounded-full text-sm font-medium hover:bg-gray-50'>
+        日常生活
+    </button>
+<button class='px-4 py-2 bg-white border border-gray-200 text-gray-600 rounded-full text-sm font-medium hover:bg-gray-50'>
+        商务英语
+    </button>
+<button class='px-4 py-2 bg-white border border-gray-200 text-gray-600 rounded-full text-sm font-medium hover:bg-gray-50'>
+        旅游出行
+    </button>
+<button class='px-4 py-2 bg-white border border-gray-200 text-gray-600 rounded-full text-sm font-medium hover:bg-gray-50'>
+        考试词汇
+    </button>
+    </div>
+    </div>
+<!-- [/MODULE] f3s_学习包页面:筛选器 -- 包含搜索框和分类筛选标签 -->
+<!-- [MODULE] 8b2_学习包页面:学习包网格 -->
+<div class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6' id='pack-grid'>
+        <!-- 学习包卡片1 -->
+<div class='bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow border border-gray-100 pack-card' data-pack-id='1'>
+        <div class='h-40 overflow-hidden'>
+        <img alt='Shameless 台词包' class='w-full h-full object-cover transition-transform hover:scale-105' src='https://design.gemcoder.com/staticResource/echoAiSystemImages/c66c464286604f1771155f1b57dc8987.png'/>
+    </div>
+<div class='p-5'>
+        <div class='flex justify-between items-start mb-3'>
+        <h4 class='text-xl font-bold'>
+        Shameless 无耻之徒
+    </h4>
+<span class='px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-full'>
+        影视剧
+    </span>
+    </div>
+<p class='text-gray-600 text-sm mb-4'>
+        包含《无耻之徒》全季精彩台词，学习地道美式口语表达，完美适配日常对话场景。
+    </p>
+<div class='flex items-center justify-between'>
+        <div class='text-sm text-gray-500'>
+        <i class='fas fa-layer-group mr-1'>
+        </i>
+12 个场景
+    </div>
+<button class='px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors view-pack-btn'>
+        查看详情
+    </button>
+    </div>
+    </div>
+    </div>
+<!-- 学习包卡片2 -->
+<div class='bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow border border-gray-100 pack-card' data-pack-id='2'>
+        <div class='h-40 overflow-hidden'>
+        <img alt='日常生活英语' class='w-full h-full object-cover transition-transform hover:scale-105' src='https://design.gemcoder.com/staticResource/echoAiSystemImages/e52a3e3dfb5be686cf42b81749c4f99f.png'/>
+    </div>
+<div class='p-5'>
+        <div class='flex justify-between items-start mb-3'>
+        <h4 class='text-xl font-bold'>
+        日常生活英语
+    </h4>
+<span class='px-2 py-1 bg-green-100 text-green-700 text-xs rounded-full'>
+        日常生活
+    </span>
+    </div>
+<p class='text-gray-600 text-sm mb-4'>
+        包含生活中常用英语表达，涵盖购物、约会、聚会等场景，轻松应对日常交流。
+    </p>
+<div class='flex items-center justify-between'>
+        <div class='text-sm text-gray-500'>
+        <i class='fas fa-layer-group mr-1'>
+        </i>
+8 个场景
+    </div>
+<button class='px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors view-pack-btn'>
+        查看详情
+    </button>
+    </div>
+    </div>
+    </div>
+<!-- 学习包卡片3 -->
+<div class='bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow border border-gray-100 pack-card' data-pack-id='3'>
+        <div class='h-40 overflow-hidden'>
+        <img alt='商务英语词汇' class='w-full h-full object-cover transition-transform hover:scale-105' src='https://design.gemcoder.com/staticResource/echoAiSystemImages/edb30c13b91de347ec63f2f93ae58b7d.png'/>
+    </div>
+<div class='p-5'>
+        <div class='flex justify-between items-start mb-3'>
+        <h4 class='text-xl font-bold'>
+        商务英语词汇
+    </h4>
+<span class='px-2 py-1 bg-purple-100 text-purple-700 text-xs rounded-full'>
+        商务英语
+    </span>
+    </div>
+<p class='text-gray-600 text-sm mb-4'>
+        专业商务英语词汇短语汇总，适合职场人士提高商务英语沟通能力。
+    </p>
+<div class='flex items-center justify-between'>
+        <div class='text-sm text-gray-500'>
+        <i class='fas fa-layer-group mr-1'>
+        </i>
+10 个场景
+    </div>
+<button class='px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors view-pack-btn'>
+        查看详情
+    </button>
+    </div>
+    </div>
+    </div>
+<!-- 学习包卡片4 -->
+<div class='bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow border border-gray-100 pack-card' data-pack-id='4'>
+        <div class='h-40 overflow-hidden'>
+        <img alt='旅游出行英语' class='w-full h-full object-cover transition-transform hover:scale-105' src='https://design.gemcoder.com/staticResource/echoAiSystemImages/ef58c4754fc5991951921951162e07b0.png'/>
+    </div>
+<div class='p-5'>
+        <div class='flex justify-between items-start mb-3'>
+        <h4 class='text-xl font-bold'>
+        旅游出行英语
+    </h4>
+<span class='px-2 py-1 bg-orange-100 text-orange-700 text-xs rounded-full'>
+        旅游出行
+    </span>
+    </div>
+<p class='text-gray-600 text-sm mb-4'>
+        出国旅行必备英语，包含机场、酒店、购物、餐饮等场景实用表达。
+    </p>
+<div class='flex items-center justify-between'>
+        <div class='text-sm text-gray-500'>
+        <i class='fas fa-layer-group mr-1'>
+        </i>
+6 个场景
+    </div>
+<button class='px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors view-pack-btn'>
+        查看详情
+    </button>
+    </div>
+    </div>
+    </div>
+<!-- 学习包卡片5 -->
+<div class='bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow border border-gray-100 pack-card' data-pack-id='5'>
+        <div class='h-40 overflow-hidden'>
+        <img alt='Friends 老友记' class='w-full h-full object-cover transition-transform hover:scale-105' src='https://design.gemcoder.com/staticResource/echoAiSystemImages/59450d512b1ec8d41acc349282bb38c8.png'/>
+    </div>
+<div class='p-5'>
+        <div class='flex justify-between items-start mb-3'>
+        <h4 class='text-xl font-bold'>
+        Friends 老友记
+    </h4>
+<span class='px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-full'>
+        影视剧
+    </span>
+    </div>
+<p class='text-gray-600 text-sm mb-4'>
+        老友记十年精彩台词，轻松活泼的日常表达，美式幽默一网打尽。
+    </p>
+<div class='flex items-center justify-between'>
+        <div class='text-sm text-gray-500'>
+        <i class='fas fa-layer-group mr-1'>
+        </i>
+10 个场景
+    </div>
+<button class='px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors view-pack-btn'>
+        查看详情
+    </button>
+    </div>
+    </div>
+    </div>
+<!-- 学习包卡片6 -->
+<div class='bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow border border-gray-100 pack-card' data-pack-id='6'>
+        <div class='h-40 overflow-hidden'>
+        <img alt='雅思核心词汇' class='w-full h-full object-cover transition-transform hover:scale-105' src='https://design.gemcoder.com/staticResource/echoAiSystemImages/d15970ac0db097288e928aa7c72e5d61.png'/>
+    </div>
+<div class='p-5'>
+        <div class='flex justify-between items-start mb-3'>
+        <h4 class='text-xl font-bold'>
+        雅思核心词汇
+    </h4>
+<span class='px-2 py-1 bg-red-100 text-red-700 text-xs rounded-full'>
+        考试词汇
+    </span>
+    </div>
+<p class='text-gray-600 text-sm mb-4'>
+        雅思高频考试词汇，按场景分类记忆，高效备考，快速提升词汇量。
+    </p>
+<div class='flex items-center justify-between'>
+        <div class='text-sm text-gray-500'>
+        <i class='fas fa-layer-group mr-1'>
+        </i>
+15 个场景
+    </div>
+<button class='px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors view-pack-btn'>
+        查看详情
+    </button>
+    </div>
+    </div>
+    </div>
+    </div>
+<!-- [/MODULE] 8b2_学习包页面:学习包网格 -- 学习包卡片网格展示 -->
+    </div>
+<!-- [/MODULE] 9d2_学习包列表页面 -- 展示所有可学习的学习包 -->
+<!-- [MODULE] 5c1_场景列表页面 -->
+<div class='hidden' id='scene-list-page'>
+        <!-- [MODULE] e7t_场景页面:顶部返回和标题 -->
+<div class='mb-6'>
+        <div class='flex items-center mb-4'>
+        <button class='flex items-center text-gray-600 hover:text-primary transition-colors' id='back-to-packs'>
+        <i class='fas fa-arrow-left mr-2'>
+        </i>
+返回学习包
+    </button>
+    </div>
+<div class='flex flex-col md:flex-row md:items-end justify-between gap-4'>
+        <div >
+        <h3 class='text-3xl font-bold' id='current-pack-name'>
+        Shameless 无耻之徒
+    </h3>
+<p class='text-gray-600 mt-2'>
+        选择场景开始闪卡学习
+    </p>
+    </div>
+<div class='text-sm text-gray-500' id='progress-info'>
+        <i class='fas fa-check-circle text-green-500'>
+        </i>
+已学习: 0/12 场景
+    </div>
+    </div>
+    </div>
+<!-- [/MODULE] e7t_场景页面:顶部返回和标题 -- 返回按钮和当前学习包名称 -->
+<!-- [MODULE] p9s_场景页面:场景卡片网格 -->
+<div class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4' id='scene-grid'>
+        <!-- 场景卡片将通过JavaScript动态生成 -->
+    </div>
+<!-- [/MODULE] p9s_场景页面:场景卡片网格 -- 学习包内的场景卡片展示 -->
+    </div>
+<!-- [/MODULE] 5c1_场景列表页面 -- 展示选中学习包中的所有场景 -->
+<!-- [MODULE] f4a_闪卡学习页面 -->
+<div class='hidden' id='flashcard-page'>
+        <!-- [MODULE] h2b_闪卡页面:顶部导航 -->
+<div class='mb-6'>
+        <div class='flex items-center justify-between mb-4'>
+        <button class='flex items-center text-gray-600 hover:text-primary transition-colors' id='back-to-scenes'>
+        <i class='fas fa-arrow-left mr-2'>
+        </i>
+返回场景
+    </button>
+<div class='flex items-center space-x-2'>
+        <span class='text-sm text-gray-600' id='current-card-index'>
+        1 / 20
+    </span>
+    </div>
+    </div>
+<h3 class='text-2xl font-bold' id='current-scene-name'>
+        家庭场景
+    </h3>
+    </div>
+<!-- [/MODULE] h2b_闪卡页面:顶部导航 -- 返回按钮和进度信息 -->
+<!-- [MODULE] 8c6_闪卡页面:闪卡展示区 -->
+<div class='max-w-3xl mx-auto mb-8'>
+        <div class='card-flip w-full h-64 md:h-80 cursor-pointer' id='flashcard'>
+        <div class='card-inner relative w-full h-full'>
+        <div class='card-front absolute w-full h-full bg-white rounded-xl shadow-md flex flex-col items-center justify-center p-8 border border-gray-100'>
+        <p class='text-sm text-gray-400 mb-4'>
+        点击卡片查看答案
+    </p>
+<h4 class='text-3xl md:text-4xl font-bold text-center' id='card-front-text'>
+        What's up?
+    </h4>
+    </div>
+<div class='card-back absolute w-full h-full bg-primary/5 rounded-xl shadow-md flex flex-col items-center justify-center p-8 border border-primary/20'>
+        <p class='text-sm text-gray-500 mb-2'>
+        翻译
+    </p>
+<h4 class='text-2xl md:text-3xl font-bold text-center text-primary' id='card-back-text'>
+        怎么了？
+    </h4>
+<div class='mt-6 text-gray-600 text-center'>
+        <p class='italic' id='card-example'>
+        "What's up with you today? You seem quiet."
+    </p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+<!-- [/MODULE] 8c6_闪卡页面:闪卡展示区 -- 可翻转的闪卡展示 -->
+<!-- [MODULE] 7d9_闪卡页面:控制按钮区 -->
+<div class='max-w-3xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 mb-8'>
+        <div class='flex items-center gap-2'>
+        <button class='px-6 py-3 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow flex items-center gap-2' id='prev-card'>
+        <i class='fas fa-chevron-left text-gray-600'>
+        </i>
+<span >
+        上一张
+    </span>
+    </button>
+<button class='px-6 py-3 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow flex items-center gap-2' id='next-card'>
+        <span >
+        下一张
+    </span>
+<i class='fas fa-chevron-right text-gray-600'>
+        </i>
+    </button>
+    </div>
+<div class='text-sm text-gray-500' id='current-card-index'>
+        1/10
+    </div>
+<div class='flex items-center gap-3'>
+        <button class='px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors flex items-center gap-2' id='mark-known'>
+        <i class='fas fa-check'>
+        </i>
+<span >
+        认识
+    </span>
+    </button>
+<button class='px-4 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600 transition-colors flex items-center gap-2' id='mark-fuzzy'>
+        <i class='fas fa-question'>
+        </i>
+<span >
+        模糊
+    </span>
+    </button>
+<button class='px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition-colors flex items-center gap-2' id='mark-unknown'>
+        <i class='fas fa-times'>
+        </i>
+<span >
+        不认识
+    </span>
+    </button>
+    </div>
+    </div>
+<!-- [/MODULE] 7d9_闪卡页面:控制按钮区 -- 包含上一张、下一张按钮和认识/模糊/不认识标记按钮 -->
+<!-- [MODULE] 7d9_闪卡页面:模式选择区 -->
+<div class='max-w-3xl mx-auto flex justify-center gap-4'>
+        <button class='px-6 py-3 bg-green-500 hover:bg-green-600 text-white rounded-lg shadow-md transition-all' id='mark-known'>
+        <i class='fas fa-check mr-2'>
+        </i>
+记得
+    </button>
+<button class='px-6 py-3 bg-yellow-500 hover:bg-yellow-600 text-white rounded-lg shadow-md transition-all' id='mark-fuzzy'>
+        <i class='fas fa-question mr-2'>
+        </i>
+模糊
+    </button>
+<button class='px-6 py-3 bg-red-500 hover:bg-red-600 text-white rounded-lg shadow-md transition-all' id='mark-unknown'>
+        <i class='fas fa-times mr-2'>
+        </i>
+不记得
+    </button>
+    </div>
+<!-- [/MODULE] 7d9_闪卡页面:模式选择区 -- 包含记得、模糊、不记得三个模式选择按钮 -->
+<!-- [MODULE] s4t_闪卡页面:控制按钮 -->
+<div class='max-w-xl mx-auto flex items-center justify-center gap-4'>
+        <button class='px-5 py-3 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors flex items-center' id='prev-card'>
+        <i class='fas fa-chevron-left mr-2'>
+        </i>
+上一张
+    </button>
+<button class='px-5 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors flex items-center' id='next-card'>
+        下一张
+<i class='fas fa-chevron-right ml-2'>
+        </i>
+    </button>
+    </div>
+<div class='mt-6 max-w-xl mx-auto flex items-center justify-center gap-4'>
+        <button class='px-4 py-2 bg-green-100 text-green-700 rounded-lg hover:bg-green-200 transition-colors flex items-center' id='mark-known'>
+        <i class='fas fa-check mr-2'>
+        </i>
+认识
+    </button>
+<button class='px-4 py-2 bg-red-100 text-red-700 rounded-lg hover:bg-red-200 transition-colors flex items-center' id='mark-unknown'>
+        <i class='fas fa-times mr-2'>
+        </i>
+不认识
+    </button>
+    </div>
+<div class='mt-8 max-w-xl mx-auto'>
+        <p class='text-center text-sm text-gray-500'>
+        <i class='fas fa-info-circle mr-1'>
+        </i>
+认识的单词会被跳过，不认识的单词会重复出现
+    </p>
+    </div>
+<!-- [/MODULE] s4t_闪卡页面:控制按钮 -- 上一张、下一张和标记认识/不认识按钮 -->
+    </div>
+<!-- [/MODULE] f4a_闪卡学习页面 -- 具体场景的闪卡学习功能 -->
+    </main>
+<!-- [/MODULE] a2f_主内容区域 -- 包含所有页面模块 -->
+<!-- [MODULE] m5b_页脚区域 -->
+<footer class='bg-white border-t border-gray-200 py-6 mt-10'>
+        <div class='container mx-auto px-4 text-center text-gray-500 text-sm'>
+        <p >
+        ©
+2025 英语闪现卡学习 | 用闪卡让记忆更高效
+    </p>
+    </div>
+    </footer>
+<!-- [/MODULE] m5b_页脚区域 -- 网站页脚信息 -->
+    </body>
+<!-- [JSMOD] g72_数据初始化模块 -->
+<script id='data-init'>// 模拟数据
+var studyData = {
+  packs: [{
+    id: 1,
+    name: "Shameless 无耻之徒",
+    description: "包含《无耻之徒》全季精彩台词，学习地道美式口语表达，完美适配日常对话场景。",
+    category: "影视剧",
+    scenes: [{
+      id: 101,
+      name: "家庭日常",
+      cards: [{
+        front: "What's up?",
+        back: "怎么了？",
+        example: "\"What's up with you today? You seem quiet.\""
+      }, {
+        front: "Get out of my house!",
+        back: "滚出我的房子！",
+        example: "\"I'm done with you, just get out of my house!\""
+      }, {
+        front: "I don't give a crap.",
+        back: "我才不在乎。",
+        example: "\"I don't give a crap about what they think.\""
+      }, {
+        front: "What the hell is wrong with you?",
+        back: "你到底有什么毛病？",
+        example: "\"What the hell is wrong with you? Why did you do that?\""
+      }, {
+        front: "I'm out of here.",
+        back: "我走了。",
+        example: "\"This place is boring, I'm out of here.\""
+      }, {
+        front: "How you doin'?",
+        back: "最近咋样？",
+        example: "\"Hey Frank, how you doin'? Long time no see.\""
+      }, {
+        front: "None of your business.",
+        back: "不关你的事。",
+        example: "\"It's my personal life, none of your business.\""
+      }, {
+        front: "Shut the hell up!",
+        back: "给我闭嘴！",
+        example: "\"Can't you see I'm on the phone? Shut the hell up!\""
+      }]
+    }, {
+      id: 102,
+      name: "酒吧聚会",
+      cards: [{
+        front: "Another round!",
+        back: "再来一轮！",
+        example: "\"Bartender, another round for everyone! It's on me.\""
+      }, {
+        front: "Let's get wasted.",
+        back: "咱们一醉方休。",
+        example: "\"It's Friday night, let's get wasted!\""
+      }, {
+        front: "You buy the first round, I'll buy the second.",
+        back: "你买第一轮，我请第二轮。",
+        example: "\"That sounds fair, you buy the first round, I'll buy the second.\""
+      }, {
+        front: "I'm getting drunk.",
+        back: "我有点醉了。",
+        example: "\"I think I've had too much, I'm getting drunk.\""
+      }, {
+        front: "Who's buying this round?",
+        back: "这轮谁请客？",
+        example: "\"Okay, who's buying this round? I got it last time.\""
+      }]
+    }, {
+      id: 103,
+      name: "争吵斗嘴",
+      cards: [{
+        front: "I'm sick of this bullshit!",
+        back: "我受够这些狗屁倒灶的事了！",
+        example: "\"Every day it's the same thing, I'm sick of this bullshit!\""
+      }, {
+        front: "You're such a jerk!",
+        back: "你真是个混蛋！",
+        example: "\"You stole my money, you're such a jerk!\""
+      }, {
+        front: "Don't you dare talk to me like that.",
+        back: "你竟敢这样跟我说话。",
+        example: "\"Who do you think you are? Don't you dare talk to me like that.\""
+      }, {
+        front: "We're done here.",
+        back: "我们到此为止。",
+        example: "\"I don't want to argue anymore, we're done here.\""
+      }, {
+        front: "Get off my back!",
+        back: "别烦我了！",
+        example: "\"I've already heard it a hundred times, get off my back!\""
+      }]
+    }]
+  }, {
+    id: 2,
+    name: "日常生活英语",
+    description: "包含生活中常用英语表达，涵盖购物、约会、聚会等场景，轻松应对日常交流。",
+    category: "日常生活",
+    scenes: [{
+      id: 201,
+      name: "餐厅用餐",
+      cards: [{
+        front: "Can I get a menu please?",
+        back: "能给我一份菜单吗？",
+        example: "\"Excuse me, can I get a menu please?\""
+      }, {
+        front: "I'd like to order a steak.",
+        back: "我想点一份牛排。",
+        example: "\"For my main course, I'd like to order a steak medium rare.\""
+      }, {
+        front: "Could we get the bill?",
+        back: "我们能结账吗？",
+        example: "\"We're done eating, could we get the bill?\""
+      }, {
+        front: "Is this included in the price?",
+        back: "这个包含在价格里吗？",
+        example: "\"Does the price include drinks or is this extra?\""
+      }]
+    }, {
+      id: 202,
+      name: "超市购物",
+      cards: [{
+        front: "Where can I find the milk?",
+        back: "我在哪里可以找到牛奶？",
+        example: "\"Excuse me, where can I find the organic milk?\""
+      }, {
+        front: "How much does this cost?",
+        back: "这个多少钱？",
+        example: "\"I can't find the price tag, how much does this cost?\""
+      }, {
+        front: "Do you accept credit cards?",
+        back: "你们接受信用卡吗？",
+        example: "\"I don't have enough cash, do you accept credit cards?\""
+      }, {
+        front: "Can I get a bag please?",
+        back: "能给我一个袋子吗？",
+        example: "\"I forgot to bring my own, can I get a bag please?\""
+      }]
+    }, {
+      id: 203,
+      name: "约见朋友",
+      cards: [{
+        front: "What time works for you?",
+        back: "你什么时间方便？",
+        example: "\"I'm free this weekend, what time works for you?\""
+      }, {
+        front: "Where should we meet?",
+        back: "我们在哪儿见面？",
+        example: "\"What place is convenient for you, where should we meet?\""
+      }, {
+        front: "I'll be there in 10 minutes.",
+        back: "我十分钟后到。",
+        example: "\"I'm leaving now, I'll be there in 10 minutes.\""
+      }, {
+        front: "It's been too long!",
+        back: "好久不见了！",
+        example: "\"Wow, it's been too long! How have you been?\""
+      }]
+    }]
+  }, {
+    id: 3,
+    name: "商务英语词汇",
+    description: "专业商务英语词汇短语汇总，适合职场人士提高商务英语沟通能力。",
+    category: "商务英语",
+    scenes: [{
+      id: 301,
+      name: "会议",
+      cards: [{
+        front: "Can we start the meeting?",
+        back: "我们可以开始开会了吗？",
+        example: "\"Everyone is here, can we start the meeting?\""
+      }, {
+        front: "What's on the agenda today?",
+        back: "今天的议程是什么？",
+        example: "\"Before we begin, what's on the agenda today?\""
+      }, {
+        front: "Let's get down to business.",
+        back: "我们开始谈正事吧。",
+        example: "\"Okay, enough small talk, let's get down to business.\""
+      }, {
+        front: "I think we need to discuss this further.",
+        back: "我认为我们需要进一步讨论这个问题。",
+        example: "\"This is a big decision, I think we need to discuss this further.\""
+      }]
+    }, {
+      id: 302,
+      name: "邮件往来",
+      cards: [{
+        front: "I'm writing to inquire about...",
+        back: "我写信是为了询问...",
+        example: "\"I'm writing to inquire about the status of my application.\""
+      }, {
+        front: "Please find attached...",
+        back: "附件请查收...",
+        example: "\"Please find attached the report we discussed.\""
+      }, {
+        front: "Looking forward to hearing from you.",
+        back: "期待收到你的回复。",
+        example: "\"Thank you for your time, looking forward to hearing from you.\""
+      }, {
+        front: "Best regards",
+        back: "致以诚挚问候",
+        example: "\"Best regards, John Smith\""
+      }]
+    }]
+  }, {
+    id: 4,
+    name: "旅游出行英语",
+    description: "出国旅行必备英语，包含机场、酒店、购物、餐饮等场景实用表达。",
+    category: "旅游出行",
+    scenes: [{
+      id: 401,
+      name: "机场",
+      cards: [{
+        front: "Where is the check-in counter?",
+        back: "办理登机手续的柜台在哪里？",
+        example: "\"Excuse me, where is the check-in counter for British Airways?\""
+      }, {
+        front: "My flight has been delayed.",
+        back: "我的航班延误了。",
+        example: "\"I just heard my flight has been delayed by two hours.\""
+      }, {
+        front: "Where is baggage claim?",
+        back: "行李提取处在哪里？",
+        example: "\"I need to pick up my suitcase, where is baggage claim?\""
+      }, {
+        front: "Can I see your passport?",
+        back: "我能看一下您的护照吗？",
+        example: "\"Immigration control, can I see your passport please?\""
+      }]
+    }, {
+      id: 402,
+      name: "酒店",
+      cards: [{
+        front: "I have a reservation under the name...",
+        back: "我以...的名字预订了房间。",
+        example: "\"Good evening, I have a reservation under the name Johnson.\""
+      }, {
+        front: "What time is check-out?",
+        back: "退房时间是几点？",
+        example: "\"I need to get an early train tomorrow, what time is check-out?\""
+      }, {
+        front: "The Wi-Fi isn't working.",
+        back: "Wi-Fi用不了。",
+        example: "\"Excuse me, the Wi-Fi isn't working in my room.\""
+      }, {
+        front: "Can I get an extra towel?",
+        back: "能多给我一条毛巾吗？",
+        example: "\"We're three people in the room, can I get an extra towel?\""
+      }]
+    }]
+  }]
+};
+// 当前状态
+var currentState = {
+  page: 'pack-list',
+  // pack-list, scene-list, flashcard
+  currentPackId: null,
+  currentSceneId: null,
+  currentCardIndex: 0,
+  knownCards: []
+};</script>
+<!-- [/JSMOD] g72_数据初始化模块 -- 初始化模拟数据和当前状态 -->
+<!-- [JSMOD] x3c_页面切换模块 -->
+<script id='navigation'>document.addEventListener('DOMContentLoaded', function () {
+  // 页面元素
+  var packListPage = document.getElementById('pack-list-page');
+  var sceneListPage = document.getElementById('scene-list-page');
+  var flashcardPage = document.getElementById('flashcard-page');
+
+  // 从学习包网格点击查看详情，进入场景列表
+  document.querySelectorAll('.view-pack-btn').forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
+      var packCard = e.target.closest('.pack-card');
+      var packId = parseInt(packCard.dataset.packId);
+      showSceneList(packId);
+    });
+  });
+  // 返回学习包列表
+  document.getElementById('back-to-packs').addEventListener('click', function () {
+    showPackList();
+  });
+  // 返回场景列表
+  document.getElementById('back-to-scenes').addEventListener('click', function () {
+    showSceneList(currentState.currentPackId);
+  });
+
+  // 我的学习页面导航
+  document.getElementById('my-learning-link').addEventListener('click', function () {
+    showMyLearning();
+  });
+  function showPackList() {
+    packListPage.classList.remove('hidden');
+    sceneListPage.classList.add('hidden');
+    flashcardPage.classList.add('hidden');
+    document.getElementById('my-learning-page').classList.add('hidden');
+    currentState.page = 'pack-list';
+
+    // 更新导航状态
+    document.getElementById('my-learning-link').classList.remove('text-primary');
+    document.getElementById('my-learning-link').classList.add('text-gray-600');
+  }
+
+  // 显示我的学习页面
+  function showMyLearning() {
+    packListPage.classList.add('hidden');
+    sceneListPage.classList.add('hidden');
+    flashcardPage.classList.add('hidden');
+    document.getElementById('my-learning-page').classList.remove('hidden');
+    currentState.page = 'my-learning';
+
+    // 更新导航状态
+    document.getElementById('my-learning-link').classList.remove('text-gray-600');
+    document.getElementById('my-learning-link').classList.add('text-primary');
+
+    // 渲染学习历史
+    renderLearningHistory();
+  }
+  function showSceneList(packId) {
+    currentState.currentPackId = packId;
+    var pack = studyData.packs.find(function (p) {
+      return p.id === packId;
+    });
+
+    // 更新页面信息
+    document.getElementById('current-pack-name').textContent = pack.name;
+
+    // 计算已学习进度
+    var totalScenes = pack.scenes.length;
+    var learnedScenes = 0; // 这里简化计算，实际应该存储
+
+    document.getElementById('progress-info').innerHTML = "<i class=\"fas fa-check-circle text-green-500\"></i> \u5DF2\u5B66\u4E60:".concat(learnedScenes, "/").concat(totalScenes, "\u573A\u666F");
+
+    // 生成场景卡片
+    renderSceneCards(pack);
+
+    // 切换页面显示
+    packListPage.classList.add('hidden');
+    sceneListPage.classList.remove('hidden');
+    flashcardPage.classList.add('hidden');
+    currentState.page = 'scene-list';
+  }
+  function renderSceneCards(pack) {
+    var sceneGrid = document.getElementById('scene-grid');
+    sceneGrid.innerHTML = '';
+    pack.scenes.forEach(function (scene) {
+      var cardCount = scene.cards.length;
+      var sceneCard = document.createElement('div');
+      sceneCard.className = 'bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow border border-gray-100 scene-card';
+      sceneCard.dataset.sceneId = scene.id;
+      sceneCard.innerHTML = "<div class=\"p-5\">\n                        <div class=\"flex justify-between items-start mb-3\">\n                            <h4 class=\"text-xl font-bold\">".concat(scene.name, "</h4>\n                        </div>\n                        <div class=\"flex items-center justify-between\">\n                            <div class=\"text-sm text-gray-500\">\n                                <i class=\"fas fa-layer-group mr-1\"></i>").concat(cardCount, "\u5F20\u95EA\u5361\n                            </div>\n                            <button class=\"px-4 py-2 bg-secondary text-white rounded-lg hover:bg-secondary/90 transition-colors start-learning-btn\">\n                                \u5F00\u59CB\u5B66\u4E60\n                            </button>\n                        </div>\n                    </div>");
+      sceneGrid.appendChild(sceneCard);
+
+      // 添加点击事件
+      sceneCard.querySelector('.start-learning-btn').addEventListener('click', function () {
+        startFlashcardLearning(packId, scene.id);
+      });
+    });
+  }
+  function startFlashcardLearning(packId, sceneId) {
+    currentState.currentPackId = packId;
+    currentState.currentSceneId = sceneId;
+    currentState.currentCardIndex = 0;
+    currentState.knownCards = [];
+    var pack = studyData.packs.find(function (p) {
+      return p.id === packId;
+    });
+    var scene = pack.scenes.find(function (s) {
+      return s.id === sceneId;
+    });
+    document.getElementById('current-scene-name').textContent = scene.name;
+
+    // 初始化第一张卡片
+    renderCurrentCard();
+
+    // 切换页面
+    packListPage.classList.add('hidden');
+    sceneListPage.classList.add('hidden');
+    flashcardPage.classList.remove('hidden');
+    currentState.page = 'flashcard';
+  }
+  // 暴露给全局使用
+  window.showPackList = showPackList;
+  window.showSceneList = showSceneList;
+  window.startFlashcardLearning = startFlashcardLearning;
+});</script>
+<!-- [/JSMOD] x3c_页面切换模块 -- 处理不同页面之间的切换导航 -->
+<!-- [JSMOD] k9d_闪卡学习模块 -->
+<script id='flashcard-logic'>document.addEventListener('DOMContentLoaded', function () {
+  var flashcard = document.getElementById('flashcard');
+  var prevBtn = document.getElementById('prev-card');
+  var nextBtn = document.getElementById('next-card');
+  var knownBtn = document.getElementById('mark-known');
+  var unknownBtn = document.getElementById('mark-unknown');
+  var currentIndexEl = document.getElementById('current-card-index');
+
+  // 翻转卡片
+  flashcard.addEventListener('click', function () {
+    flashcard.classList.toggle('card-flipped');
+  });
+
+  // 渲染当前卡片
+  function renderCurrentCard() {
+    var pack = studyData.packs.find(function (p) {
+      return p.id === currentState.currentPackId;
+    });
+    var scene = pack.scenes.find(function (s) {
+      return s.id === currentState.currentSceneId;
+    });
+    var cards = getFilteredCards(scene.cards);
+    if (cards.length === 0) {
+      // 全部认识了
+      alert('恭喜！你已经掌握了这个场景的所有单词！');
+      document.getElementById('back-to-scenes').click();
+      return;
+    }
+    if (currentState.currentCardIndex >= cards.length) {
+      currentState.currentCardIndex = 0;
+    }
+    var card = cards[currentState.currentCardIndex];
+    document.getElementById('card-front-text').textContent = card.front;
+    document.getElementById('card-back-text').textContent = card.back;
+    document.getElementById('card-example').textContent = card.example;
+
+    // 更新索引显示
+    currentIndexEl.textContent = "".concat(currentState.currentCardIndex + 1, "/").concat(cards.length);
+
+    // 重置卡片翻转为正面
+    flashcard.classList.remove('card-flipped');
+  }
+
+  // 获取过滤后的卡片列表（排除已经认识的）
+  function getFilteredCards(cards) {
+    return cards.filter(function (card, index) {
+      return !currentState.knownCards.includes(index);
+    });
+  }
+
+  // 上一张
+  prevBtn.addEventListener('click', function () {
+    if (currentState.currentCardIndex > 0) {
+      currentState.currentCardIndex--;
+      renderCurrentCard();
+    }
+  });
+
+  // 下一张
+  nextBtn.addEventListener('click', function () {
+    var pack = studyData.packs.find(function (p) {
+      return p.id === currentState.currentPackId;
+    });
+    var scene = pack.scenes.find(function (s) {
+      return s.id === currentState.currentSceneId;
+    });
+    var cards = getFilteredCards(scene.cards);
+    if (currentState.currentCardIndex < cards.length - 1) {
+      currentState.currentCardIndex++;
+      renderCurrentCard();
+    } else {
+      // 已经是最后一张，重新开始
+      currentState.currentCardIndex = 0;
+      renderCurrentCard();
+    }
+  });
+
+  // 翻页动画切换卡片
+  function switchCardWithAnimation() {
+    flashcard.classList.add('card-slide-out-left');
+    setTimeout(function () {
+      renderCurrentCard();
+      flashcard.classList.remove('card-slide-out-left');
+      flashcard.classList.add('card-slide-in-right');
+      setTimeout(function () {
+        flashcard.classList.remove('card-slide-in-right');
+      }, 400);
+    }, 400);
+  }
+
+  // 标记为认识
+  knownBtn.addEventListener('click', function () {
+    var pack = studyData.packs.find(function (p) {
+      return p.id === currentState.currentPackId;
+    });
+    var scene = pack.scenes.find(function (s) {
+      return s.id === currentState.currentSceneId;
+    });
+    var cards = getFilteredCards(scene.cards);
+
+    // 获取当前卡片原始索引（原始位置，不是过滤后的）
+    var originalCards = scene.cards;
+    var currentCard = cards[currentState.currentCardIndex];
+    var originalIndex = originalCards.findIndex(function (c) {
+      return c.front === currentCard.front;
+    });
+    if (!currentState.knownCards.includes(originalIndex)) {
+      currentState.knownCards.push(originalIndex);
+    }
+
+    // 跳到下一张
+    var filteredCards = getFilteredCards(originalCards);
+    if (filteredCards.length === 0) {
+      renderCurrentCard();
+    } else {
+      if (currentState.currentCardIndex >= filteredCards.length - 1) {
+        currentState.currentCardIndex = 0;
+      } else {
+        currentState.currentCardIndex++;
+      }
+      switchCardWithAnimation();
+    }
+  });
+
+  // 标记为模糊
+  document.getElementById('mark-fuzzy').addEventListener('click', function () {
+    // 跳到下一张
+    var pack = studyData.packs.find(function (p) {
+      return p.id === currentState.currentPackId;
+    });
+    var scene = pack.scenes.find(function (s) {
+      return s.id === currentState.currentSceneId;
+    });
+    var cards = getFilteredCards(scene.cards);
+    if (currentState.currentCardIndex < cards.length - 1) {
+      currentState.currentCardIndex++;
+    } else {
+      currentState.currentCardIndex = 0;
+    }
+    switchCardWithAnimation();
+  });
+
+  // 标记为不认识
+  unknownBtn.addEventListener('click', function () {
+    var pack = studyData.packs.find(function (p) {
+      return p.id === currentState.currentPackId;
+    });
+    var scene = pack.scenes.find(function (s) {
+      return s.id === currentState.currentSceneId;
+    });
+    var cards = getFilteredCards(scene.cards);
+
+    // 跳到下一张
+    if (currentState.currentCardIndex < cards.length - 1) {
+      currentState.currentCardIndex++;
+    } else {
+      currentState.currentCardIndex = 0;
+    }
+    switchCardWithAnimation();
+  });
+  window.renderCurrentCard = renderCurrentCard;
+});</script>
+<!-- [/JSMOD] k9d_闪卡学习模块 -- 实现闪卡翻转、上一张下一张和标记认识/不认识功能 -->
+<!-- [/JSMOD] k9d_闪卡学习模块 -- 实现闪卡翻转、上一张下一张和标记认识/不认识功能 -->
+<!-- [JSMOD] l4p_学习历史模块 -->
+<script id='learning-history'>// 学习历史数据
+window.learningHistory = [{
+  id: 1,
+  packName: "Shameless台词包",
+  sceneName: "家庭晚餐场景",
+  date: "2024-05-20",
+  timeSpent: "45分钟",
+  cardsLearned: 10,
+  progress: 100
+}, {
+  id: 2,
+  packName: "Shameless台词包",
+  sceneName: "酒吧场景",
+  date: "2024-05-19",
+  timeSpent: "20分钟",
+  cardsLearned: 3,
+  progress: 100
+}, {
+  id: 3,
+  packName: "日常英语对话包",
+  sceneName: "购物场景",
+  date: "2024-05-18",
+  timeSpent: "15分钟",
+  cardsLearned: 1,
+  progress: 50
+}, {
+  id: 4,
+  packName: "Shameless台词包",
+  sceneName: "家庭晚餐场景",
+  date: "2024-05-17",
+  timeSpent: "30分钟",
+  cardsLearned: 7,
+  progress: 70
+}];
+
+// 渲染学习历史
+function renderLearningHistory() {
+  var historyList = document.getElementById('learning-history-list');
+  historyList.innerHTML = '';
+  learningHistory.forEach(function (item) {
+    var historyItem = document.createElement('div');
+    historyItem.className = 'p-6 hover:bg-gray-50 transition-colors';
+    historyItem.innerHTML = "<div class=\"flex flex-col md:flex-row md:items-center justify-between\">\n          <div class=\"mb-4 md:mb-0\">\n            <div class=\"flex items-center\">\n              <h4 class=\"font-bold text-lg\">".concat(item.sceneName, "</h4>\n              <span class=\"ml-2 text-sm bg-gray-100 px-2 py-1 rounded-full text-gray-600\">").concat(item.packName, "</span>\n            </div>\n            <p class=\"text-gray-500 mt-1\">").concat(item.date, "\xB7").concat(item.timeSpent, "</p>\n          </div>\n          <div class=\"flex items-center\">\n            <div class=\"mr-4 text-center\">\n              <p class=\"text-sm text-gray-500\">\u5DF2\u5B66\u5361\u7247</p>\n              <p class=\"font-bold\">").concat(item.cardsLearned, "</p>\n            </div>\n            <div class=\"w-32\">\n              <p class=\"text-sm text-gray-500 mb-1\">\u5B8C\u6210\u8FDB\u5EA6</p>\n              <div class=\"w-full bg-gray-200 rounded-full h-2\">\n                <div class=\"bg-secondary h-2 rounded-full\" style=\"width:").concat(item.progress, "%\"></div>\n              </div>\n              <p class=\"text-xs text-right mt-1\">").concat(item.progress, "%</p>\n            </div>\n            <button class=\"ml-4 px-3 py-1.5 bg-primary/10 text-primary rounded-lg hover:bg-primary/20 transition-colors\">\n              <i class=\"fas fa-repeat mr-1\"></i>\n              \u590D\u4E60\n            </button>\n          </div>\n        </div>");
+    historyList.appendChild(historyItem);
+  });
+}
+
+// 页面加载时渲染学习历史
+document.addEventListener('DOMContentLoaded', function () {
+  if (currentState.page === 'my-learning') {
+    renderLearningHistory();
+  }
+});</script>
+<!-- [/JSMOD] l4p_学习历史模块 -- 渲染学习统计数据和历史记录列表 -->
+<!-- [JSMOD] m3n_页面切换模块 -->
+<script id='page-switch-logic'>document.addEventListener('DOMContentLoaded', function () {
+  // 学习数据
+  window.studyData = {
+    packs: [{
+      id: 1,
+      name: "Shameless台词包",
+      scenes: [{
+        id: 1,
+        name: "家庭晚餐场景",
+        cards: [{
+          front: "What's up?",
+          back: "怎么了？",
+          example: "\"What's up with you today? You seem quiet.\""
+        }, {
+          front: "I'm beat.",
+          back: "我累死了。",
+          example: "\"I worked 12 hours today, I'm beat.\""
+        }, {
+          front: "Cut the crap.",
+          back: "别废话了。",
+          example: "\"Cut the crap and tell me what you really want.\""
+        }, {
+          front: "No way.",
+          back: "不可能。",
+          example: "\"No way I'm lending you money again.\""
+        }, {
+          front: "Give me a break.",
+          back: "饶了我吧。",
+          example: "\"Give me a break, it wasn't my fault.\""
+        }, {
+          front: "I'm screwed.",
+          back: "我完蛋了。",
+          example: "\"I forgot my exam today, I'm screwed.\""
+        }, {
+          front: "What the hell?",
+          back: "搞什么鬼？",
+          example: "\"What the hell is going on here?\""
+        }, {
+          front: "You bet.",
+          back: "当然。",
+          example: "\"Are you coming to the party? You bet!\""
+        }, {
+          front: "Never mind.",
+          back: "算了。",
+          example: "\"Never mind, it's not important.\""
+        }, {
+          front: "It's on me.",
+          back: "我请客。",
+          example: "\"The drinks are on me tonight.\""
+        }]
+      }, {
+        id: 2,
+        name: "酒吧场景",
+        cards: [{
+          front: "Another round!",
+          back: "再来一轮！",
+          example: "\"Another round, bartender!\""
+        }, {
+          front: "I'm wasted.",
+          back: "我喝高了。",
+          example: "\"I've had too much to drink, I'm wasted.\""
+        }, {
+          front: "Cheers!",
+          back: "干杯！",
+          example: "\"Cheers to a great night!\""
+        }]
+      }]
+    }, {
+      id: 2,
+      name: "日常英语对话包",
+      scenes: [{
+        id: 1,
+        name: "购物场景",
+        cards: [{
+          front: "How much is this?",
+          back: "这个多少钱？",
+          example: "\"Excuse me, how much is this shirt?\""
+        }]
+      }]
+    }]
+  };
+
+  // 学习状态
+  window.currentState = {
+    currentPackId: null,
+    currentSceneId: null,
+    currentCardIndex: 0,
+    knownCards: []
+  };
+
+  // 页面切换函数
+  function showPage(pageId) {
+    // 隐藏所有页面
+    document.getElementById('packs-page').classList.add('hidden');
+    document.getElementById('scenes-page').classList.add('hidden');
+    document.getElementById('flashcard-page').classList.add('hidden');
+    document.getElementById('flashcard-controls').classList.add('hidden');
+
+    // 显示目标页面
+    document.getElementById(pageId).classList.remove('hidden');
+    if (pageId === 'flashcard-page') {
+      document.getElementById('flashcard-controls').classList.remove('hidden');
+      // 渲染当前闪卡
+      if (window.renderCurrentCard) {
+        window.renderCurrentCard();
+      }
+    }
+  }
+
+  // 学习包卡片点击事件
+  document.querySelectorAll('.pack-card').forEach(function (card) {
+    card.addEventListener('click', function () {
+      var packId = parseInt(this.getAttribute('data-pack-id'));
+      currentState.currentPackId = packId;
+      showPage('scenes-page');
+    });
+  });
+
+  // 场景卡片点击事件
+  document.querySelectorAll('.scene-card').forEach(function (card) {
+    card.addEventListener('click', function () {
+      var sceneId = parseInt(this.getAttribute('data-scene-id'));
+      currentState.currentSceneId = sceneId;
+      currentState.currentCardIndex = 0;
+      currentState.knownCards = [];
+      showPage('flashcard-page');
+    });
+  });
+
+  // 返回按钮事件
+  document.getElementById('back-to-packs').addEventListener('click', function () {
+    showPage('packs-page');
+  });
+  document.getElementById('back-to-scenes').addEventListener('click', function () {
+    showPage('scenes-page');
+  });
+
+  // 默认显示学习包页面
+  showPage('packs-page');
+});</script>
+<!-- [/JSMOD] m3n_页面切换模块 -- 实现学习包页面、场景页面和闪卡页面之间的切换逻辑，管理学习数据和状态 -->
+    </html>
