@@ -1,0 +1,382 @@
+[
+  {
+    "id": "rec_85749805",
+    "card_id": "card_0",
+    "rating": "know",
+    "studied_at": "2026-04-02T17:16:29.033816",
+    "session_id": null,
+    "ease_factor": 2.5,
+    "interval": 0,
+    "next_review": null
+  },
+  {
+    "id": "rec_22566f21",
+    "card_id": "card_1",
+    "rating": "fuzzy",
+    "studied_at": "2026-04-02T17:16:41.051732",
+    "session_id": null,
+    "ease_factor": 2.5,
+    "interval": 0,
+    "next_review": null
+  },
+  {
+    "id": "rec_dbff61b3",
+    "card_id": "card_2",
+    "rating": "unknown",
+    "studied_at": "2026-04-02T17:16:41.054295",
+    "session_id": null,
+    "ease_factor": 2.5,
+    "interval": 0,
+    "next_review": null
+  },
+  {
+    "id": "rec_75f1921a",
+    "card_id": "card_0",
+    "rating": "know",
+    "studied_at": "2026-04-02T17:29:21.590819",
+    "session_id": null,
+    "ease_factor": 2.5,
+    "interval": 0,
+    "next_review": null
+  },
+  {
+    "id": "rec_5fbf08c9",
+    "card_id": "card_1",
+    "rating": "know",
+    "studied_at": "2026-04-02T17:29:39.484581",
+    "session_id": null,
+    "ease_factor": 2.5,
+    "interval": 0,
+    "next_review": null
+  },
+  {
+    "id": "rec_502031d2",
+    "card_id": "card_0",
+    "rating": "know",
+    "studied_at": "2026-04-02T17:36:30.567808",
+    "session_id": null,
+    "ease_factor": 2.5,
+    "interval": 0,
+    "next_review": null
+  },
+  {
+    "id": "rec_3e86883d",
+    "card_id": "card_1",
+    "rating": "fuzzy",
+    "studied_at": "2026-04-02T17:36:32.022877",
+    "session_id": null,
+    "ease_factor": 2.5,
+    "interval": 0,
+    "next_review": null
+  },
+  {
+    "id": "rec_9e06fa2f",
+    "card_id": "card_2",
+    "rating": "unknown",
+    "studied_at": "2026-04-02T17:36:33.286746",
+    "session_id": null,
+    "ease_factor": 2.5,
+    "interval": 0,
+    "next_review": null
+  },
+  {
+    "id": "rec_c52112bd",
+    "card_id": "card_3",
+    "rating": "unknown",
+    "studied_at": "2026-04-02T17:36:47.790692",
+    "session_id": null,
+    "ease_factor": 2.5,
+    "interval": 0,
+    "next_review": null
+  },
+  {
+    "id": "rec_a8bffad6",
+    "card_id": "card_4",
+    "rating": "know",
+    "studied_at": "2026-04-02T17:36:53.678365",
+    "session_id": null,
+    "ease_factor": 2.5,
+    "interval": 0,
+    "next_review": null
+  },
+  {
+    "id": "rec_4f4c8478",
+    "card_id": "card_0",
+    "rating": "know",
+    "studied_at": "2026-04-02T17:37:16.310956",
+    "session_id": null,
+    "ease_factor": 2.5,
+    "interval": 0,
+    "next_review": null
+  },
+  {
+    "id": "rec_56b1389f",
+    "card_id": "card_0",
+    "rating": "know",
+    "studied_at": "2026-04-02T17:37:24.124444",
+    "session_id": null,
+    "ease_factor": 2.5,
+    "interval": 0,
+    "next_review": null
+  },
+  {
+    "id": "rec_16738e62",
+    "card_id": "card_1",
+    "rating": "know",
+    "studied_at": "2026-04-02T17:37:27.590131",
+    "session_id": null,
+    "ease_factor": 2.5,
+    "interval": 0,
+    "next_review": null
+  },
+  {
+    "id": "rec_05db6e60",
+    "card_id": "card_2",
+    "rating": "fuzzy",
+    "studied_at": "2026-04-02T17:37:36.117937",
+    "session_id": null,
+    "ease_factor": 2.5,
+    "interval": 0,
+    "next_review": null
+  },
+  {
+    "id": "rec_f2a5f7a6",
+    "card_id": "card_3",
+    "rating": "unknown",
+    "studied_at": "2026-04-02T17:37:40.158298",
+    "session_id": null,
+    "ease_factor": 2.5,
+    "interval": 0,
+    "next_review": null
+  },
+  {
+    "id": "rec_bf0d6040",
+    "card_id": "card_4",
+    "rating": "know",
+    "studied_at": "2026-04-02T17:37:44.494270",
+    "session_id": null,
+    "ease_factor": 2.5,
+    "interval": 0,
+    "next_review": null
+  },
+  {
+    "id": "rec_1e09be5d",
+    "card_id": "card_5",
+    "rating": "know",
+    "studied_at": "2026-04-02T17:37:50.291886",
+    "session_id": null,
+    "ease_factor": 2.5,
+    "interval": 0,
+    "next_review": null
+  },
+  {
+    "id": "rec_641a9898",
+    "card_id": "card_6",
+    "rating": "know",
+    "studied_at": "2026-04-02T17:39:54.583934",
+    "session_id": null,
+    "ease_factor": 2.5,
+    "interval": 0,
+    "next_review": null
+  },
+  {
+    "id": "rec_7c951c73",
+    "card_id": "card_7",
+    "rating": "know",
+    "studied_at": "2026-04-02T17:39:57.542226",
+    "session_id": null,
+    "ease_factor": 2.5,
+    "interval": 0,
+    "next_review": null
+  },
+  {
+    "id": "rec_00c2e6f2",
+    "card_id": "card_8",
+    "rating": "know",
+    "studied_at": "2026-04-02T17:40:02.590422",
+    "session_id": null,
+    "ease_factor": 2.5,
+    "interval": 0,
+    "next_review": null
+  },
+  {
+    "id": "rec_c2d5bdc1",
+    "card_id": "card_2",
+    "rating": "know",
+    "studied_at": "2026-04-02T17:58:07.913755",
+    "session_id": null,
+    "ease_factor": 2.5,
+    "interval": 0,
+    "next_review": null
+  },
+  {
+    "id": "rec_ad044c32",
+    "card_id": "card_0",
+    "rating": "fuzzy",
+    "studied_at": "2026-04-02T17:58:57.055745",
+    "session_id": null,
+    "ease_factor": 2.5,
+    "interval": 0,
+    "next_review": null
+  },
+  {
+    "id": "rec_9a22b85c",
+    "card_id": "card_0",
+    "rating": "fuzzy",
+    "studied_at": "2026-04-02T17:58:59.353051",
+    "session_id": null,
+    "ease_factor": 2.5,
+    "interval": 0,
+    "next_review": null
+  },
+  {
+    "id": "rec_4f54bb1f",
+    "card_id": "card_0",
+    "rating": "know",
+    "studied_at": "2026-04-02T18:01:07.337531",
+    "session_id": null,
+    "ease_factor": 2.5,
+    "interval": 0,
+    "next_review": null
+  },
+  {
+    "id": "rec_eeefc865",
+    "card_id": "card_1",
+    "rating": "know",
+    "studied_at": "2026-04-02T18:01:09.782090",
+    "session_id": null,
+    "ease_factor": 2.5,
+    "interval": 0,
+    "next_review": null
+  },
+  {
+    "id": "rec_00b4d06d",
+    "card_id": "card_0",
+    "rating": "know",
+    "studied_at": "2026-04-02T18:01:27.718880",
+    "session_id": null,
+    "ease_factor": 2.5,
+    "interval": 0,
+    "next_review": null
+  },
+  {
+    "id": "rec_11a445f3",
+    "card_id": "card_1",
+    "rating": "know",
+    "studied_at": "2026-04-02T18:01:30.261934",
+    "session_id": null,
+    "ease_factor": 2.5,
+    "interval": 0,
+    "next_review": null
+  },
+  {
+    "id": "rec_a5d09683",
+    "card_id": "card_55",
+    "rating": "fuzzy",
+    "studied_at": "2026-04-02T18:07:00.926703",
+    "session_id": null,
+    "ease_factor": 2.5,
+    "interval": 0,
+    "next_review": null
+  },
+  {
+    "id": "rec_d3bb7043",
+    "card_id": "card_64",
+    "rating": "fuzzy",
+    "studied_at": "2026-04-02T18:07:17.241466",
+    "session_id": null,
+    "ease_factor": 2.5,
+    "interval": 0,
+    "next_review": null
+  },
+  {
+    "id": "rec_ca832e78",
+    "card_id": "card_59",
+    "rating": "unknown",
+    "studied_at": "2026-04-03T10:43:48.734257",
+    "session_id": null,
+    "ease_factor": 2.5,
+    "interval": 0,
+    "next_review": null
+  },
+  {
+    "id": "rec_ddbf8435",
+    "card_id": "card_50",
+    "rating": "unknown",
+    "studied_at": "2026-04-03T10:43:57.025904",
+    "session_id": null,
+    "ease_factor": 2.5,
+    "interval": 0,
+    "next_review": null
+  },
+  {
+    "id": "rec_41ba4304",
+    "card_id": "card_53",
+    "rating": "know",
+    "studied_at": "2026-04-03T10:44:13.468584",
+    "session_id": null,
+    "ease_factor": 2.5,
+    "interval": 0,
+    "next_review": null
+  },
+  {
+    "id": "rec_7a0504ab",
+    "card_id": "card_0",
+    "rating": "know",
+    "studied_at": "2026-04-03T15:15:20.461048",
+    "session_id": null,
+    "ease_factor": 2.5,
+    "interval": 0,
+    "next_review": null
+  },
+  {
+    "id": "rec_751e078f",
+    "card_id": "card_1",
+    "rating": "know",
+    "studied_at": "2026-04-03T15:15:23.549910",
+    "session_id": null,
+    "ease_factor": 2.5,
+    "interval": 0,
+    "next_review": null
+  },
+  {
+    "id": "rec_4988b13f",
+    "card_id": "card_142",
+    "rating": "know",
+    "studied_at": "2026-04-03T15:27:08.263683",
+    "session_id": null,
+    "ease_factor": 2.5,
+    "interval": 0,
+    "next_review": null
+  },
+  {
+    "id": "rec_c737a43a",
+    "card_id": "card_142",
+    "rating": "unknown",
+    "studied_at": "2026-04-03T15:29:08.178309",
+    "session_id": null,
+    "ease_factor": 2.5,
+    "interval": 0,
+    "next_review": null
+  },
+  {
+    "id": "rec_70a7dcb1",
+    "card_id": "card_143",
+    "rating": "unknown",
+    "studied_at": "2026-04-03T15:29:27.605911",
+    "session_id": null,
+    "ease_factor": 2.5,
+    "interval": 0,
+    "next_review": null
+  },
+  {
+    "id": "rec_c9fb0f53",
+    "card_id": "card_144",
+    "rating": "unknown",
+    "studied_at": "2026-04-03T15:29:55.358276",
+    "session_id": null,
+    "ease_factor": 2.5,
+    "interval": 0,
+    "next_review": null
+  }
+]

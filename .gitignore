@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.env
+smart-pillbox-backend-main/
+node_modules/
+.DS_Store

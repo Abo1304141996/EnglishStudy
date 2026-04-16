@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="英语抽认卡学习工具 — 通过翻转卡片、分类浏览和间隔重复高效学习英语日常表达">
+  <meta name="theme-color" content="hsl(230, 25%, 8%)">
+  <title>英语抽认卡 · English Flashcards</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎴</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Skip Link -->
+  <a href="#main-content" class="skip-link">跳转到主要内容</a>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo" aria-label="英语抽认卡首页">
+        <span class="logo-icon" aria-hidden="true">🎴</span>
+        <span>English Flashcards</span>
+      </a>
+
+      <div class="header-stats" aria-label="学习统计">
+        <div class="stat-badge">
+          <span aria-hidden="true">✅</span>
+          <span>认识</span>
+          <span class="stat-value" id="stat-know">0</span>
+        </div>
+        <div class="stat-badge">
+          <span aria-hidden="true">🤔</span>
+          <span>模糊</span>
+          <span class="stat-value" id="stat-fuzzy">0</span>
+        </div>
+        <div class="stat-badge">
+          <span aria-hidden="true">❌</span>
+          <span>不认识</span>
+          <span class="stat-value" id="stat-unknown">0</span>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <a href="history.html" class="btn-icon" aria-label="学习记录" title="学习记录">📋</a>
+        <button class="btn-icon" id="btn-shuffle" aria-label="随机打乱卡片" title="随机打乱">
+          🔀
+        </button>
+        <button class="btn-icon" id="btn-theme" aria-label="切换亮色/暗色主题" title="切换主题">
+          🌙
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content" id="main-content">
+    <!-- Directory Section (Default) -->
+    <section id="directory-view" class="directory-section" aria-label="课程目录" style="display: block;">
+      <div class="directory-header">
+        <h2>课程大厅</h2>
+        <p>请选择一个场景开始挑战</p>
+      </div>
+      <div id="category-list" class="category-list">
+        <p>加载课程目录中...</p>
+      </div>
+    </section>
+
+    <!-- Card Section (Hidden by Default) -->
+    <section id="study-view" class="card-section" aria-label="抽认卡学习区域" style="display: none;">
+      <!-- Scene Header -->
+      <div class="scene-header">
+        <button id="btn-back-dir" class="btn-icon">← 返回目录</button>
+        <h2 id="current-scene-title" class="scene-title">加载中...</h2>
+      </div>
+
+      <!-- Progress -->
+      <div class="progress-info">
+        <span id="progress-text">0 / 0 已学习</span>
+        <span id="progress-percent">0%</span>
+      </div>
+      <div class="progress-bar-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progress-bar">
+        <div class="progress-bar-fill" id="progress-fill" style="width: 0%"></div>
+      </div>
+
+      <!-- Flashcard -->
+      <div class="card-container" id="card-container" role="button" tabindex="0" aria-label="点击或按空格翻转卡片">
+        <div class="card" id="card">
+          <div class="card-face card-front">
+            <span class="card-label">问题 · Question</span>
+            <p class="card-text" id="card-question">加载中…</p>
+            <span class="card-hint" aria-hidden="true">
+              点击翻转 · Press Space
+            </span>
+          </div>
+          <div class="card-face card-back">
+            <span class="card-label">答案 · Answer</span>
+            <p class="card-text" id="card-answer"></p>
+            <span class="card-hint" aria-hidden="true">
+              评价你的掌握程度
+            </span>
+          </div>
+        </div>
+        <!-- Rating Feedback Overlay -->
+        <div class="card-feedback" id="card-feedback" aria-live="polite">
+          <span class="feedback-icon" id="feedback-icon"></span>
+          <span class="feedback-text" id="feedback-text"></span>
+        </div>
+      </div>
+
+      <!-- Card Navigation -->
+      <div class="card-nav">
+        <button class="btn-nav" id="btn-prev" aria-label="上一张卡片" title="上一张 (←)">
+          ←
+        </button>
+        <span class="card-counter" id="card-counter" aria-live="polite">0 / 0</span>
+        <button class="btn-nav" id="btn-next" aria-label="下一张卡片" title="下一张 (→)">
+          →
+        </button>
+      </div>
+
+      <!-- Rating Buttons -->
+      <div class="rating-bar" aria-label="自评区域">
+        <button class="btn-rate rate-know" id="btn-know" aria-label="认识这张卡片">
+          <span aria-hidden="true">✅</span>
+          认识
+          <span class="rate-key">1</span>
+        </button>
+        <button class="btn-rate rate-fuzzy" id="btn-fuzzy" aria-label="模糊记忆">
+          <span aria-hidden="true">🤔</span>
+          模糊
+          <span class="rate-key">2</span>
+        </button>
+        <button class="btn-rate rate-unknown" id="btn-unknown" aria-label="不认识这张卡片">
+          <span aria-hidden="true">❌</span>
+          不认识
+          <span class="rate-key">3</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Keyboard Shortcuts -->
+    <div class="shortcuts-panel" aria-label="键盘快捷键" id="shortcuts-panel" style="display: none;">
+      <div class="shortcut"><kbd>Space</kbd> 翻转</div>
+      <div class="shortcut"><kbd>←</kbd> 上一张</div>
+      <div class="shortcut"><kbd>→</kbd> 下一张</div>
+      <div class="shortcut"><kbd>1</kbd> 认识</div>
+      <div class="shortcut"><kbd>2</kbd> 模糊</div>
+      <div class="shortcut"><kbd>3</kbd> 不认识</div>
+    </div>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

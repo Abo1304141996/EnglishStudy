@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="hsl(230, 25%, 8%)" />
+  <title>学习记录 · Study History</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Skip Link -->
+  <a href="#main-content" class="skip-link">跳转到主要内容</a>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="返回主页">
+        <span class="logo-icon">←</span>
+        <span>返回学习</span>
+      </a>
+
+      <h1 class="page-title">学习记录</h1>
+
+      <div class="header-actions">
+        <button class="btn-icon" id="btn-theme" aria-label="切换主题" title="切换主题">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content" id="main-content">
+
+    <!-- Stats Summary -->
+    <div class="history-stats">
+      <div class="history-stat-item">
+        <span class="history-stat-value" id="stat-total">0</span>
+        <span class="history-stat-label">已学习</span>
+      </div>
+      <div class="history-stat-item">
+        <span class="history-stat-value stat-know" id="stat-know-count">0</span>
+        <span class="history-stat-label">认识</span>
+      </div>
+      <div class="history-stat-item">
+        <span class="history-stat-value stat-fuzzy" id="stat-fuzzy-count">0</span>
+        <span class="history-stat-label">模糊</span>
+      </div>
+      <div class="history-stat-item">
+        <span class="history-stat-value stat-unknown" id="stat-unknown-count">0</span>
+        <span class="history-stat-label">不认识</span>
+      </div>
+    </div>
+
+    <!-- Tab Bar -->
+    <nav class="tab-bar" role="tablist" aria-label="评分分类">
+      <button class="tab active" role="tab" aria-selected="true" data-tab="know" id="tab-know">
+        <span class="tab-icon">✅</span>
+        <span class="tab-label">认识</span>
+        <span class="tab-count" id="tab-know-count">0</span>
+      </button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="fuzzy" id="tab-fuzzy">
+        <span class="tab-icon">🤔</span>
+        <span class="tab-label">模糊</span>
+        <span class="tab-count" id="tab-fuzzy-count">0</span>
+      </button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="unknown" id="tab-unknown">
+        <span class="tab-icon">❌</span>
+        <span class="tab-label">不认识</span>
+        <span class="tab-count" id="tab-unknown-count">0</span>
+      </button>
+    </nav>
+
+    <!-- Card List -->
+    <div class="card-list" id="card-list" role="tabpanel">
+      <!-- Dynamically generated -->
+    </div>
+
+    <!-- Empty State -->
+    <div class="empty-state" id="empty-state" style="display: none;">
+      <span class="empty-icon">📭</span>
+      <p class="empty-text" id="empty-text">该分类下暂无单词</p>
+    </div>
+
+  </main>
+
+  <!-- Study Modal (for fuzzy/unknown cards) -->
+  <div class="modal-overlay" id="study-modal" style="display: none;" role="dialog" aria-modal="true" aria-label="学习模式">
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close" aria-label="关闭">✕</button>
+
+      <div class="modal-card-container" id="modal-card-container">
+        <div class="modal-card" id="modal-card">
+          <div class="modal-card-face modal-card-front">
+            <span class="card-label">问题 · Question</span>
+            <p class="card-text" id="modal-question">问题内容</p>
+            <span class="card-hint">点击翻转</span>
+          </div>
+          <div class="modal-card-face modal-card-back">
+            <span class="card-label">答案 · Answer</span>
+            <p class="card-text modal-answer-text" id="modal-answer">答案内容</p>
+            <span class="card-hint">评价你的掌握程度</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-actions">
+        <button class="btn-rate rate-know" id="modal-know">✅ 认识</button>
+        <button class="btn-rate rate-fuzzy" id="modal-fuzzy">🤔 模糊</button>
+        <button class="btn-rate rate-unknown" id="modal-unknown">❌ 不认识</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/history.js"></script>
+</body>
+</html>
