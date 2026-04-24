@@ -14,3 +14,14 @@ python-dotenv>=1.0.0
 
 # CORS
 python-multipart>=0.0.6
+
+# === 实时语音交互 ===
+# 豆包 LLM（arkitect）
+arkitect>=0.1.0
+volcengine-python-sdk
+
+# 豆包 ASR WebSocket
+websockets>=12.0
+
+# OpenAI 兼容 TTS
+httpx>=0.27.0

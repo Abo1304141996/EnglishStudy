@@ -25,13 +25,28 @@ class Settings(BaseSettings):
     # 日志配置
     log_level: str = "INFO"
 
-    # === LLM 配置（预留） ===
+    # === 豆包 LLM（arkitect） ===
     ark_api_key: Optional[str] = None
-    llm_endpoint: Optional[str] = None
+    ark_llm_endpoint: Optional[str] = None
+
+    # === 豆包流式 ASR ===
+    asr_app_id: Optional[str] = None
+    asr_access_token: Optional[str] = None
+    asr_secret_key: Optional[str] = None
+    asr_resource_id: str = "volc.bigasr.sauc.duration"
+    asr_ws_url: str = "wss://openspeech.bytedance.com/api/v3/sauc/bigmodel"
+
+    # === OpenAI 兼容 TTS ===
+    openai_base_url: str = "https://api.openai.com/v1"
+    openai_api_key: Optional[str] = None
+    tts_model: str = "gpt-4o-mini-tts"
+    tts_voice: str = "alloy"
+    tts_format: str = "mp3"
 
     class Config:
         env_file = ".env"
         case_sensitive = False
+        extra = "ignore"
 
 
 @lru_cache()

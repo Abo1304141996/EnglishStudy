@@ -518,5 +518,45 @@
     "ease_factor": 2.5,
     "interval": 0,
     "next_review": null
+  },
+  {
+    "id": "rec_aff4dadd",
+    "card_id": "card_124",
+    "rating": "unknown",
+    "studied_at": "2026-04-16T17:19:47.310957",
+    "session_id": null,
+    "ease_factor": 2.5,
+    "interval": 0,
+    "next_review": null
+  },
+  {
+    "id": "rec_119cf4e8",
+    "card_id": "card_125",
+    "rating": "unknown",
+    "studied_at": "2026-04-16T17:20:00.356866",
+    "session_id": null,
+    "ease_factor": 2.5,
+    "interval": 0,
+    "next_review": null
+  },
+  {
+    "id": "rec_c621216d",
+    "card_id": "card_126",
+    "rating": "know",
+    "studied_at": "2026-04-16T17:20:09.426129",
+    "session_id": null,
+    "ease_factor": 2.5,
+    "interval": 0,
+    "next_review": null
+  },
+  {
+    "id": "rec_544a8e24",
+    "card_id": "card_127",
+    "rating": "unknown",
+    "studied_at": "2026-04-16T17:20:23.237109",
+    "session_id": null,
+    "ease_factor": 2.5,
+    "interval": 0,
+    "next_review": null
   }
 ]
