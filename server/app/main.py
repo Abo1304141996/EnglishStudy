@@ -15,7 +15,6 @@ from pydantic import BaseModel, Field
 from app.config import settings
 from app.storage import get_storage, close_storage
 from app.models import FlashcardCreate
-from app.voice.router import router as voice_router
 
 # 配置日志
 logging.basicConfig(
@@ -40,8 +39,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# 注册语音交互 WebSocket 路由
-app.include_router(voice_router)
+
 
 
 # ========== 应用生命周期事件 ==========

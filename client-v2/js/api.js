@@ -1,7 +1,7 @@
 /**
  * api.js — 后端 API 通信层
  */
-const API_BASE = 'http://localhost:8888';
+const API_BASE = 'http://localhost:8000';
 
 const Api = {
   async fetch(path, options = {}) {
