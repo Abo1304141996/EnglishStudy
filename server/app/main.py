@@ -4,6 +4,7 @@
 import csv
 import io
 import logging
+import os
 from typing import Optional
 
 from fastapi import FastAPI, HTTPException, UploadFile, File
@@ -333,6 +334,15 @@ async def health_check():
     count = await storage.get_flashcard_count()
     return {"status": "ok", "service": "english_flashcard_backend", "flashcard_count": count}
 
+
+# ========== 静态文件挂载 (前端) ==========
+
+# 将前端文件挂载到根路径，这样就可以在同一个端口访问前后端了
+client_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../client-v2"))
+if os.path.exists(client_dir):
+    app.mount("/", StaticFiles(directory=client_dir, html=True), name="static")
+else:
+    logger.warning(f"Frontend directory not found at {client_dir}")
 
 # ========== 主函数 ==========
 
