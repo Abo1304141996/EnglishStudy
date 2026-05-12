@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "id": "16",
+    "name": "【场景16：吵闹贫苦的带娃清晨】",
+    "card_count": 10,
+    "created_at": "2026-05-12T13:53:40.906134"
+  },
+  "cards": [
+    {
+      "id": "card_195",
+      "category": "Shameless-S02E01",
+      "scene": "【场景16：吵闹贫苦的带娃清晨】",
+      "tag": "影视剧",
+      "question": "日常找不到吃的：“我们家里把芝士通心粉全都吃光了。”",
+      "answer": "We're out of mac and cheese.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_196",
+      "category": "Shameless-S02E01",
+      "scene": "【场景16：吵闹贫苦的带娃清晨】",
+      "tag": "影视剧",
+      "question": "想办法拿别的食物替代：“我倒是可以去给你们改做花生酱果酱三明治将就凑合，但我接下来肯定得需要更多的吐司面包才行。”",
+      "answer": "I can make PB&Js instead, but I'm gonna need more bread.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_197",
+      "category": "Shameless-S02E01",
+      "scene": "【场景16：吵闹贫苦的带娃清晨】",
+      "tag": "影视剧",
+      "question": "抱怨带娃累死：“我精力全被耗尽累瘫了。”",
+      "answer": "I'm exhausted.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_198",
+      "category": "Shameless-S02E01",
+      "scene": "【场景16：吵闹贫苦的带娃清晨】",
+      "tag": "影视剧",
+      "question": "控诉小婴儿昨晚的暴行：“利亚姆昨晚几乎把我折腾醒了大半夜，就因为他一直拿脑袋一直撞床板。”",
+      "answer": "Liam had me up half the night banging his head.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_199",
+      "category": "Shameless-S02E01",
+      "scene": "【场景16：吵闹贫苦的带娃清晨】",
+      "tag": "影视剧",
+      "question": "小女孩想要私人空间：“我也必须要有一间只属于我自个儿独立的房间了。”",
+      "answer": "I need my own room.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_200",
+      "category": "Shameless-S02E01",
+      "scene": "【场景16：吵闹贫苦的带娃清晨】",
+      "tag": "影视剧",
+      "question": "小女孩觉得自己立刻成熟了需要界限：“我很快就要成长成为一个真正的成年女人了。”",
+      "answer": "I'm going to be a woman soon.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_201",
+      "category": "Shameless-S02E01",
+      "scene": "【场景16：吵闹贫苦的带娃清晨】",
+      "tag": "影视剧",
+      "question": "用戏剧化的早熟语言要独立权：“我亟需获得一点私人隐秘空间，好来顺利去度过去承受马上紧接着那些关于生为人青春期带来的残酷创伤性身心巨大蜕变。”",
+      "answer": "I need privacy to undergo the upcoming traumatic transformation.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_202",
+      "category": "Shameless-S02E01",
+      "scene": "【场景16：吵闹贫苦的带娃清晨】",
+      "tag": "影视剧",
+      "question": "大人完全听不懂乱入对话：“我们到底在聊瞎扯探讨什么呢？”",
+      "answer": "What are we talking about?",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_203",
+      "category": "Shameless-S02E01",
+      "scene": "【场景16：吵闹贫苦的带娃清晨】",
+      "tag": "影视剧",
+      "question": "大姐提醒要开工了：“第一个送来日托照看的小孩子已经到家门口咯。”",
+      "answer": "First day care kid is here.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_204",
+      "category": "Shameless-S02E01",
+      "scene": "【场景16：吵闹贫苦的带娃清晨】",
+      "tag": "影视剧",
+      "question": "直接粉碎切断妹妹的想法：“这种事就是不可能永远也不会达成的啊，黛比（打消念头吧）。”",
+      "answer": "It's not gonna happen, Debs.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    }
+  ]
+}

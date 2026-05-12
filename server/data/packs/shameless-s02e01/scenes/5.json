@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "id": "5",
+    "name": "【场景5：地下烂事与炮友局】",
+    "card_count": 3,
+    "created_at": "2026-05-12T13:53:40.903990"
+  },
+  "cards": [
+    {
+      "id": "card_121",
+      "category": "Shameless-S02E01",
+      "scene": "【场景5：地下烂事与炮友局】",
+      "tag": "影视剧",
+      "question": "被别人问起什么关系：“我们之间算什么关系？朋友。”",
+      "answer": "What are we? Friends.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_122",
+      "category": "Shameless-S02E01",
+      "scene": "【场景5：地下烂事与炮友局】",
+      "tag": "影视剧",
+      "question": "紧接着追问真实性质：“只是普通朋友？那种喜欢随时打炮发生关系的朋友吧。”",
+      "answer": "Just friends? Friends who like to do this.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_123",
+      "category": "Shameless-S02E01",
+      "scene": "【场景5：地下烂事与炮友局】",
+      "tag": "影视剧",
+      "question": "报复家暴/不负责父亲的质问：“你现在感觉如何，老爹？你还觉得我只配当个婊子吗？”",
+      "answer": "What do you think now, daddy? Am I still a whore?",
+      "created_at": "2026-04-03T00:00:00.000000"
+    }
+  ]
+}

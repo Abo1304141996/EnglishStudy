@@ -1,0 +1,163 @@
+{
+  "meta": {
+    "id": "p-1bfa20285d",
+    "name": "默认场景",
+    "card_count": 17,
+    "created_at": "2026-05-12T13:53:40.906851"
+  },
+  "cards": [
+    {
+      "id": "card_218",
+      "category": "我的积累",
+      "scene": "默认场景",
+      "tag": "默认",
+      "question": "表达无奈、无所谓：“反正这都没关系了”用英语怎么说？",
+      "answer": "It doesn't matter anyway.",
+      "created_at": "2026-05-09T11:21:49.937978"
+    },
+    {
+      "id": "card_219",
+      "category": "我的积累",
+      "scene": "默认场景",
+      "tag": "默认",
+      "question": "粗鲁或愤世嫉俗地表示每个人都有权坚持己见：“每个混蛋都有选择自己信念的权利”用英语怎么说？",
+      "answer": "Every asshole is entitled to his beliefs.",
+      "created_at": "2026-05-09T11:21:49.937978"
+    },
+    {
+      "id": "card_220",
+      "category": "我的积累",
+      "scene": "默认场景",
+      "tag": "默认",
+      "question": "预言或断言某种事物的消亡：“那儿将不存在...”用英语怎么说？",
+      "answer": "there's not gonna be...",
+      "created_at": "2026-05-09T11:21:49.937978"
+    },
+    {
+      "id": "card_221",
+      "category": "我的积累",
+      "scene": "默认场景",
+      "tag": "默认",
+      "question": "极端语境下表达没有种族/身份之分：“那儿不存在什么犹太人或雅利安人”用英语怎么说？",
+      "answer": "there's not gonna be any Jew or Aryan.",
+      "created_at": "2026-05-09T11:21:49.937978"
+    },
+    {
+      "id": "card_222",
+      "category": "我的积累",
+      "scene": "默认场景",
+      "tag": "默认",
+      "question": "断言未来必定会发生/存在某事：“那儿将会存在...”用英语怎么说？",
+      "answer": "There's gonna be...",
+      "created_at": "2026-05-09T11:21:49.937978"
+    },
+    {
+      "id": "card_223",
+      "category": "我的积累",
+      "scene": "默认场景",
+      "tag": "默认",
+      "question": "愤世嫉俗地描述两极分化的残酷社会现实：“只会剩下有钱人和穷光蛋（倒霉蛋）”用英语怎么说？",
+      "answer": "There's just gonna be the rich and the fucked.",
+      "created_at": "2026-05-09T11:21:49.937978"
+    },
+    {
+      "id": "card_224",
+      "category": "我的积累",
+      "scene": "默认场景",
+      "tag": "默认",
+      "question": "绝望地感叹自己后代的阶级命运：“我的孙子已经是穷光蛋中的一员了”用英语怎么说？",
+      "answer": "our grandson is already one of the fucked.",
+      "created_at": "2026-05-09T11:21:49.937978"
+    },
+    {
+      "id": "card_225",
+      "category": "我的积累",
+      "scene": "默认场景",
+      "tag": "默认",
+      "question": "表达人生没有标准答案/模板：“没有适用于每个人的正确答案”用英语怎么说？",
+      "answer": "there is no right answer for every human.",
+      "created_at": "2026-05-09T11:21:49.937978"
+    },
+    {
+      "id": "card_226",
+      "category": "我的积累",
+      "scene": "默认场景",
+      "tag": "默认",
+      "question": "举例假设对方未来的具体职业梦想：“如果你想成为一名兽医”用英语怎么说？",
+      "answer": "if you want to be a veterinarian.",
+      "created_at": "2026-05-09T11:21:49.937978"
+    },
+    {
+      "id": "card_227",
+      "category": "我的积累",
+      "scene": "默认场景",
+      "tag": "默认",
+      "question": "感叹世界广阔、选择繁多：“外面有那么多东西（选择）”用英语怎么说？",
+      "answer": "there are so many things out there.",
+      "created_at": "2026-05-09T11:21:49.937978"
+    },
+    {
+      "id": "card_228",
+      "category": "我的积累",
+      "scene": "默认场景",
+      "tag": "默认",
+      "question": "表达对某人宿命或天分的强烈确信：“你知道自己注定要做什么”用英语怎么说？",
+      "answer": "you know what you meant to do.",
+      "created_at": "2026-05-09T11:21:49.937978"
+    },
+    {
+      "id": "card_229",
+      "category": "我的积累",
+      "scene": "默认场景",
+      "tag": "默认",
+      "question": "热血地鼓励他人毫无保留地投入行动：“全力以赴，放手一搏吧”用英语怎么说？",
+      "answer": "just lean all in and go for it.",
+      "created_at": "2026-05-09T11:21:49.937978"
+    },
+    {
+      "id": "card_230",
+      "category": "我的积累",
+      "scene": "默认场景",
+      "tag": "默认",
+      "question": "设想极其遥远或离奇的未来工作场景：“如果你们中有人最终去了火星工作”用英语怎么说？",
+      "answer": "if some of you end up going and working on Mars.",
+      "created_at": "2026-05-09T11:21:49.937978"
+    },
+    {
+      "id": "card_231",
+      "category": "我的积累",
+      "scene": "默认场景",
+      "tag": "默认",
+      "question": "表达坚定不移的巨大支持：“我们会大声且明确地为你欢呼”用英语怎么说？",
+      "answer": "we will be cheering you on loud and clear.",
+      "created_at": "2026-05-09T11:21:49.937978"
+    },
+    {
+      "id": "card_232",
+      "category": "我的积累",
+      "scene": "默认场景",
+      "tag": "默认",
+      "question": "向别人抱怨自己已经跌入人生谷底：“反正我的生活也不能更烂了”用英语怎么说？",
+      "answer": "My life couldn't get any fucking worse.",
+      "created_at": "2026-05-09T11:21:49.937978"
+    },
+    {
+      "id": "card_e5833878",
+      "category": "我的积累",
+      "scene": "默认场景",
+      "tag": "默认",
+      "question": "想要用虚拟语气表达某人本来打算做某事却最终没做的含义时：\"某人本来会做某事（但实际上没做）\"用英语怎么说？",
+      "answer": "sb. would have done sth.",
+      "created_at": "2026-05-12T13:57:04.717284"
+    },
+    {
+      "id": "card_dcb71422",
+      "category": "我的积累",
+      "scene": "默认场景",
+      "tag": "默认",
+      "question": "没能按时联系对方，事后带着歉意解释原因时：\"我本来要打给你的，但是手机没电了\"用英语怎么说？",
+      "answer": "I would have called you, but my phone died.",
+      "created_at": "2026-05-12T13:57:04.717295"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "id": "3",
+    "name": "【场景3：感情拉扯与家庭羁绊】",
+    "card_count": 5,
+    "created_at": "2026-05-12T13:53:40.903440"
+  },
+  "cards": [
+    {
+      "id": "card_113",
+      "category": "Shameless-S02E01",
+      "scene": "【场景3：感情拉扯与家庭羁绊】",
+      "tag": "影视剧",
+      "question": "对于昨晚的进展感到欣慰：“关于昨晚的那件事，我已经期望（等待）了太久了。”",
+      "answer": "I've waited a long time for last night to happen.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_114",
+      "category": "Shameless-S02E01",
+      "scene": "【场景3：感情拉扯与家庭羁绊】",
+      "tag": "影视剧",
+      "question": "不满老爹干涉自己私生活大吼：“至少托尼不会跑来对我家的私事指手画脚！你他妈到底有什么毛病，弗兰克？！”",
+      "answer": "At least Tony's not coming here getting all in my family's business. What the fuck is wrong, Frank?!",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_115",
+      "category": "Shameless-S02E01",
+      "scene": "【场景3：感情拉扯与家庭羁绊】",
+      "tag": "影视剧",
+      "question": "赌气承认自己的冲动：“也许这就是我想追求的。”",
+      "answer": "Maybe that's what I want.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_116",
+      "category": "Shameless-S02E01",
+      "scene": "【场景3：感情拉扯与家庭羁绊】",
+      "tag": "影视剧",
+      "question": "别人乱下判断时反驳：“你对我根本就一无所知。”",
+      "answer": "You know nothing about me.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_117",
+      "category": "Shameless-S02E01",
+      "scene": "【场景3：感情拉扯与家庭羁绊】",
+      "tag": "影视剧",
+      "question": "谈条件时让双方都满意：“我得到我想拥有的，你也可以达成你的目的。”",
+      "answer": "I get what I want, and you can have what you want.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    }
+  ]
+}

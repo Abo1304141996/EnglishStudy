@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "id": "2",
+    "name": "【场景2：凑钱买必需品或应对家庭危机】",
+    "card_count": 4,
+    "created_at": "2026-05-12T13:53:40.903281"
+  },
+  "cards": [
+    {
+      "id": "card_109",
+      "category": "Shameless-S02E01",
+      "scene": "【场景2：凑钱买必需品或应对家庭危机】",
+      "tag": "影视剧",
+      "question": "清点手头资金时问：“我们现在还差多少钱？”",
+      "answer": "How much are we short?",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_110",
+      "category": "Shameless-S02E01",
+      "scene": "【场景2：凑钱买必需品或应对家庭危机】",
+      "tag": "影视剧",
+      "question": "给别人当枪手赚钱：“我正要去给某个倒霉的波兰小鬼当代考（高考预考）。”",
+      "answer": "I'm taking the PSATs for some Polish kid.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_111",
+      "category": "Shameless-S02E01",
+      "scene": "【场景2：凑钱买必需品或应对家庭危机】",
+      "tag": "影视剧",
+      "question": "问兄弟能不能多出点血：“你手头还能再多凑个十块左右给我吗？”",
+      "answer": "Are you able to kick in, like, ten more?",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_112",
+      "category": "Shameless-S02E01",
+      "scene": "【场景2：凑钱买必需品或应对家庭危机】",
+      "tag": "影视剧",
+      "question": "拒绝别人的同情：“我们不需要你的施舍。”",
+      "answer": "We don't need your charity.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    }
+  ]
+}

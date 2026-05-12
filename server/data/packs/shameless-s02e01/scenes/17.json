@@ -1,0 +1,73 @@
+{
+  "meta": {
+    "id": "17",
+    "name": "【场景17：修东西与菜园子闲聊】",
+    "card_count": 7,
+    "created_at": "2026-05-12T13:53:40.906286"
+  },
+  "cards": [
+    {
+      "id": "card_205",
+      "category": "Shameless-S02E01",
+      "scene": "【场景17：修东西与菜园子闲聊】",
+      "tag": "影视剧",
+      "question": "打招呼并夸奖别人擅长的园艺：“哇哦。艾瑟儿，这花园现在看上去真的很赞啊。”",
+      "answer": "Wow. Ethel, the garden looks great.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_206",
+      "category": "Shameless-S02E01",
+      "scene": "【场景17：修东西与菜园子闲聊】",
+      "tag": "影视剧",
+      "question": "谦虚或者吹嘘这都是肥料的作用：“这全靠那些混合堆肥发酵肥料的奇效。”",
+      "answer": "It's all in the compost.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_207",
+      "category": "Shameless-S02E01",
+      "scene": "【场景17：修东西与菜园子闲聊】",
+      "tag": "影视剧",
+      "question": "骄傲地指出有蚯蚓在加成：“我养那批红蚯蚓在今年可一直都是保持在加班工作的巅峰状态啊。”",
+      "answer": "My red worms have been working overtime this year.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_208",
+      "category": "Shameless-S02E01",
+      "scene": "【场景17：修东西与菜园子闲聊】",
+      "tag": "影视剧",
+      "question": "感恩大自然：“上帝慷慨恩赐的任何丰饶一点点都绝对不能被随意丢弃浪费掉啊。”",
+      "answer": "None of god's bounty ever needs go to waste.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_209",
+      "category": "Shameless-S02E01",
+      "scene": "【场景17：修东西与菜园子闲聊】",
+      "tag": "影视剧",
+      "question": "特工对接工作代号确认：“今天原定的那个计划行动还算数吗？”",
+      "answer": "Still on for today?",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_210",
+      "category": "Shameless-S02E01",
+      "scene": "【场景17：修东西与菜园子闲聊】",
+      "tag": "影视剧",
+      "question": "确认破烂载具是不是还能用：“那你觉得它可能还会运作发动跑得起来吗？”",
+      "answer": "Think it still runs?",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_211",
+      "category": "Shameless-S02E01",
+      "scene": "【场景17：修东西与菜园子闲聊】",
+      "tag": "影视剧",
+      "question": "奉承会修东西的男孩：“八成是不行吧，但只要到了你手上应该任何什么破烂都你能把它修好搞定的。”",
+      "answer": "Probably not, but you can fix anything.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    }
+  ]
+}

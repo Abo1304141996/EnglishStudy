@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "id": "12",
+    "name": "【场景12：地下拳赛盘口分钱】",
+    "card_count": 5,
+    "created_at": "2026-05-12T13:53:40.905384"
+  },
+  "cards": [
+    {
+      "id": "card_160",
+      "category": "Shameless-S02E01",
+      "scene": "【场景12：地下拳赛盘口分钱】",
+      "tag": "影视剧",
+      "question": "比赛结束后老板惊叹爆冷门：“那小鬼究竟是怎么他妈地把那个科特·兰蒂斯给胖揍一顿的？”",
+      "answer": "How the hell did that little guy kick Kurt- fucking-Landis' ass?",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_161",
+      "category": "Shameless-S02E01",
+      "scene": "【场景12：地下拳赛盘口分钱】",
+      "tag": "影视剧",
+      "question": "赢了比赛来找庄家拿钱：“从我打的这场比赛里，咱们赚到钱（抽成）了吗？谢了，拉斯米克！”",
+      "answer": "We make anything on my fight? Thanks, Rasmik!",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_162",
+      "category": "Shameless-S02E01",
+      "scene": "【场景12：地下拳赛盘口分钱】",
+      "tag": "影视剧",
+      "question": "庄家告诉他没人压注爆冷局：“零鸭蛋。哪怕兄弟情义再深，也不会让我头脑发昏在这上头犯傻的，老兄。”",
+      "answer": "Nada. Fraternal loyalty doesn't extend to stupidity, bud.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_163",
+      "category": "Shameless-S02E01",
+      "scene": "【场景12：地下拳赛盘口分钱】",
+      "tag": "影视剧",
+      "question": "宣布要在办一局黑拳：“听着，我还想下个礼拜再接着办一场搏击之夜。”",
+      "answer": "Hey, I want to stage another fight night next week.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_164",
+      "category": "Shameless-S02E01",
+      "scene": "【场景12：地下拳赛盘口分钱】",
+      "tag": "影视剧",
+      "question": "吩咐收下出去拉人头：“你去四处那些个武道馆里多走动转转，给我多拉拢找些打手好手过来，行吧？”",
+      "answer": "Go around to the dojos, round up some more scrappers, all right?",
+      "created_at": "2026-04-03T00:00:00.000000"
+    }
+  ]
+}

@@ -5,7 +5,7 @@ import csv
 import io
 import logging
 import os
-from typing import Optional
+from typing import List, Optional
 
 from fastapi import FastAPI, HTTPException, UploadFile, File
 from fastapi.responses import JSONResponse
@@ -15,7 +15,8 @@ from pydantic import BaseModel, Field
 
 from app.config import settings
 from app.storage import get_storage, close_storage
-from app.models import FlashcardCreate
+from app.models import FlashcardCreate, PackCreate, PackUpdate, SceneCreate, SceneUpdate
+from app.services.card_ai import get_card_ai
 
 # 配置日志
 logging.basicConfig(
@@ -322,6 +323,195 @@ async def list_sessions(limit: int = 20):
             "sessions": [s.model_dump(mode="json") for s in sessions],
         }
     )
+
+
+# ========== API: 学习包 / 场景 管理 ==========
+
+
+@app.get("/api/packs")
+async def list_packs():
+    """列出全部学习包（含场景统计）"""
+    storage = await get_storage()
+    packs = storage.list_packs()
+    return JSONResponse({
+        "success": True,
+        "packs": [p.model_dump(mode="json") for p in packs],
+    })
+
+
+@app.post("/api/packs")
+async def create_pack(req: PackCreate):
+    storage = await get_storage()
+    try:
+        meta = await storage.create_pack(req.name, req.tag or "日常生活")
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+    return JSONResponse({"success": True, "pack": meta.model_dump(mode="json")})
+
+
+@app.patch("/api/packs/{pack_id}")
+async def update_pack(pack_id: str, req: PackUpdate):
+    storage = await get_storage()
+    try:
+        meta = await storage.update_pack(pack_id, req.name, req.tag)
+    except KeyError:
+        raise HTTPException(status_code=404, detail="学习包不存在")
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+    return JSONResponse({"success": True, "pack": meta.model_dump(mode="json")})
+
+
+@app.delete("/api/packs/{pack_id}")
+async def delete_pack(pack_id: str, force: bool = False):
+    storage = await get_storage()
+    try:
+        await storage.delete_pack(pack_id, force=force)
+    except KeyError:
+        raise HTTPException(status_code=404, detail="学习包不存在")
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+    return JSONResponse({"success": True})
+
+
+@app.post("/api/packs/{pack_id}/scenes")
+async def create_scene(pack_id: str, req: SceneCreate):
+    storage = await get_storage()
+    try:
+        meta = await storage.create_scene(pack_id, req.name)
+    except KeyError:
+        raise HTTPException(status_code=404, detail="学习包不存在")
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+    return JSONResponse({"success": True, "scene": meta.model_dump(mode="json")})
+
+
+@app.patch("/api/packs/{pack_id}/scenes/{scene_id}")
+async def update_scene(pack_id: str, scene_id: str, req: SceneUpdate):
+    storage = await get_storage()
+    try:
+        meta = await storage.update_scene(pack_id, scene_id, req.name)
+    except KeyError:
+        raise HTTPException(status_code=404, detail="场景不存在")
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+    return JSONResponse({"success": True, "scene": meta.model_dump(mode="json")})
+
+
+@app.delete("/api/packs/{pack_id}/scenes/{scene_id}")
+async def delete_scene(pack_id: str, scene_id: str, force: bool = False):
+    storage = await get_storage()
+    try:
+        await storage.delete_scene(pack_id, scene_id, force=force)
+    except KeyError:
+        raise HTTPException(status_code=404, detail="场景不存在")
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+    return JSONResponse({"success": True})
+
+
+# ========== API: AI 卡片解析 ==========
+
+
+class ParseCardsRequest(BaseModel):
+    text: str = Field(description="用户粘贴的原始英语积累文本")
+
+
+class CardItem(BaseModel):
+    front: str
+    back: str
+
+
+class RefineCardRequest(BaseModel):
+    front: str
+    back: str
+    instruction: str = Field(description="用户的修改指令")
+    original_source: Optional[str] = None
+
+
+class CommitCardsRequest(BaseModel):
+    pack_id: Optional[str] = Field(default=None, description="已有学习包 ID")
+    pack_name: Optional[str] = Field(default=None, description="新建学习包名（与 pack_id 二选一）")
+    pack_tag: Optional[str] = Field(default="日常生活")
+    scene_id: Optional[str] = None
+    scene_name: Optional[str] = None
+    cards: List[CardItem]
+
+
+@app.post("/api/ai/parse-cards")
+async def ai_parse_cards(req: ParseCardsRequest):
+    """把用户粘贴的英语积累文本，通过 AI 解析为情境化卡片候选"""
+    text = (req.text or "").strip()
+    if not text:
+        raise HTTPException(status_code=400, detail="文本不能为空")
+    try:
+        cards = await get_card_ai().parse_cards(text)
+    except Exception as e:
+        logger.error(f"AI parse failed: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail=str(e))
+    return JSONResponse({"success": True, "count": len(cards), "cards": cards})
+
+
+@app.post("/api/ai/refine-card")
+async def ai_refine_card(req: RefineCardRequest):
+    """根据用户指令让 AI 重新生成单张卡片"""
+    try:
+        new_card = await get_card_ai().refine_card(
+            req.front, req.back, req.instruction, req.original_source
+        )
+    except Exception as e:
+        logger.error(f"AI refine failed: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail=str(e))
+    return JSONResponse({"success": True, "card": new_card})
+
+
+@app.post("/api/cards/commit")
+async def commit_cards(req: CommitCardsRequest):
+    """把审核通过的卡片落地到指定 pack/scene；支持顺手新建 pack/scene"""
+    storage = await get_storage()
+    if not req.cards:
+        raise HTTPException(status_code=400, detail="cards 不能为空")
+
+    # 解析 / 创建 pack
+    if req.pack_id:
+        pack = storage.get_pack(req.pack_id)
+        if not pack:
+            raise HTTPException(status_code=404, detail="学习包不存在")
+    elif req.pack_name:
+        pack = storage.find_pack_by_name(req.pack_name)
+        if not pack:
+            try:
+                pack = await storage.create_pack(req.pack_name, req.pack_tag or "日常生活")
+            except ValueError as e:
+                raise HTTPException(status_code=400, detail=str(e))
+    else:
+        raise HTTPException(status_code=400, detail="必须指定 pack_id 或 pack_name")
+
+    # 解析 / 创建 scene
+    if req.scene_id:
+        if (pack.id, req.scene_id) not in storage.scenes:
+            raise HTTPException(status_code=404, detail="场景不存在")
+        scene_id = req.scene_id
+    elif req.scene_name:
+        scn = storage.find_scene_by_name(pack.id, req.scene_name)
+        if not scn:
+            try:
+                scn = await storage.create_scene(pack.id, req.scene_name)
+            except ValueError as e:
+                raise HTTPException(status_code=400, detail=str(e))
+        scene_id = scn.id
+    else:
+        raise HTTPException(status_code=400, detail="必须指定 scene_id 或 scene_name")
+
+    # 转 question/answer 格式：front -> question, back -> answer
+    raw_cards = [{"question": c.front, "answer": c.back} for c in req.cards]
+    added = await storage.add_cards_to_scene(pack.id, scene_id, raw_cards)
+    return JSONResponse({
+        "success": True,
+        "added": len(added),
+        "pack_id": pack.id,
+        "scene_id": scene_id,
+        "cards": [c.model_dump(mode="json") for c in added],
+    })
 
 
 # ========== 系统接口 ==========

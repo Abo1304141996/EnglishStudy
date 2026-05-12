@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "id": "1",
+    "name": "【场景1：久违的心动（两人在房间聊天）】",
+    "card_count": 3,
+    "created_at": "2026-05-12T13:53:40.903094"
+  },
+  "cards": [
+    {
+      "id": "card_106",
+      "category": "Shameless-S02E01",
+      "scene": "【场景1：久违的心动（两人在房间聊天）】",
+      "tag": "影视剧",
+      "question": "感叹对方的生活经历不凡：“你的生活背负了太多（复杂沉重），而且你是我前所未见的，最与众不同的人。”",
+      "answer": "Your life's not simple, Fiona, and you're nothing like anyone I've ever met.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_107",
+      "category": "Shameless-S02E01",
+      "scene": "【场景1：久违的心动（两人在房间聊天）】",
+      "tag": "影视剧",
+      "question": "向对方倾诉爱意：“你重新燃起了我享受生活的欲望。”",
+      "answer": "You make me want to enjoy my life again.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_108",
+      "category": "Shameless-S02E01",
+      "scene": "【场景1：久违的心动（两人在房间聊天）】",
+      "tag": "影视剧",
+      "question": "看到陌生人在自己家里，没好气地问：“那老家伙到底是谁？”",
+      "answer": "Who the hell is that?",
+      "created_at": "2026-04-03T00:00:00.000000"
+    }
+  ]
+}

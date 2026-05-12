@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "id": "4",
+    "name": "【场景4：坑蒙拐骗赚快外】",
+    "card_count": 3,
+    "created_at": "2026-05-12T13:53:40.903585"
+  },
+  "cards": [
+    {
+      "id": "card_118",
+      "category": "Shameless-S02E01",
+      "scene": "【场景4：坑蒙拐骗赚快外】",
+      "tag": "影视剧",
+      "question": "向朋友解释这奇葩行径的初衷：“我们也就只收养这个寄养儿童一个礼拜，全是为凑足那笔钱去还清我那蠢爆了的停车罚单罢了。”",
+      "answer": "We're only taking in a foster kid for a week to get the money to pay for my stupid parking tickets.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_119",
+      "category": "Shameless-S02E01",
+      "scene": "【场景4：坑蒙拐骗赚快外】",
+      "tag": "影视剧",
+      "question": "为了推销假货或引诱犯罪，先打消顾虑：“这是全国最好的顶尖机器人实验室。”",
+      "answer": "This is the robotics lab. It is the best in the country.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_120",
+      "category": "Shameless-S02E01",
+      "scene": "【场景4：坑蒙拐骗赚快外】",
+      "tag": "影视剧",
+      "question": "吐槽别人家像个没底线的安乐窝：“你们家现在简直就是那个酒鬼弗兰克做梦都想要的天堂。”",
+      "answer": "Your house is Frank's wet dream.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    }
+  ]
+}

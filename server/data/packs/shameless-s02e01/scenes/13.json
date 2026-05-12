@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "id": "13",
+    "name": "【场景13：找前任纠缠】",
+    "card_count": 9,
+    "created_at": "2026-05-12T13:53:40.905523"
+  },
+  "cards": [
+    {
+      "id": "card_165",
+      "category": "Shameless-S02E01",
+      "scene": "【场景13：找前任纠缠】",
+      "tag": "影视剧",
+      "question": "打听对方出门去哪：“没问题。你要去哪？”",
+      "answer": "Sure. Where you going?",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_166",
+      "category": "Shameless-S02E01",
+      "scene": "【场景13：找前任纠缠】",
+      "tag": "影视剧",
+      "question": "知道对方去哪里后嘲讽没出息：“我还以为你早对那档子事彻底死心放弃了呢。”",
+      "answer": "Thought you gave up on that.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_167",
+      "category": "Shameless-S02E01",
+      "scene": "【场景13：找前任纠缠】",
+      "tag": "影视剧",
+      "question": "八卦朋友的前任：“凯伦·杰克逊？就在那个跟你老爸搞过之后（你还想去她家）？”",
+      "answer": "Karen Jackson? After that thing with your dad?",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_168",
+      "category": "Shameless-S02E01",
+      "scene": "【场景13：找前任纠缠】",
+      "tag": "影视剧",
+      "question": "质问在前女友家楼下看到的男生：“你刚才待在这里到底在干嘛？”",
+      "answer": "What the hell you doing here?",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_169",
+      "category": "Shameless-S02E01",
+      "scene": "【场景13：找前任纠缠】",
+      "tag": "影视剧",
+      "question": "理直气壮地说：“我来找凯伦的。”",
+      "answer": "Came to see Karen.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_170",
+      "category": "Shameless-S02E01",
+      "scene": "【场景13：找前任纠缠】",
+      "tag": "影视剧",
+      "question": "得知前女友去了奇怪的互助会：“匿名性瘾者互助会。”",
+      "answer": "Sex addicts anonymous.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_171",
+      "category": "Shameless-S02E01",
+      "scene": "【场景13：找前任纠缠】",
+      "tag": "影视剧",
+      "question": "询问情敌能否上楼等：“那好吧，我能进屋里去等等她吗？”",
+      "answer": "Well, can I come in and wait?",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_172",
+      "category": "Shameless-S02E01",
+      "scene": "【场景13：找前任纠缠】",
+      "tag": "影视剧",
+      "question": "嘲讽朋友又被老男人比下去了：“看来大卫那个老家伙比你更持久啊（抢占了你的先机），罗密欧。”",
+      "answer": "Looks like old man Dave is beating your time, Romeo.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_173",
+      "category": "Shameless-S02E01",
+      "scene": "【场景13：找前任纠缠】",
+      "tag": "影视剧",
+      "question": "爆料老男人靠吃药撑着：“他刚才竟然嗑了蓝色小药丸——我特意数过，整整四颗。”",
+      "answer": "He was popping little blue pills-- I counted four.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "id": "15",
+    "name": "【场景15：街区早晨邻居互相关心】",
+    "card_count": 11,
+    "created_at": "2026-05-12T13:53:40.905991"
+  },
+  "cards": [
+    {
+      "id": "card_184",
+      "category": "Shameless-S02E01",
+      "scene": "【场景15：街区早晨邻居互相关心】",
+      "tag": "影视剧",
+      "question": "邻居闲聊盖房子进度：“你的房子重新翻修得怎样了？”",
+      "answer": "How's your remodel coming?",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_185",
+      "category": "Shameless-S02E01",
+      "scene": "【场景15：街区早晨邻居互相关心】",
+      "tag": "影视剧",
+      "question": "试探邻居的关心目的：“你是真心实意想了解，还是纯粹只是为了街坊客套？”",
+      "answer": "You really want to know or just being neighborly?",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_186",
+      "category": "Shameless-S02E01",
+      "scene": "【场景15：街区早晨邻居互相关心】",
+      "tag": "影视剧",
+      "question": "抱怨工程进度：“生锈的铸铁水管全给拆除扔掉了，打算全换上新铜管。”",
+      "answer": "Cast iron plumbing's out, replacing it with copper.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_187",
+      "category": "Shameless-S02E01",
+      "scene": "【场景15：街区早晨邻居互相关心】",
+      "tag": "影视剧",
+      "question": "解释找了有电工技能的人帮忙：“和我换班倒班干活的那哥们刚好夜间兼职搞电工活儿，所以接下来他会来帮我重新铺设电线。”",
+      "answer": "Guy on my shift moonlights as an electrician, so he's going to help me rewire.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_188",
+      "category": "Shameless-S02E01",
+      "scene": "【场景15：街区早晨邻居互相关心】",
+      "tag": "影视剧",
+      "question": "打听装修完了的意图：“你是搞定了之后就准备转手倒卖出去（炒房），还是自己留着住进去？”",
+      "answer": "You gonna flip it or live in it?",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_189",
+      "category": "Shameless-S02E01",
+      "scene": "【场景15：街区早晨邻居互相关心】",
+      "tag": "影视剧",
+      "question": "表示迷茫：“等待着看看事情怎么发展吧（走一步看一步）。”",
+      "answer": "Waiting to see what happens.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_190",
+      "category": "Shameless-S02E01",
+      "scene": "【场景15：街区早晨邻居互相关心】",
+      "tag": "影视剧",
+      "question": "为了结束客套早晨对话：“我得回家去照看孩子们上路了。”",
+      "answer": "I got to get the kids going.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_191",
+      "category": "Shameless-S02E01",
+      "scene": "【场景15：街区早晨邻居互相关心】",
+      "tag": "影视剧",
+      "question": "惊叹看到被人打青了眼睛：“哇哦。你这只眼睛是怎么搞的？”",
+      "answer": "Whoa. What happened to you?",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_192",
+      "category": "Shameless-S02E01",
+      "scene": "【场景15：街区早晨邻居互相关心】",
+      "tag": "影视剧",
+      "question": "解释为啥挨揍：“我底下的那个拳手临阵吓得怂成娘炮跑路了，我只好必须亲自去顶包填补上场。”",
+      "answer": "One of my fighters pussied-out on me, I had to fill in.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_193",
+      "category": "Shameless-S02E01",
+      "scene": "【场景15：街区早晨邻居互相关心】",
+      "tag": "影视剧",
+      "question": "嘲讽逃跑的也是识相：“看起来那个怂货临阵脱逃反而算是明智的选择啊。”",
+      "answer": "Looks like the pussy had the right idea.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_194",
+      "category": "Shameless-S02E01",
+      "scene": "【场景15：街区早晨邻居互相关心】",
+      "tag": "影视剧",
+      "question": "关心挨打的人让敷冰块：“快去拿点冰块敷在你那只眼睛上吧。”",
+      "answer": "Get some ice on that eye.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    }
+  ]
+}

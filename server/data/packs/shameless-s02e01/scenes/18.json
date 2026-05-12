@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "id": "18",
+    "name": "【场景18：家庭防盗与找东西】",
+    "card_count": 6,
+    "created_at": "2026-05-12T13:53:40.906418"
+  },
+  "cards": [
+    {
+      "id": "card_212",
+      "category": "Shameless-S02E01",
+      "scene": "【场景18：家庭防盗与找东西】",
+      "tag": "影视剧",
+      "question": "听到吃早饭的动静：“早餐开吃咯！”",
+      "answer": "Breakfast!",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_213",
+      "category": "Shameless-S02E01",
+      "scene": "【场景18：家庭防盗与找东西】",
+      "tag": "影视剧",
+      "question": "心虚地掩饰找不到某个贵重物品：“我，呃，我就是一下子找不到我那块手表放哪儿了去了。”",
+      "answer": "I, uh, I can't find my watch.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_214",
+      "category": "Shameless-S02E01",
+      "scene": "【场景18：家庭防盗与找东西】",
+      "tag": "影视剧",
+      "question": "防贼一样把家里的钱处理了：“在刚好因为上次出了那桩烂摊子的糟心事情之后，我就叫让我妈赶紧把她用来储备的防灾救急资金给火速挪换个地方转移放好去了。”",
+      "answer": "I had mom move her rainy day fund after what happened last time.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_215",
+      "category": "Shameless-S02E01",
+      "scene": "【场景18：家庭防盗与找东西】",
+      "tag": "影视剧",
+      "question": "不管怎么样就是要推卸责任老赖说辞：“我他妈跟那发生的那档子破事可半毛钱关系都沾不上一点没有牵扯。”",
+      "answer": "I had nothing to do with that.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_216",
+      "category": "Shameless-S02E01",
+      "scene": "【场景18：家庭防盗与找东西】",
+      "tag": "影视剧",
+      "question": "为了防守钱被刷走把卡藏了：“我甚至干脆连她的银行信用卡自动提款卡全也一起都给严严实实藏严实了去，所以你简直想都不要在脑子里盘算再企图动试着想要去把它给再去给偷拿拿走的这种肮脏死主意念头。”",
+      "answer": "I hid her ATM card, too, So don't even try taking that again.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_217",
+      "category": "Shameless-S02E01",
+      "scene": "【场景18：家庭防盗与找东西】",
+      "tag": "影视剧",
+      "question": "给生病的小动物找客观原因：“她的鼻腔也一直老是不停地往下直淌流着小清鼻涕，不过我倒总猜测觉得那应当无非也许说不定完全真的就仅仅都只是因为由于早先那个用来之前那个用来在铺垫翻新贴上关于那种贴去关于使用抹在在那个去上在新搞铺新涂那些给贴厨房去崭新装潢亚麻油地板表层材质上所用的些许廉价胶水给刺鼻诱发引发而起的而已罢了。”",
+      "answer": "Her nose has been running, but I think it's just the glue that Jeff's been using on the new kitchen linoleum.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    }
+  ]
+}

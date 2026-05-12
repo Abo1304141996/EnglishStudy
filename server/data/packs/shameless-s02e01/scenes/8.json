@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "id": "8",
+    "name": "【场景8：酒吧里吹牛打赌（关于被电击枪打中）】",
+    "card_count": 6,
+    "created_at": "2026-05-12T13:53:40.904808"
+  },
+  "cards": [
+    {
+      "id": "card_132",
+      "category": "Shameless-S02E01",
+      "scene": "【场景8：酒吧里吹牛打赌（关于被电击枪打中）】",
+      "tag": "影视剧",
+      "question": "吹牛自己曾抗拒警察拒捕：“他当时试图拿电击枪电晕我。我就直接反过来揍了他。”",
+      "answer": "He gonna try and tase me. I hit him.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_133",
+      "category": "Shameless-S02E01",
+      "scene": "【场景8：酒吧里吹牛打赌（关于被电击枪打中）】",
+      "tag": "影视剧",
+      "question": "另一个人听不下去揭穿：“少他妈扯淡，我就被电了一秒左右，就直接吓得拉裤兜子了。”",
+      "answer": "I got tasered for like a second, I crapped myself.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_134",
+      "category": "Shameless-S02E01",
+      "scene": "【场景8：酒吧里吹牛打赌（关于被电击枪打中）】",
+      "tag": "影视剧",
+      "question": "质疑前者的牛逼经历：“你这是纯纯扯淡，根本不可能有人被电击完两次，还反倒打晕仨警察撒丫子就跑。”",
+      "answer": "There's no way you got tasered twice, fought off three cops ran away.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_135",
+      "category": "Shameless-S02E01",
+      "scene": "【场景8：酒吧里吹牛打赌（关于被电击枪打中）】",
+      "tag": "影视剧",
+      "question": "被人质疑马上立下赌约：“我打赌一千块现金，老子就是干到了！”",
+      "answer": "A grand says I did.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_136",
+      "category": "Shameless-S02E01",
+      "scene": "【场景8：酒吧里吹牛打赌（关于被电击枪打中）】",
+      "tag": "影视剧",
+      "question": "好赌之徒立马加注：“我跟了你那一千块赌约，再追加九千。”",
+      "answer": "I'll see your grand and add nine more.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_137",
+      "category": "Shameless-S02E01",
+      "scene": "【场景8：酒吧里吹牛打赌（关于被电击枪打中）】",
+      "tag": "影视剧",
+      "question": "正式放狠话开赌局：“一万块美利坚现钞摆在这！我赌你丫绝不可能被电两次还不把裤裆吓出屎尿弄脏内裤，更别提能撑着站着了！”",
+      "answer": "10,000 in American legal tender says you can not get tasered twice and not soil your tighty whities, much less keep standing.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    }
+  ]
+}

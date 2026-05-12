@@ -32,18 +32,30 @@
     <div class="container mx-auto px-4 py-4 flex items-center justify-between">
       <div class="flex items-center space-x-2 cursor-pointer" id="nav-logo">
         <i class="fas fa-bolt text-primary text-2xl"></i>
-        <h1 class="text-xl font-bold text-dark">英语闪现卡</h1>
+        <h1 class="text-lg md:text-xl font-bold text-dark">英语闪现卡</h1>
       </div>
       <nav class="hidden md:flex items-center space-x-8">
         <a class="nav-link active" href="javascript:void(0);" data-page="pack-list">首页</a>
         <a class="nav-link" href="javascript:void(0);" data-page="my-learning">我的学习</a>
-      </nav>
-      <div class="flex items-center space-x-4">
-
-        <button class="md:hidden text-dark text-xl" id="mobile-menu-btn">
-          <i class="fas fa-bars"></i>
+        <button id="open-ingest-btn-desktop" class="px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors text-sm">
+          <i class="fas fa-plus mr-1"></i>新增积累
         </button>
-      </div>
+      </nav>
+      <button class="md:hidden text-dark text-2xl p-2 -mr-2" id="mobile-menu-btn" aria-label="菜单" type="button">
+        <i class="fas fa-bars pointer-events-none"></i>
+      </button>
+    </div>
+    <!-- 移动端下拉菜单 -->
+    <div id="mobile-menu" class="md:hidden hidden border-t border-gray-100 bg-white">
+      <a class="mobile-nav-link active" href="javascript:void(0);" data-page="pack-list">
+        <i class="fas fa-home mr-2 w-5 text-center"></i>首页
+      </a>
+      <a class="mobile-nav-link" href="javascript:void(0);" data-page="my-learning">
+        <i class="fas fa-chart-line mr-2 w-5 text-center"></i>我的学习
+      </a>
+      <a class="mobile-nav-link" href="javascript:void(0);" id="open-ingest-btn-mobile">
+        <i class="fas fa-plus mr-2 w-5 text-center"></i>新增积累
+      </a>
     </div>
   </header>
 
@@ -56,6 +68,9 @@
       <div class="mb-8">
         <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
           <h2 class="text-2xl font-bold">全部学习包</h2>
+          <button id="new-pack-btn" class="self-start md:self-auto px-4 py-2 bg-white border border-primary text-primary rounded-lg hover:bg-primary/5 transition-colors text-sm">
+            <i class="fas fa-folder-plus mr-1"></i>新建学习包
+          </button>
         </div>
         <div class="flex flex-wrap gap-2" id="tag-filters">
           <button class="tag-btn active" data-tag="全部">全部</button>
@@ -80,10 +95,21 @@
         </div>
         <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
           <div>
-            <h2 class="text-3xl font-bold" id="current-pack-name"></h2>
+            <h2 class="text-2xl md:text-3xl font-bold" id="current-pack-name"></h2>
             <p class="text-gray-600 mt-2">选择场景开始闪卡学习</p>
           </div>
-          <div class="text-sm text-gray-500" id="pack-progress-info"></div>
+          <div class="flex flex-wrap items-center gap-2">
+            <div class="text-sm text-gray-500 mr-2" id="pack-progress-info"></div>
+            <button id="new-scene-btn" class="px-3 py-1.5 bg-white border border-primary text-primary rounded-lg hover:bg-primary/5 transition-colors text-sm">
+              <i class="fas fa-plus mr-1"></i>新建场景
+            </button>
+            <button id="rename-pack-btn" class="px-3 py-1.5 bg-white border border-gray-300 text-gray-600 rounded-lg hover:bg-gray-50 transition-colors text-sm">
+              <i class="fas fa-pen mr-1"></i>重命名
+            </button>
+            <button id="delete-pack-btn" class="px-3 py-1.5 bg-white border border-red-200 text-red-500 rounded-lg hover:bg-red-50 transition-colors text-sm">
+              <i class="fas fa-trash mr-1"></i>删除
+            </button>
+          </div>
         </div>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4" id="scene-grid"></div>
@@ -221,6 +247,9 @@
 
   </main>
 
+  <!-- ========== Modal: 通用容器（动态填充） ========== -->
+  <div id="modal-root"></div>
+
   <!-- ========== 页脚 ========== -->
   <footer class="bg-white border-t border-gray-200 py-6 mt-10">
     <div class="container mx-auto px-4 text-center text-gray-500 text-sm">
@@ -231,9 +260,11 @@
   <!-- JS Modules -->
   <script src="js/api.js"></script>
   <script src="js/router.js"></script>
+  <script src="js/modal.js"></script>
   <script src="js/packs.js"></script>
   <script src="js/scenes.js"></script>
   <script src="js/flashcard.js"></script>
+  <script src="js/ingest.js"></script>
   <script src="js/history.js"></script>
 </body>
 </html>

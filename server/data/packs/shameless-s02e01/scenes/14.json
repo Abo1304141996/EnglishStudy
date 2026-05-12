@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "id": "14",
+    "name": "【场景14：跑步比赛】",
+    "card_count": 10,
+    "created_at": "2026-05-12T13:53:40.905823"
+  },
+  "cards": [
+    {
+      "id": "card_174",
+      "category": "Shameless-S02E01",
+      "scene": "【场景14：跑步比赛】",
+      "tag": "影视剧",
+      "question": "跟老板有约快要来不及了：“啊，艹！我才刚跟我老板报备过，大概一小时后就去跟他汇合跑步的。”",
+      "answer": "Ah, fuck! I told my boss I'd meet him for a run in about an hour.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_175",
+      "category": "Shameless-S02E01",
+      "scene": "【场景14：跑步比赛】",
+      "tag": "影视剧",
+      "question": "女生想搭讪跑步：“我或许可以跟你们一起跑。”",
+      "answer": "I could run with you.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_176",
+      "category": "Shameless-S02E01",
+      "scene": "【场景14：跑步比赛】",
+      "tag": "影视剧",
+      "question": "男生看不起女生的体力，女生解释：“我在高中的时候可是跑田径的。”",
+      "answer": "I ran track in high school.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_177",
+      "category": "Shameless-S02E01",
+      "scene": "【场景14：跑步比赛】",
+      "tag": "影视剧",
+      "question": "被人轻视后呛回去：“干嘛？别露出一副那么大惊小怪的样子。”",
+      "answer": "What? Don't look so surprised.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_178",
+      "category": "Shameless-S02E01",
+      "scene": "【场景14：跑步比赛】",
+      "tag": "影视剧",
+      "question": "炫耀自己的长项：“我可是练长跑距离的选手。”",
+      "answer": "I ran distance.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_179",
+      "category": "Shameless-S02E01",
+      "scene": "【场景14：跑步比赛】",
+      "tag": "影视剧",
+      "question": "吹大话过去的辉煌：“以前甚至还有可能（有机会）入选州代表队的拔尖选手呢。”",
+      "answer": "There was a chance I was gonna make state.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_180",
+      "category": "Shameless-S02E01",
+      "scene": "【场景14：跑步比赛】",
+      "tag": "影视剧",
+      "question": "男生表示要碾压女生，女生欣然接受挑战：“我看我打败你轻而易举。——赌就赌，比比看呀。”",
+      "answer": "I could beat your ass. -You're on.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_181",
+      "category": "Shameless-S02E01",
+      "scene": "【场景14：跑步比赛】",
+      "tag": "影视剧",
+      "question": "跑步比赛开场指令：“各就各位……——好的。”",
+      "answer": "On your mark ... -Yeah.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_182",
+      "category": "Shameless-S02E01",
+      "scene": "【场景14：跑步比赛】",
+      "tag": "影视剧",
+      "question": "继续下指令：“预备……——没问题。”",
+      "answer": "Get set... -Okay.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_183",
+      "category": "Shameless-S02E01",
+      "scene": "【场景14：跑步比赛】",
+      "tag": "影视剧",
+      "question": "看到别人献殷勤开门调侃：“你搞什么名堂？现在化身当接车男仆啦？”",
+      "answer": "What are you doing? Are you a valet now?",
+      "created_at": "2026-04-03T00:00:00.000000"
+    }
+  ]
+}

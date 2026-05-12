@@ -10,13 +10,20 @@ const Api = {
       headers: { 'Content-Type': 'application/json', ...options.headers },
       ...options,
     });
-    if (!res.ok) throw new Error(`API ${res.status}: ${res.statusText}`);
+    if (!res.ok) {
+      let detail = `API ${res.status}: ${res.statusText}`;
+      try {
+        const errData = await res.json();
+        if (errData && errData.detail) detail = errData.detail;
+      } catch (_) { /* ignore */ }
+      throw new Error(detail);
+    }
     return res.json();
   },
 
   /** 获取学习包列表（含场景和统计） */
   async getPacks() {
-    const data = await this.fetch('/api/categories');
+    const data = await this.fetch('/api/packs');
     return data.packs || [];
   },
 
@@ -27,6 +34,66 @@ const Api = {
     if (scene) params.set('scene', scene);
     const data = await this.fetch(`/api/flashcards?${params}`);
     return data.flashcards || [];
+  },
+
+  /** 创建学习包 */
+  createPack(name, tag) {
+    return this.fetch('/api/packs', {
+      method: 'POST',
+      body: JSON.stringify({ name, tag: tag || '日常生活' }),
+    });
+  },
+  updatePack(packId, payload) {
+    return this.fetch(`/api/packs/${encodeURIComponent(packId)}`, {
+      method: 'PATCH',
+      body: JSON.stringify(payload),
+    });
+  },
+  deletePack(packId, force = false) {
+    return this.fetch(`/api/packs/${encodeURIComponent(packId)}?force=${force}`, {
+      method: 'DELETE',
+    });
+  },
+  createScene(packId, name) {
+    return this.fetch(`/api/packs/${encodeURIComponent(packId)}/scenes`, {
+      method: 'POST',
+      body: JSON.stringify({ name }),
+    });
+  },
+  updateScene(packId, sceneId, name) {
+    return this.fetch(`/api/packs/${encodeURIComponent(packId)}/scenes/${encodeURIComponent(sceneId)}`, {
+      method: 'PATCH',
+      body: JSON.stringify({ name }),
+    });
+  },
+  deleteScene(packId, sceneId, force = false) {
+    return this.fetch(`/api/packs/${encodeURIComponent(packId)}/scenes/${encodeURIComponent(sceneId)}?force=${force}`, {
+      method: 'DELETE',
+    });
+  },
+
+  /** AI: 解析积累文本为候选卡片 */
+  async aiParseCards(text) {
+    const data = await this.fetch('/api/ai/parse-cards', {
+      method: 'POST',
+      body: JSON.stringify({ text }),
+    });
+    return data.cards || [];
+  },
+  /** AI: 优化单张卡片 */
+  async aiRefineCard(front, back, instruction, originalSource) {
+    const data = await this.fetch('/api/ai/refine-card', {
+      method: 'POST',
+      body: JSON.stringify({ front, back, instruction, original_source: originalSource }),
+    });
+    return data.card;
+  },
+  /** 落地审核通过的卡片 */
+  commitCards(payload) {
+    return this.fetch('/api/cards/commit', {
+      method: 'POST',
+      body: JSON.stringify(payload),
+    });
   },
 
   /** 提交评分 */

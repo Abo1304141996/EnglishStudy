@@ -1,0 +1,964 @@
+{
+  "meta": {
+    "id": "p-1bfa20285d",
+    "name": "默认场景",
+    "card_count": 106,
+    "created_at": "2026-05-12T13:53:40.902486"
+  },
+  "cards": [
+    {
+      "id": "card_0",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "用英语询问对方“你今天怎么样？”最常见的表达是什么？",
+      "answer": "How are you today?",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_1",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "当别人问“How are you today?”时，表达“我很好，谢谢”怎么说？",
+      "answer": "I'm fine thank you.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_2",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "当别人问“How are you today?”时，表达“我过得挺好”怎么说？",
+      "answer": "I'm doing well.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_3",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "当别人问“How are you today?”时，表达“虽然有点累，但还好”怎么说？",
+      "answer": "I'm a bit tired but I'm okay.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_4",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "日常英语口语中，“我醒了”怎么表达？",
+      "answer": "I wake up.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_5",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "描述晨间动作：起床后“我伸了个懒腰”怎么说？",
+      "answer": "I stretch.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_6",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "描述晨间动作：“我坐起来”怎么说？",
+      "answer": "I sit up.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_7",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "描述晨间动作：“我站起来”怎么说？",
+      "answer": "I stand.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_8",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "描述晨间动作：“我走向厨房”怎么说？",
+      "answer": "I walk to the kitchen.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_9",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "描述晨间动作：“我喝水”怎么说？",
+      "answer": "I drink water.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_10",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "描述晨间动作：“我做早餐”怎么说？",
+      "answer": "I make breakfast.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_11",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "描述晨间动作：“我刷牙”怎么说？",
+      "answer": "I brush my teeth.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_12",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "描述晨间动作：“我洗脸”怎么说？",
+      "answer": "I wash my face.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_13",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "描述晨间动作：“我穿好衣服”怎么说？",
+      "answer": "I get dressed.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_14",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "描述晨间动作：“我离开家”怎么说？",
+      "answer": "I leave my home.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_15",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "用英语询问对方“你正在做什么？”怎么说？",
+      "answer": "What are you doing?",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_16",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "回答“我正在学习”英语怎么说？",
+      "answer": "I am studying.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_17",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "回答“我正在工作”英语怎么说？",
+      "answer": "I am working.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_18",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "回答“我正和家人待在一起”英语怎么说？",
+      "answer": "I am spending time with my family.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_19",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "回答“我正在放松”英语怎么说？",
+      "answer": "I am relaxing.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_20",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "用英语询问对方“你有时间吗？”怎么说？",
+      "answer": "Do you have time?",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_21",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "回答“是的，我有时间”英语怎么说？",
+      "answer": "Yes I have time.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_22",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "回答“不，我现在有点忙”英语怎么说？",
+      "answer": "No I am a little busy right now.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_23",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "流利英语的关键不在于说话快，而在于_____。",
+      "answer": "舒服自然地表达 (Speaking comfortably).",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_24",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "用英语询问对方“你今天过得怎么样？”（过去式）怎么说？",
+      "answer": "How was your day?",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_25",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "回答“我今天过得不错”英语怎么说？",
+      "answer": "My day was good.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_26",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "回答“我今天过得还可以，挺平常的”英语怎么说？",
+      "answer": "My day was okay just normal.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_27",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "描述忙碌的一天：“我今天很忙，但我把一切都处理得很好”怎么说？",
+      "answer": "I had a busy day but I handled everything well.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_28",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "描述过去的一天：“我今天起得很早”怎么说？",
+      "answer": "I woke up early today.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_29",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "描述天气：“天气安静而祥和”怎么表达？",
+      "answer": "The weather was quiet and calm.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_30",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "描述动作：“我给自己泡了一杯茶”怎么说？",
+      "answer": "I made myself a cup of tea.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_31",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "描述动作：“我坐在窗边”怎么说？",
+      "answer": "I sat near the window.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_32",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "描述天空：“天空正变得越来越亮”怎么说？",
+      "answer": "The sky was getting brighter.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_33",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "描述动作：“我规划了我的一天”怎么说？",
+      "answer": "I planned my day.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_34",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "表达“我为接下来的一天做好了准备”怎么说？",
+      "answer": "I prepared myself for the day ahead.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_35",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "询问对方午餐吃什么：“What are you having for lunch?”，回答“我吃米饭和蔬菜”怎么说？",
+      "answer": "I am having rice and vegetables.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_36",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "回答午餐吃什么：“我吃面包和鸡蛋”怎么说？",
+      "answer": "I am having bread and eggs.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_37",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "当还没决定午餐吃什么时，回答“我还没决定”英语怎么说？",
+      "answer": "I haven't decided yet.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_38",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "表达心情：“我今天感到很开心”怎么说？",
+      "answer": "I feel happy today.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_39",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "表达心情：“我现在感到平静而放松”怎么说？",
+      "answer": "I feel calm and relaxed right now.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_40",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "很多学习者因为害怕犯错而不敢开口，其实大家追求的不是完美而是_____。",
+      "answer": "交流与联系 (Connection).",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_41",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "自我鼓励：“我每天都在进步”英语怎么说？",
+      "answer": "I am improving every day.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_42",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "自我鼓励：“我不需要做到完美”英语怎么说？",
+      "answer": "I do not need to be perfect.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_43",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "描述室外场景：“天气很宜人”英语怎么说？",
+      "answer": "The weather is pleasant.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_44",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "描述室外场景：“我看到人们在走动”英语怎么说？",
+      "answer": "I see people walking.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_45",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "描述室外场景：“我听到车子经过的声音”英语怎么说？",
+      "answer": "I hear cars passing by.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_46",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "描述感受：“我感受着清新的空气”英语怎么说？",
+      "answer": "I feel the fresh air.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_47",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "表达“我活在当下”英语怎么说？",
+      "answer": "I am present in this moment.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_48",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "用英语询问对方“你要去哪里？”怎么说？",
+      "answer": "Where are you going?",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_49",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "用英语询问对方“你今天有什么计划？”怎么说？",
+      "answer": "What are your plans for today?",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_50",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "用英语询问对方“你睡得好吗？”怎么说？",
+      "answer": "Did you sleep well?",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_51",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "回答“我要去商店”英语怎么说？",
+      "answer": "I'm going to the store.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_52",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "回答“我要去见个朋友”英语怎么说？",
+      "answer": "I'm going to meet a friend.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_53",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "回答“是的，我睡得很好”英语怎么说？",
+      "answer": "Yes I slept well.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_54",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "回答“不怎么好，我有点累”英语怎么说？",
+      "answer": "Not really I was a bit tired.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_55",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "描述厨房动作：“我打开冰箱”英语怎么说？",
+      "answer": "I open the fridge.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_56",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "描述厨房动作：“我拿出蔬菜”英语怎么说？",
+      "answer": "I take out vegetables.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_57",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "描述厨房动作：“我把它们切了”英语怎么说？",
+      "answer": "I cut them.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_58",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "描述厨房动作：“我给锅加热”英语怎么说？",
+      "answer": "I heat the pan.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_59",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "描述厨房动作：“我加入调料”英语怎么说？",
+      "answer": "I add spices.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_60",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "表达“我不急，我很享受这个过程”英语怎么说？",
+      "answer": "I take my time and enjoy the process.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_61",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "自我鼓励：“我每天都变得更加自信”英语怎么说？",
+      "answer": "I am becoming more confident every day.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_62",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "用英语询问对方“你待会儿要做什么？”怎么说？",
+      "answer": "What are you doing later today?",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_63",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "回答“我晚点要去散步”英语怎么说？",
+      "answer": "I will go for a walk later.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_64",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "回答“我可能会看场电影”英语怎么说？",
+      "answer": "I might watch a movie.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_65",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "回答“我还有些工作要完成”英语怎么说？",
+      "answer": "I have some work to finish.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_66",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "有礼貌地寻求帮助：“你能帮我吗？”怎么说？",
+      "answer": "Can you help me?",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_67",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "有礼貌地请求解释：“你能解释一下那个吗？”怎么说？",
+      "answer": "Could you explain that please?",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_68",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "有礼貌地表达“我没听懂”怎么说？",
+      "answer": "I didn't understand.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_69",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "有礼貌地请求对方再说一遍：“你能再说一次吗？”怎么说？",
+      "answer": "Could you say that again?",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_70",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "答应对方请求：“好的，等我一下”怎么说？",
+      "answer": "Sure give me a moment.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_71",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "描述天气：“今天是个好天气”英语怎么说？",
+      "answer": "It's a nice day today.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_72",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "描述天气：“天看起来要下雨了”英语怎么说？",
+      "answer": "It looks like it's going to rain.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_73",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "描述天气：“今天天空非常晴朗”英语怎么说？",
+      "answer": "The sky is very clear today.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_74",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "表达友好：“很高兴见到你”英语怎么说？",
+      "answer": "I am happy to see you.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_75",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "表达友好：“我希望你一切都好”英语怎么说？",
+      "answer": "I hope you are doing well.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_76",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "表达友好：“和你聊天很愉快”英语怎么说？",
+      "answer": "It's nice to talk with you.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_77",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "描述傍晚动作：“我坐下来休息”英语怎么说？",
+      "answer": "I sat down to relax.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_78",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "描述傍晚动作：“我深吸了一口气”英语怎么说？",
+      "answer": "I took a deep breath.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_79",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "描述状态：“我感到平静而安详”英语怎么说？",
+      "answer": "I felt calm and peaceful.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_80",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "提出建议：“我们去散个步吧”英语怎么说？",
+      "answer": "Let's go for a walk.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_81",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "提出建议：“我们一起看点什么吧”英语怎么说？",
+      "answer": "Let's watch something together.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_82",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "赞同对方建议：“听起来不错”英语怎么说？",
+      "answer": "That sounds good.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_83",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "赞同对方建议：“没问题，我很愿意”英语怎么说？",
+      "answer": "Sure I would like that.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_84",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "委婉拒绝建议：“下次吧”英语怎么说？",
+      "answer": "Maybe another time.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_85",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "委婉拒绝建议：“我不觉得我今天行”英语怎么说？",
+      "answer": "I don't think I can today.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_86",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "自我介绍：“很高兴认识你”英语怎么说？",
+      "answer": "I'm happy to meet you.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_87",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "询问对方籍贯：“你来自哪里？”英语怎么说？",
+      "answer": "Where are you from?",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_88",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "表达爱好：“我喜欢听音乐”英语怎么说？",
+      "answer": "I like listening to music.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_89",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "表达爱好：“我喜欢学习新事物”英语怎么说？",
+      "answer": "I like learning new things.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_90",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "表达偏好：“比起咖啡，我更喜欢茶”英语怎么说？",
+      "answer": "I prefer tea over coffee.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_91",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "表达偏好：“我喜欢安静的早晨”英语怎么说？",
+      "answer": "I like quiet mornings.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_92",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "表达偏好：“我享受宁静的日子”英语怎么说？",
+      "answer": "I enjoy peaceful days.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_93",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "描述动作：I wash my face and feel ______ (感到神清气爽).",
+      "answer": "refreshed",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_94",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "表达未来计划：“我明天会给你打电话”英语怎么说？",
+      "answer": "I will call you tomorrow.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_95",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "表达需求：“我需要一点时间”英语怎么说？",
+      "answer": "I need a little time.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_96",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "表达需求：“我需要休息一下”英语怎么说？",
+      "answer": "I need some rest.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_97",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "礼貌回应：“谢谢，那对我意义重大”英语怎么说？",
+      "answer": "Thank you that means a lot.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_98",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "礼貌回应：“我很感激你的支持”英语怎么说？",
+      "answer": "I appreciate your support.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_99",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "礼貌回应：“你真是太好了”英语怎么说？",
+      "answer": "That is very kind of you.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_100",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "描述动作：“我能听到自己的呼吸声”英语怎么说？",
+      "answer": "I can hear my breath.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_101",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "用英语询问对方“你今天感觉怎么样？”英语怎么说？",
+      "answer": "How are you feeling today?",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_102",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "用英语询问对方“你需要什么吗？”英语怎么说？",
+      "answer": "Do you need anything?",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_103",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "用英语询问对方“我能怎么帮你？”英语怎么说？",
+      "answer": "How can I help?",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_104",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "回答对方的关心：“我感觉还好”英语怎么说？",
+      "answer": "I'm feeling all right.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    },
+    {
+      "id": "card_105",
+      "category": "基础口语",
+      "scene": "默认场景",
+      "tag": "日常生活",
+      "question": "回答对方的关心：“谢谢你的询问”英语怎么说？",
+      "answer": "Thank you for asking.",
+      "created_at": "2026-04-02T17:14:08.311614"
+    }
+  ]
+}

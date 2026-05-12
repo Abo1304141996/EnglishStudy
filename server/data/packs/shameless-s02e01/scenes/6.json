@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "id": "6",
+    "name": "【场景6：面对感情的坦白与私奔请求】",
+    "card_count": 4,
+    "created_at": "2026-05-12T13:53:40.904469"
+  },
+  "cards": [
+    {
+      "id": "card_124",
+      "category": "Shameless-S02E01",
+      "scene": "【场景6：面对感情的坦白与私奔请求】",
+      "tag": "影视剧",
+      "question": "对闺蜜袒露心声：“我觉得我自己好像真是有点爱上她了。”",
+      "answer": "I think I was kind of falling in love with her.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_125",
+      "category": "Shameless-S02E01",
+      "scene": "【场景6：面对感情的坦白与私奔请求】",
+      "tag": "影视剧",
+      "question": "遭遇危机，想带着爱人逃走：“我必须要离开这个镇子了。跟我一起走吧。”",
+      "answer": "I have to leave town. Come with me.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_126",
+      "category": "Shameless-S02E01",
+      "scene": "【场景6：面对感情的坦白与私奔请求】",
+      "tag": "影视剧",
+      "question": "放下防备大胆表白：“我爱你。我就想和你在一起。”",
+      "answer": "I love you. I want to be with you.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_127",
+      "category": "Shameless-S02E01",
+      "scene": "【场景6：面对感情的坦白与私奔请求】",
+      "tag": "影视剧",
+      "question": "看透老爹的酒鬼本性，预言他马上原形毕露：“不出几天，她只要出门走到便利店，然后路过理发店，最后必然扎进Alibi酒吧。”",
+      "answer": "In a few days, she's gonna make it to the store, then the hair salon, Alibi room.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    }
+  ]
+}

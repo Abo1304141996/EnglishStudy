@@ -27,10 +27,9 @@ const PacksPage = (() => {
 
   function renderTagFilters() {
     const container = document.getElementById('tag-filters');
-    // 收集所有不重复的 tag
-    const tags = ['全部', ...new Set(allPacks.map(p => p.tag))];
+    const tags = ['全部', ...new Set(allPacks.map(p => p.tag).filter(Boolean))];
     container.innerHTML = tags.map(tag =>
-      `<button class="tag-btn ${tag === activeTag ? 'active' : ''}" data-tag="${tag}">${tag}</button>`
+      `<button class="tag-btn ${tag === activeTag ? 'active' : ''}" data-tag="${escapeHtml(tag)}">${escapeHtml(tag)}</button>`
     ).join('');
 
     container.querySelectorAll('.tag-btn').forEach(btn => {
@@ -47,7 +46,11 @@ const PacksPage = (() => {
     const filtered = activeTag === '全部' ? allPacks : allPacks.filter(p => p.tag === activeTag);
 
     if (filtered.length === 0) {
-      grid.innerHTML = '<p class="text-center text-gray-400 py-16 col-span-full">暂无学习包</p>';
+      grid.innerHTML = `
+        <div class="text-center text-gray-400 py-16 col-span-full">
+          <i class="fas fa-folder-open text-4xl mb-3"></i>
+          <p>暂无学习包，点击右上角"新增积累"开始</p>
+        </div>`;
       return;
     }
 
@@ -65,14 +68,14 @@ const PacksPage = (() => {
 
       return `
         <div class="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow border border-gray-100 cursor-pointer pack-card"
-             data-pack-name="${pack.name}">
+             data-pack-id="${escapeHtml(pack.id)}">
           <div class="h-40 pack-cover pack-cover-${colorIdx}">
             <i class="fas ${icon}"></i>
           </div>
           <div class="p-5">
-            <div class="flex justify-between items-start mb-3">
-              <h4 class="text-xl font-bold">${pack.name}</h4>
-              <span class="px-2 py-1 ${tagClass} text-xs rounded-full whitespace-nowrap">${pack.tag}</span>
+            <div class="flex justify-between items-start mb-3 gap-2">
+              <h4 class="text-xl font-bold break-words flex-1">${escapeHtml(pack.name)}</h4>
+              <span class="px-2 py-1 ${tagClass} text-xs rounded-full whitespace-nowrap">${escapeHtml(pack.tag || '日常生活')}</span>
             </div>
             <p class="text-gray-600 text-sm mb-4">包含 ${pack.total_cards} 张闪卡，${pack.scene_count} 个学习场景</p>
             <div class="flex items-center justify-between">
@@ -87,15 +90,24 @@ const PacksPage = (() => {
         </div>`;
     }).join('');
 
-    // 绑定点击事件
     grid.querySelectorAll('.pack-card').forEach(card => {
       card.addEventListener('click', () => {
-        const packName = card.dataset.packName;
-        const pack = allPacks.find(p => p.name === packName);
+        const packId = card.dataset.packId;
+        const pack = allPacks.find(p => p.id === packId);
         if (pack) ScenesPage.open(pack);
       });
     });
   }
 
-  return { load };
+  function getPackById(id) {
+    return allPacks.find(p => p.id === id);
+  }
+
+  function escapeHtml(str) {
+    return (str || '').replace(/[&<>"']/g, c => ({
+      '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+    })[c]);
+  }
+
+  return { load, getPackById };
 })();

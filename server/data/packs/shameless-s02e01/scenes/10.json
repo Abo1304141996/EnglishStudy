@@ -1,0 +1,73 @@
+{
+  "meta": {
+    "id": "10",
+    "name": "【场景10：地下业余拳击场】",
+    "card_count": 7,
+    "created_at": "2026-05-12T13:53:40.905087"
+  },
+  "cards": [
+    {
+      "id": "card_142",
+      "category": "Shameless-S02E01",
+      "scene": "【场景10：地下业余拳击场】",
+      "tag": "影视剧",
+      "question": "在场边大骂自己的拳手软弱无能：“还手击退回去啊！你打出去的拳就像个娘炮一样棉！”",
+      "answer": "Kick him back, you're punching like a fag.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_143",
+      "category": "Shameless-S02E01",
+      "scene": "【场景10：地下业余拳击场】",
+      "tag": "影视剧",
+      "question": "裁判发号施令：“好了，第一回合开始。赶紧各就各位退回角落。”",
+      "answer": "First round. Go to your corners.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_144",
+      "category": "Shameless-S02E01",
+      "scene": "【场景10：地下业余拳击场】",
+      "tag": "影视剧",
+      "question": "看到自家拳手光挨打不发火：“马蒂，你应该搞懂的，你是必须狠狠重拳回击他的，是不是？”",
+      "answer": "Marty, you know you're supposed to hit him back, right?",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_145",
+      "category": "Shameless-S02E01",
+      "scene": "【场景10：地下业余拳击场】",
+      "tag": "影视剧",
+      "question": "没准备挨揍的人崩溃抱怨：“你以为来打老拳会是个怎样的情况？”",
+      "answer": "What did you think this was going to be?",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_146",
+      "category": "Shameless-S02E01",
+      "scene": "【场景10：地下业余拳击场】",
+      "tag": "影视剧",
+      "question": "没料到混混不按套路出牌：“老子真没想到他他妈居然用脚踢！”",
+      "answer": "I didn't think he could punch me with a foot.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_147",
+      "category": "Shameless-S02E01",
+      "scene": "【场景10：地下业余拳击场】",
+      "tag": "影视剧",
+      "question": "打完场下问人服不服：“听着，看着我的眼睛。你是想要扔白毛巾直接放弃投降吗？”",
+      "answer": "Listen, look at me. You want to throw in the towel?",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_148",
+      "category": "Shameless-S02E01",
+      "scene": "【场景10：地下业余拳击场】",
+      "tag": "影视剧",
+      "question": "被打烂的哥们虚弱地认怂：“如果我脑子够灵光聪明，我就该早点认输。”",
+      "answer": "I would if I was smart.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    }
+  ]
+}

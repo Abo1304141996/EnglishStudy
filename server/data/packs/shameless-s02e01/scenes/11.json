@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "id": "11",
+    "name": "【场景11：酒吧闲聊与试探】",
+    "card_count": 11,
+    "created_at": "2026-05-12T13:53:40.905235"
+  },
+  "cards": [
+    {
+      "id": "card_149",
+      "category": "Shameless-S02E01",
+      "scene": "【场景11：酒吧闲聊与试探】",
+      "tag": "影视剧",
+      "question": "闺蜜评价一直黏在身边的追求者：“他为你（对你）简直痴迷不已啊。”",
+      "answer": "He's crazy about you.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_150",
+      "category": "Shameless-S02E01",
+      "scene": "【场景11：酒吧闲聊与试探】",
+      "tag": "影视剧",
+      "question": "朋友再次邀请：“干嘛你晚点不要和我们一起出去玩呢？”",
+      "answer": "Why don't you come out with us later.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_151",
+      "category": "Shameless-S02E01",
+      "scene": "【场景11：酒吧闲聊与试探】",
+      "tag": "影视剧",
+      "question": "找借口拒绝派对邀约：“小凯不会介意的。——我真不行（去不了）。”",
+      "answer": "Kev won't mind. - I can't.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_152",
+      "category": "Shameless-S02E01",
+      "scene": "【场景11：酒吧闲聊与试探】",
+      "tag": "影视剧",
+      "question": "说明早起有事：“我明天早上在疗养院（养老院）还有个班要值。”",
+      "answer": "I got a shift at the nursing home in the morning.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_153",
+      "category": "Shameless-S02E01",
+      "scene": "【场景11：酒吧闲聊与试探】",
+      "tag": "影视剧",
+      "question": "跟华尔街精英客套：“你在高盛工作得怎么样了？”",
+      "answer": "How's things at Goldman Sachs?",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_154",
+      "category": "Shameless-S02E01",
+      "scene": "【场景11：酒吧闲聊与试探】",
+      "tag": "影视剧",
+      "question": "精英自嘲地炫富：“还挺不错的，至少捞的油水足够我来这种地方被你们痛宰（花冤枉钱消费）了。”",
+      "answer": "Going well enough for me to afford getting ripped off coming here.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_155",
+      "category": "Shameless-S02E01",
+      "scene": "【场景11：酒吧闲聊与试探】",
+      "tag": "影视剧",
+      "question": "仇富女反驳华尔街吸血鬼：“反正早晚有一天，你们这帮靠抵押贷款剥削人的混账玩意儿都该进监狱。”",
+      "answer": "All you mortgage-raping shits should be in prison anyway.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_156",
+      "category": "Shameless-S02E01",
+      "scene": "【场景11：酒吧闲聊与试探】",
+      "tag": "影视剧",
+      "question": "精英无所谓地替自己辩解：“是啊，不过次贷危机爆发时，我还在念研究生呢。”",
+      "answer": "Yeah, well, I was in grad school during the mortgage crisis.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_157",
+      "category": "Shameless-S02E01",
+      "scene": "【场景11：酒吧闲聊与试探】",
+      "tag": "影视剧",
+      "question": "精英毫无羞耻感地暴露正在做的事：“如今，我们正在设法做空欧元，好让整个希腊顺利破产。”",
+      "answer": "Nowadays, we're trying to short euros so Greece will go bankrupt.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_158",
+      "category": "Shameless-S02E01",
+      "scene": "【场景11：酒吧闲聊与试探】",
+      "tag": "影视剧",
+      "question": "精英轻浮地追问邀约：“我们待会儿还有戏（约会）吗？”",
+      "answer": "Are we on for later?",
+      "created_at": "2026-04-03T00:00:00.000000"
+    },
+    {
+      "id": "card_159",
+      "category": "Shameless-S02E01",
+      "scene": "【场景11：酒吧闲聊与试探】",
+      "tag": "影视剧",
+      "question": "辣妹高冷地吊胃口回复：“我还没决定自己是不是还像以前一样对你有感觉（喜欢你）。”",
+      "answer": "I haven't decided if I still like you.",
+      "created_at": "2026-04-03T00:00:00.000000"
+    }
+  ]
+}

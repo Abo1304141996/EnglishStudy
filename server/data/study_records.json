@@ -718,5 +718,25 @@
     "ease_factor": 2.5,
     "interval": 0,
     "next_review": null
+  },
+  {
+    "id": "rec_4e69744c",
+    "card_id": "card_e5833878",
+    "rating": "fuzzy",
+    "studied_at": "2026-05-12T13:57:50.236822",
+    "session_id": null,
+    "ease_factor": 2.5,
+    "interval": 0,
+    "next_review": null
+  },
+  {
+    "id": "rec_a94838d4",
+    "card_id": "card_dcb71422",
+    "rating": "unknown",
+    "studied_at": "2026-05-12T13:58:18.427982",
+    "session_id": null,
+    "ease_factor": 2.5,
+    "interval": 0,
+    "next_review": null
   }
 ]
