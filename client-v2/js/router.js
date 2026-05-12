@@ -68,19 +68,24 @@ const Router = (() => {
       openIngest();
     });
 
-    // 新建学习包
-    const newPackBtn = document.getElementById('new-pack-btn');
-    if (newPackBtn) newPackBtn.addEventListener('click', async () => {
+    // 新建学习包（桌面 + 移动端共用同一处理函数）
+    const handleNewPack = async () => {
+      document.getElementById('mobile-menu').classList.add('hidden');
       const name = await Modal.prompt({ title: '新建学习包', label: '名称', placeholder: '如：Shameless-S03' });
       if (!name) return;
       try {
         await Api.createPack(name);
         Modal.toast('已创建学习包', 'success');
-        PacksPage.load();
+        // 创建后自动回到首页并刷新
+        Router.navigateTo('pack-list');
       } catch (err) {
         Modal.toast(err.message, 'error', 3000);
       }
-    });
+    };
+    const newPackBtn = document.getElementById('new-pack-btn');
+    if (newPackBtn) newPackBtn.addEventListener('click', handleNewPack);
+    const newPackBtnM = document.getElementById('new-pack-btn-mobile');
+    if (newPackBtnM) newPackBtnM.addEventListener('click', handleNewPack);
 
     // 返回按钮
     document.getElementById('back-to-packs').addEventListener('click', () => {

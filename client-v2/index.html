@@ -34,12 +34,17 @@
         <i class="fas fa-bolt text-primary text-2xl"></i>
         <h1 class="text-lg md:text-xl font-bold text-dark">英语闪现卡</h1>
       </div>
-      <nav class="hidden md:flex items-center space-x-8">
+      <nav class="hidden md:flex items-center space-x-6">
         <a class="nav-link active" href="javascript:void(0);" data-page="pack-list">首页</a>
         <a class="nav-link" href="javascript:void(0);" data-page="my-learning">我的学习</a>
-        <button id="open-ingest-btn-desktop" class="px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors text-sm">
-          <i class="fas fa-plus mr-1"></i>新增积累
-        </button>
+        <div class="flex items-center gap-2">
+          <button id="new-pack-btn" class="px-3 py-2 bg-white border border-primary text-primary rounded-lg hover:bg-primary/5 transition-colors text-sm">
+            <i class="fas fa-folder-plus mr-1"></i>新建学习包
+          </button>
+          <button id="open-ingest-btn-desktop" class="px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors text-sm">
+            <i class="fas fa-plus mr-1"></i>新增积累
+          </button>
+        </div>
       </nav>
       <button class="md:hidden text-dark text-2xl p-2 -mr-2" id="mobile-menu-btn" aria-label="菜单" type="button">
         <i class="fas fa-bars pointer-events-none"></i>
@@ -52,6 +57,9 @@
       </a>
       <a class="mobile-nav-link" href="javascript:void(0);" data-page="my-learning">
         <i class="fas fa-chart-line mr-2 w-5 text-center"></i>我的学习
+      </a>
+      <a class="mobile-nav-link" href="javascript:void(0);" id="new-pack-btn-mobile">
+        <i class="fas fa-folder-plus mr-2 w-5 text-center"></i>新建学习包
       </a>
       <a class="mobile-nav-link" href="javascript:void(0);" id="open-ingest-btn-mobile">
         <i class="fas fa-plus mr-2 w-5 text-center"></i>新增积累
@@ -68,9 +76,6 @@
       <div class="mb-8">
         <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
           <h2 class="text-2xl font-bold">全部学习包</h2>
-          <button id="new-pack-btn" class="self-start md:self-auto px-4 py-2 bg-white border border-primary text-primary rounded-lg hover:bg-primary/5 transition-colors text-sm">
-            <i class="fas fa-folder-plus mr-1"></i>新建学习包
-          </button>
         </div>
         <div class="flex flex-wrap gap-2" id="tag-filters">
           <button class="tag-btn active" data-tag="全部">全部</button>

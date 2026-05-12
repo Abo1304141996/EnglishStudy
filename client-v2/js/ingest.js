@@ -261,21 +261,21 @@ const IngestWizard = (() => {
       <p class="text-sm text-gray-600 mb-4">将保存 <b>${includedCount}</b> 张卡片到：</p>
 
       <label class="form-label">学习包</label>
-      <div class="flex gap-2 items-center mb-3">
+      <div class="flex flex-col sm:flex-row gap-2 mb-4">
         <select id="ingest-pack" class="form-select" style="flex:1;">
           <option value="__new__">+ 新建学习包</option>
           ${state.packs.map(p => `<option value="${p.id}">${escapeHtml(p.name)}（${p.total_cards} 卡）</option>`).join('')}
         </select>
-      </div>
-      <div id="ingest-new-pack-fields" class="mb-3 hidden">
-        <input type="text" id="ingest-new-pack-name" class="form-input" placeholder="新学习包名称（如：Shameless-S03）">
+        <input type="text" id="ingest-new-pack-name" class="form-input hidden" style="flex:1;" placeholder="新学习包名称（如：Shameless-S03）">
       </div>
 
       <label class="form-label">场景</label>
-      <select id="ingest-scene" class="form-select mb-2">
-        <option value="__new__">+ 新建场景</option>
-      </select>
-      <input type="text" id="ingest-new-scene-name" class="form-input hidden" placeholder="新场景名称（如：第3话 · 酒吧吐槽）">
+      <div class="flex flex-col sm:flex-row gap-2">
+        <select id="ingest-scene" class="form-select" style="flex:1;">
+          <option value="__new__">+ 新建场景</option>
+        </select>
+        <input type="text" id="ingest-new-scene-name" class="form-input hidden" style="flex:1;" placeholder="新场景名称（如：第3话 · 酒吧吐槽）">
+      </div>
     `;
 
     setTimeout(() => bindTargetForm(wrap), 30);
@@ -284,7 +284,7 @@ const IngestWizard = (() => {
 
   function bindTargetForm(wrap) {
     const packSel = wrap.querySelector('#ingest-pack');
-    const newPackFields = wrap.querySelector('#ingest-new-pack-fields');
+    const newPackInput = wrap.querySelector('#ingest-new-pack-name');
     const sceneSel = wrap.querySelector('#ingest-scene');
     const newSceneInput = wrap.querySelector('#ingest-new-scene-name');
 
@@ -308,7 +308,7 @@ const IngestWizard = (() => {
     }
     function refreshNewPackVisibility() {
       const isNew = packSel.value === '__new__';
-      newPackFields.classList.toggle('hidden', !isNew);
+      newPackInput.classList.toggle('hidden', !isNew);
       refreshScenes();
       // 新建 pack 下，强制走"新建场景"
       if (isNew) {
